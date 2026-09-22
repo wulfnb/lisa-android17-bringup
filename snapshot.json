@@ -70,6 +70,60 @@
       "patch_sha256": "38a81e97bf7f8767af0a6dc92ff5c4c21b342dd365cd1d5d960520e2856d18db"
     },
     {
+      "path": "hardware/qcom-caf/sm8450-6.6/display/hal",
+      "base_commit": "ce8d3bb79a8519a1241049d68f8b73d73ff4f400",
+      "patch": "patches/hardware__qcom-caf__sm8450-6.6__display__hal.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "edadc92c4fa2c8fbcae3da6accb8dfe4ed43b3c0948f08e0cf48d6ae2435fde8"
+    },
+    {
+      "path": "hardware/qcom-caf/sm8450/display",
+      "base_commit": "222878b523a9140dd1c1364230c95655228b8039",
+      "patch": "patches/hardware__qcom-caf__sm8450__display.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "7cbea8e1bdadb2884e9a83423b91b05cccb19585623dc85d69e448d4be88cbe9"
+    },
+    {
+      "path": "hardware/qcom-caf/sm8550/display",
+      "base_commit": "d679d895cd1e35d088b67bfd19d9141c76da5207",
+      "patch": "patches/hardware__qcom-caf__sm8550__display.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "edadc92c4fa2c8fbcae3da6accb8dfe4ed43b3c0948f08e0cf48d6ae2435fde8"
+    },
+    {
+      "path": "hardware/qcom-caf/sm8650/display",
+      "base_commit": "fe6db19f67a58c43a794b9517eade8426dcce71c",
+      "patch": "patches/hardware__qcom-caf__sm8650__display.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "edadc92c4fa2c8fbcae3da6accb8dfe4ed43b3c0948f08e0cf48d6ae2435fde8"
+    },
+    {
+      "path": "hardware/qcom-caf/sm8750/display/hal",
+      "base_commit": "9c00ef9bd5cc5799a441c13e442a09756b6db51e",
+      "patch": "patches/hardware__qcom-caf__sm8750__display__hal.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "edadc92c4fa2c8fbcae3da6accb8dfe4ed43b3c0948f08e0cf48d6ae2435fde8"
+    },
+    {
+      "path": "hardware/qcom-caf/sm8850/display/hal",
+      "base_commit": "511d5ca4731479f58c398150ff7f4a59615759f8",
+      "patch": "patches/hardware__qcom-caf__sm8850__display__hal.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "edadc92c4fa2c8fbcae3da6accb8dfe4ed43b3c0948f08e0cf48d6ae2435fde8"
+    },
+    {
       "path": "hardware/qcom/sm7250/gps",
       "base_commit": "c0e0375f06c0335062f19e3d87cb84d3c27cbc57",
       "patch": "patches/hardware__qcom__sm7250__gps.patch",
@@ -97,6 +151,15 @@
         "megvii/Android.bp"
       ],
       "patch_sha256": "240990a8c52fa1364b2260a124d253d9a0a5628e311b25d0fb6da79c15582685"
+    },
+    {
+      "path": "system/vold",
+      "base_commit": "6d1461e1b7618ba30272450633a5971f2e89710b",
+      "patch": "patches/system__vold.patch",
+      "files": [
+        "model/PublicVolume.cpp"
+      ],
+      "patch_sha256": "a2d5b3a2c8a332f12d70149d0dc19996b6dc2c518a42e9a71d1b429771767e1d"
     },
     {
       "path": "vendor/qcom/opensource/display",

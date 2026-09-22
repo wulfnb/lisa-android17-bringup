@@ -1,0 +1,12 @@
+diff --git a/services/config/src/device_impl.h b/services/config/src/device_impl.h
+index c89be31a2a32e3bdc94dafc49a634578c567a1dc..010135a38b0e2b7929010211980bef27b94b3f52 100644
+--- a/services/config/src/device_impl.h
++++ b/services/config/src/device_impl.h
+@@ -71,6 +71,7 @@
+ #include <log/log.h>
+ #include <config/device_interface.h>
+ #include <map>
++#include <mutex>
+ #include <utility>
+ #include <string>
+ #include <vector>

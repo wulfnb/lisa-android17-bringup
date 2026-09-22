@@ -16,6 +16,13 @@
 | device/xiaomi/sm8350-common | Move inline `LocIpc::getLocIpcQrtrRecver(listener, service, instance)` out of `LocIpc.h` into `LocIpc.cpp`, so its `unique_ptr<LocIpcRecver>` destructor is only instantiated once `LocIpcRecver` is a complete type | Failed compile step re-run standalone via `siso_failed_commands.sh`; exits 0 with no diagnostics. Full `m evolution` not retried by the assistant |
 | hardware/qcom/sm7250/gps | Same `LocIpc.h`/`LocIpc.cpp` split (byte-identical upstream file to sm8350-common's) | Not build-verified; `sm7250` is outside the `lisa` (sm8350) target's dependency graph |
 | hardware/qcom/sm8150/gps | Same `LocIpc.h`/`LocIpc.cpp` split (byte-identical upstream file to sm8350-common's) | Not build-verified; `sm8150` is outside the `lisa` (sm8350) target's dependency graph |
+| system/vold | Include algorithm directly in model/PublicVolume.cpp for std::replace (same missing include as the bootable/recovery copy) | Not build-verified; no generated Soong/Siso command exists yet for this target to re-run standalone |
+| hardware/qcom-caf/sm8450/display | Include mutex directly in services/config/src/device_impl.h (same missing include as vendor/qcom/opensource/display's copy) | Not build-verified; not part of the `lisa` target's dependency graph |
+| hardware/qcom-caf/sm8550/display | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
+| hardware/qcom-caf/sm8650/display | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
+| hardware/qcom-caf/sm8450-6.6/display/hal | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
+| hardware/qcom-caf/sm8750/display/hal | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
+| hardware/qcom-caf/sm8850/display/hal | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
 
 The libjxl and libdng_sdk vendor variants are already in the pinned upstream
 source, so no additional source patch is required for them.
@@ -76,3 +83,41 @@ overload, and the full definition). Applied the identical split there so a
 future `sm7250` or `sm8150` bring-up on this toolchain doesn't hit the same
 error; neither is part of the `lisa` build graph, so neither was compiled to
 confirm. Next log number is still 12.
+
+## Sweep for the same missing-include class as the two earlier one-off fixes
+
+The user asked whether the `vendor/qcom/opensource/display` (`<mutex>`) and
+`bootable/recovery` (`<algorithm>`) fixes recorded above, made in an earlier
+session, might also be needed in other repositories in this manifest that
+just haven't been reached by a build yet. `find` for exact duplicate
+filenames, followed by grep for the same standard-library usage without the
+corresponding include, turned up two more affected sets:
+
+- `system/vold/model/PublicVolume.cpp` calls `std::replace` at line 73 with
+  no `<algorithm>` include, identical to the `bootable/recovery` copy of the
+  same file. Unlike the display trees below, `system/vold` is a core system
+  component that is definitely compiled for this build, not a bundled but
+  unused chipset variant, so this is a likely near-term build blocker rather
+  than a precaution. Added `#include <algorithm>` in the same position as the
+  `bootable/recovery` fix.
+- `services/config/src/device_impl.h` is duplicated across eight repos in
+  this manifest. `vendor/qcom/opensource/commonsys/display`'s copy is a
+  distinct, newer file revision that already includes both `<mutex>` and
+  `<shared_mutex>` directly, so it needed no change. The other six —
+  `hardware/qcom-caf/sm8450/display`, `hardware/qcom-caf/sm8550/display`,
+  `hardware/qcom-caf/sm8650/display`, `hardware/qcom-caf/sm8450-6.6/display/hal`,
+  `hardware/qcom-caf/sm8750/display/hal`, and
+  `hardware/qcom-caf/sm8850/display/hal` — declare `std::mutex` and
+  `std::recursive_mutex` members and include `<shared_mutex>` but not
+  `<mutex>` directly, the same shape of bug as the already-fixed
+  `vendor/qcom/opensource/display` copy (which has no `<shared_mutex>` use at
+  all, so it is not proof `<shared_mutex>` transitively supplies `<mutex>` on
+  this toolchain). Added `#include <mutex>` in the same position as the
+  existing fix. None of these six chipset trees are reachable from the
+  `lisa` (sm8350) lunch target, so none could be compiled to confirm.
+
+No generated Siso/Soong command exists yet for any of these targets (the
+build hasn't reached them), so unlike the GPS fix these could not be
+re-verified with a standalone recompile; per this repository's convention
+the assistant did not start `m` to reach them. `system/vold` in particular
+is worth resolving before or during the very next attempted build.

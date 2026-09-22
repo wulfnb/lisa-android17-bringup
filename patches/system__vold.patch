@@ -1,0 +1,12 @@
+diff --git a/model/PublicVolume.cpp b/model/PublicVolume.cpp
+index bf7aaa6b8bf3222e593c58a7437e328770056ed3..90ae76785f1d0f7bdd5c269215bd12592cb4bb84 100644
+--- a/model/PublicVolume.cpp
++++ b/model/PublicVolume.cpp
+@@ -33,6 +33,7 @@
+ #include <private/android_filesystem_config.h>
+ #include <utils/Timers.h>
+ 
++#include <algorithm>
+ #include <fcntl.h>
+ #include <stdlib.h>
+ #include <sys/mount.h>
