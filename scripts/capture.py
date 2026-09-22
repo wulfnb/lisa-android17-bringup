@@ -23,8 +23,11 @@ def main():
     recipes = json.loads((BUNDLE / "binary-fixups.json").read_text())
     known = {(r["repository"], r["path"]): r for r in recipes}
     expected = {r["path"] for r in repositories if r["managed"]}
+    recorded = {r["path"] for r in repositories}
     actual = set((root / ".repo/project.list").read_text().splitlines())
-    if expected != actual:
+    # The original workspace cloned nine projects manually. A restored
+    # workspace manages them through our complete pinned manifest instead.
+    if not expected <= actual or not actual <= recorded:
         raise SystemExit("Repo project list changed: review and update the pinned manifest first.")
 
     def capture(repo):

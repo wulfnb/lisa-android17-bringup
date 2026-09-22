@@ -19,3 +19,13 @@
 These are snapshot-tool and patch checks, not a new ROM build. No build or
 retry commands were run during repository preparation. A fresh full upstream
 sync and end-to-end rebuild from this repository have not been performed.
+
+## Remote-machine README update
+
+- Syntax-checked all 16 Bash examples without executing their commands.
+- Corrected capture's inventory check to accept the original nine manual
+  clones and the restored layout where Repo manages those same repositories.
+- Exercised both layouts in disposable Git repositories and confirmed they
+  produce identical snapshots. Missing required or unknown projects fail.
+- Re-captured the existing workspace and confirmed the source patches and
+  snapshot were unchanged. No setup, sync, build or retry command was run.
