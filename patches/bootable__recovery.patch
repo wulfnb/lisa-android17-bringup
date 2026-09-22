@@ -1,0 +1,12 @@
+diff --git a/volume_manager/PublicVolume.cpp b/volume_manager/PublicVolume.cpp
+index b04135fd07a99669ffd5967281eb509af4af8175..cea34ffcf30a6993e305ab98632e61c826401609 100644
+--- a/volume_manager/PublicVolume.cpp
++++ b/volume_manager/PublicVolume.cpp
+@@ -31,6 +31,7 @@
+ #include <cutils/fs.h>
+ #include <private/android_filesystem_config.h>
+ 
++#include <algorithm>
+ #include <fcntl.h>
+ #include <stdlib.h>
+ #include <sys/mount.h>

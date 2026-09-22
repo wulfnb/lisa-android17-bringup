@@ -12,6 +12,7 @@
 | hardware/xiaomi | Use existing platform Megvii compatibility modules | Stub function table compared; duplicate-module error passed |
 | vendor/xiaomi/firmware-lisa | Supply only firmware absent from integrated vendor radio directory | 17 matching SHA-256 comparisons; 17 unique AB partitions; later build reached compilation |
 | vendor/qcom/opensource/display | Include mutex directly in device_impl.h | Diff check passed; compilation not retried by assistant |
+| bootable/recovery | Include algorithm directly in PublicVolume.cpp for std::replace | Diff check passed; compilation not retried |
 
 The libjxl and libdng_sdk vendor variants are already in the pinned upstream
 source, so no additional source patch is required for them.
@@ -23,3 +24,17 @@ new dated note. Capture and commit the updated snapshot with each fix.
 `bringup-history.md` preserves the earlier chronological notes. Filenames for
 old individual patch exports mentioned there are historical; the authoritative
 current patch mapping is `snapshot.json` and `patches/`.
+
+## Build #11: recovery header fix
+
+The user's incremental retry scheduled 137,621 actions, compared with 212,206
+in build #10. Its displayed 4% is progress through that retry's work, not a
+loss of the previously completed compilation. It completed 6,406 more actions
+before one failure. The UWB license-metadata line preceding the summary is
+not the failed command.
+
+The actual failed target was libvolume_manager's recovery arm64
+PublicVolume.o. PublicVolume.cpp:65 calls std::replace but did not directly
+include <algorithm>. Added that header. No build, failed-command retry, clean
+or source sync was run by the assistant. The user will validate with the next
+incremental build; the next log number is 12.

@@ -11,10 +11,12 @@ this workspace, rather than a copy of the entire Android source tree.
 - Kernel: `kernel/xiaomi/lisa`, with `lisa_defconfig vendor/lisa_QGKI.config`.
 - Soong graph analysis and the duplicate Megvii/firmware packaging blockers
   have been passed by subsequent compilation.
-- The latest build inspected was build #10: approximately 35%, with 74,455
-  completed actions. The two failed display-config compilations shared a
-  missing `<mutex>` include. That include is patched here; its compilation
-  has not been verified by the assistant.
+- Build #10 stopped after 74,455 completed actions with two display-config
+  compilation errors; the missing `<mutex>` include was added.
+- The latest inspected retry, build #11, completed another 6,406 actions and
+  reported one recovery compilation failure: `PublicVolume.cpp` uses
+  `std::replace` without including `<algorithm>`. That include is now patched;
+  compilation of this newest fix has not been retried by the assistant.
 - No completed flashable ROM or successful device boot has been verified.
 - The user runs build/retry commands in their own terminal. Snapshot scripts
   never start a build, sync source, clean output, or push to GitHub.
@@ -289,7 +291,7 @@ are not part of that source snapshot.
 ## Build manually
 
 For the **existing original checkout**, the next log number after the last
-inspected build is 11. This is the requested six-job example; keep `-j4` if
+inspected build is 12. This is the requested six-job example; keep `-j4` if
 memory pressure is high. Run only after any previous build has stopped.
 
 ```bash
@@ -298,7 +300,7 @@ export GOGC=20 GOMEMLIMIT=22GiB
 source build/envsetup.sh
 set -o pipefail
 lunch lineage_lisa-trunk_staging-userdebug &&
-m evolution -j6 2>&1 | tee build_lisa_11.log
+m evolution -j6 2>&1 | tee build_lisa_12.log
 ```
 
 The Soong patch forwards the Go memory controls through its otherwise empty

@@ -3,6 +3,15 @@
   "repository_count": 1261,
   "projects": [
     {
+      "path": "bootable/recovery",
+      "base_commit": "af859816808542007f5e3d9c14efbc49abadcaf0",
+      "patch": "patches/bootable__recovery.patch",
+      "files": [
+        "volume_manager/PublicVolume.cpp"
+      ],
+      "patch_sha256": "b498fd36894936d10d18fe11b030d3557d8e6686de0fdc2213f6a96e16249f2d"
+    },
+    {
       "path": "build/soong",
       "base_commit": "ce8adbbbafd7376385a1fbcb5176563907e8010f",
       "patch": "patches/build__soong.patch",
