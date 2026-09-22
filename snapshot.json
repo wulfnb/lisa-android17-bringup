@@ -36,9 +36,11 @@
       "patch": "patches/device__xiaomi__sm8350-common.patch",
       "files": [
         "extract-files.py",
+        "gps/utils/LocIpc.cpp",
+        "gps/utils/LocIpc.h",
         "proprietary-files.txt"
       ],
-      "patch_sha256": "649dfcf477b4d5e124a8dd0ca82520db4d2dc219c9f7dfd409f3c1d432003e18"
+      "patch_sha256": "ff105819f8868618275f72c92997e35bc2b1bccdb7c16e9634c8fb89b7f0d5e7"
     },
     {
       "path": "external/XMP-Toolkit-SDK",
@@ -66,6 +68,26 @@
         "Android.bp"
       ],
       "patch_sha256": "38a81e97bf7f8767af0a6dc92ff5c4c21b342dd365cd1d5d960520e2856d18db"
+    },
+    {
+      "path": "hardware/qcom/sm7250/gps",
+      "base_commit": "c0e0375f06c0335062f19e3d87cb84d3c27cbc57",
+      "patch": "patches/hardware__qcom__sm7250__gps.patch",
+      "files": [
+        "utils/LocIpc.cpp",
+        "utils/LocIpc.h"
+      ],
+      "patch_sha256": "014f2ccf5983beed29149ad38d2cffd53d907a4dc31393e2d6945a63ab80dff9"
+    },
+    {
+      "path": "hardware/qcom/sm8150/gps",
+      "base_commit": "c102ecaf661265a5bb4bab028c4dba8454016e1b",
+      "patch": "patches/hardware__qcom__sm8150__gps.patch",
+      "files": [
+        "utils/LocIpc.cpp",
+        "utils/LocIpc.h"
+      ],
+      "patch_sha256": "5ab9e5f16c3822ad55d01b27ed7357150d91b61ba5fd84a838d1a3bb0de62c10"
     },
     {
       "path": "hardware/xiaomi",

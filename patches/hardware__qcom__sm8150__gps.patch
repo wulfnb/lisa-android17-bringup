@@ -1,0 +1,35 @@
+diff --git a/utils/LocIpc.cpp b/utils/LocIpc.cpp
+index cd99b7283f53c9ecc8f88b6a8dcb12ee87c6f1e3..1caed0c3036a2df1e8bf0076501512a234622ea4 100644
+--- a/utils/LocIpc.cpp
++++ b/utils/LocIpc.cpp
+@@ -383,6 +383,11 @@ shared_ptr<LocIpcSender> LocIpc::getLocIpcQrtrSender(int service, int instance)
+             "_ZN8loc_util22createLocIpcQrtrSenderEii");
+     return (nullptr == creator) ? nullptr : creator(service, instance);
+ }
++unique_ptr<LocIpcRecver> LocIpc::getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
++                                                     int service, int instance) {
++    const shared_ptr<LocIpcQrtrWatcher> qrtrWatcher = nullptr;
++    return getLocIpcQrtrRecver(listener, service, instance, qrtrWatcher);
++}
+ unique_ptr<LocIpcRecver> LocIpc::getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
+                                                      int service, int instance,
+                                                      const shared_ptr<LocIpcQrtrWatcher>& watcher) {
+diff --git a/utils/LocIpc.h b/utils/LocIpc.h
+index b2586e617d03c5e57d1275a0777ed1aaafd8c3c1..dddb28be6d3cdcb812409431cc964d9767502209 100644
+--- a/utils/LocIpc.h
++++ b/utils/LocIpc.h
+@@ -111,12 +111,9 @@ public:
+     static unique_ptr<LocIpcRecver>
+             getLocIpcInetTcpRecver(const shared_ptr<ILocIpcListener>& listener,
+                                    const char* serverName, int32_t port);
+-    inline static unique_ptr<LocIpcRecver>
++    static unique_ptr<LocIpcRecver>
+             getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
+-                                int service, int instance) {
+-        const shared_ptr<LocIpcQrtrWatcher> qrtrWatcher = nullptr;
+-        return getLocIpcQrtrRecver(listener, service, instance, qrtrWatcher);
+-    }
++                                int service, int instance);
+     static unique_ptr<LocIpcRecver>
+             getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
+                                 int service, int instance,

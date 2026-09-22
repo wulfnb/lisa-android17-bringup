@@ -13,6 +13,41 @@ index 02f70a0f72c76d8d1f1bef01f4c1651367a36b68..c62442ea6ca6f147efa40b2ed3c1f869
      'system_ext/lib64/libwfdnative.so': blob_fixup()
          .add_needed('libinput_shim.so'),
      'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+diff --git a/gps/utils/LocIpc.cpp b/gps/utils/LocIpc.cpp
+index cd99b7283f53c9ecc8f88b6a8dcb12ee87c6f1e3..1caed0c3036a2df1e8bf0076501512a234622ea4 100644
+--- a/gps/utils/LocIpc.cpp
++++ b/gps/utils/LocIpc.cpp
+@@ -383,6 +383,11 @@ shared_ptr<LocIpcSender> LocIpc::getLocIpcQrtrSender(int service, int instance)
+             "_ZN8loc_util22createLocIpcQrtrSenderEii");
+     return (nullptr == creator) ? nullptr : creator(service, instance);
+ }
++unique_ptr<LocIpcRecver> LocIpc::getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
++                                                     int service, int instance) {
++    const shared_ptr<LocIpcQrtrWatcher> qrtrWatcher = nullptr;
++    return getLocIpcQrtrRecver(listener, service, instance, qrtrWatcher);
++}
+ unique_ptr<LocIpcRecver> LocIpc::getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
+                                                      int service, int instance,
+                                                      const shared_ptr<LocIpcQrtrWatcher>& watcher) {
+diff --git a/gps/utils/LocIpc.h b/gps/utils/LocIpc.h
+index 40ed5a3d3601217a9d66637b7065788aec318151..50301b39927bd2f1557be1d539a86370f5d1bf95 100644
+--- a/gps/utils/LocIpc.h
++++ b/gps/utils/LocIpc.h
+@@ -111,12 +111,9 @@ public:
+     static unique_ptr<LocIpcRecver>
+             getLocIpcInetTcpRecver(const shared_ptr<ILocIpcListener>& listener,
+                                    const char* serverName, int32_t port);
+-    inline static unique_ptr<LocIpcRecver>
++    static unique_ptr<LocIpcRecver>
+             getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
+-                                int service, int instance) {
+-        const shared_ptr<LocIpcQrtrWatcher> qrtrWatcher = nullptr;
+-        return getLocIpcQrtrRecver(listener, service, instance, qrtrWatcher);
+-    }
++                                int service, int instance);
+     static unique_ptr<LocIpcRecver>
+             getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
+                                 int service, int instance,
 diff --git a/proprietary-files.txt b/proprietary-files.txt
 index e60a8abdecc728150e74ac166e83bb21f2fca1aa..bde59dfe80c314d76b613b74b901321cecf56a0d 100644
 --- a/proprietary-files.txt
