@@ -38,9 +38,10 @@
         "extract-files.py",
         "gps/utils/LocIpc.cpp",
         "gps/utils/LocIpc.h",
-        "proprietary-files.txt"
+        "proprietary-files.txt",
+        "sepolicy/vendor/batterysecret.te"
       ],
-      "patch_sha256": "ff105819f8868618275f72c92997e35bc2b1bccdb7c16e9634c8fb89b7f0d5e7"
+      "patch_sha256": "89d9f4fdf678682a7a97caf70be4718279100fd31be86a8f7ec0db835199d075"
     },
     {
       "path": "external/XMP-Toolkit-SDK",

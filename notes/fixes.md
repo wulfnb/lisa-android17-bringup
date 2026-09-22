@@ -23,6 +23,7 @@
 | hardware/qcom-caf/sm8450-6.6/display/hal | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
 | hardware/qcom-caf/sm8750/display/hal | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
 | hardware/qcom-caf/sm8850/display/hal | Include mutex directly in services/config/src/device_impl.h | Not build-verified; not part of the `lisa` target's dependency graph |
+| device/xiaomi/sm8350-common | Declare missing `type vendor_sysfs_usb_c, sysfs_type, fs_type;` in sepolicy/vendor/batterysecret.te | Regenerated vendor_sepolicy.conf via its rule_builder script, then re-ran the failed checkpolicy step through `siso_failed_commands.sh`: exits 0, `unknown type` error gone, only the pre-existing unrelated hal_vm_capabilities_default neverallow warning remains |
 
 The libjxl and libdng_sdk vendor variants are already in the pinned upstream
 source, so no additional source patch is required for them.
@@ -121,3 +122,56 @@ build hasn't reached them), so unlike the GPS fix these could not be
 re-verified with a standalone recompile; per this repository's convention
 the assistant did not start `m` to reach them. `system/vold` in particular
 is worth resolving before or during the very next attempted build.
+
+## Build #12: sepolicy unknown type
+
+The user's next incremental build (still logged as `build_lisa_11.log`)
+progressed to 48,726 done actions over 1h33m before failing. The `FAILED:`
+line sits well before the log's tail — the bionic/libc lines the user pasted
+are unrelated in-flight parallel jobs still printing after Siso had already
+stopped scheduling new work, not the failing step itself.
+
+The actual failure was `checkpolicy` compiling `vendor_sepolicy.conf`:
+
+```
+device/xiaomi/sm8350-common/sepolicy/vendor/batterysecret.te:13:ERROR 'unknown type vendor_sysfs_usb_c' at token ';' on line 69771:
+```
+
+`batterysecret.te` references `vendor_sysfs_usb_c` inside its
+`batterysecret_sysfs` type-set macro alongside three sibling types
+(`vendor_sysfs_battery_supply`, `vendor_sysfs_usb_supply`,
+`vendor_sysfs_usbpd_device`). Those three are declared in
+`device/qcom/sepolicy_vndr/<chip>/generic/vendor/common/file.te`; lisa
+(`lahaina`, sm8350) resolves through `SEPolicy.mk`'s `UM_5_4_FAMILY` branch
+to the shared `legacy-um` variant of that file. A tree-wide search for
+`vendor_sysfs_usb_c` found exactly one hit in the whole source tree — this
+same usage — in every chip family's `sepolicy_vndr` copy, not just
+`legacy-um`. It was never declared anywhere; not a version-skew gap, a plain
+missing type.
+
+Fix: declared `type vendor_sysfs_usb_c, sysfs_type, fs_type;` directly in
+`batterysecret.te`, above its first use, following this device tree's own
+existing convention of declaring a locally-needed type inline in the `.te`
+file that uses it (see `hal_sensors_default.te`'s `vendor_sysfs_iio` and
+`hal_fingerprint_default.te`'s `vendor_sysfs_udfps`). Deliberately not added
+to the shared `device/qcom/sepolicy_vndr/legacy-um` repo, which would also
+apply to every unrelated `kona`/`lito`/`bengal`/`msmnile`/`sdm845`/`sdm710`
+device sharing that family.
+
+No `genfscon`/`file_contexts` labeling rule exists for this type on any chip
+family, unlike its three siblings (e.g. `vendor_sysfs_usb_supply` is labeled
+in `legacy-um/generic/vendor/common/file_contexts`). The declaration alone
+is enough to satisfy `checkpolicy`; at runtime, `batterysecret` simply won't
+find any real file carrying this label until (if) a labeling rule is added,
+so the `allow ... vendor_sysfs_usb_c:file rw_file_perms` grant is currently a
+no-op rather than wrong. Unverified: which sysfs path a genfscon rule should
+target, and whether batterysecret needs it at all on this device's hardware.
+
+Verified past the level of the two previous include fixes: regenerated
+`vendor_sepolicy.conf` by running its Soong rule_builder script directly
+(`out/soong/rule_builder_scripts/52fb5220...sh`, which re-invokes `m4` over
+the current `.te` sources), then re-ran the failing `checkpolicy` step via
+`out/siso_failed_commands.sh`. Exit 0; the `unknown type` error is gone,
+leaving only the pre-existing, unrelated `hal_vm_capabilities_default`
+neverallow warning that was already present in the failing run's stderr.
+Full `m evolution` was not restarted by the assistant.

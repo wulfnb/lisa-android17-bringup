@@ -61,3 +61,13 @@ index e60a8abdecc728150e74ac166e83bb21f2fca1aa..bde59dfe80c314d76b613b74b901321c
  system_ext/lib64/libwfdsinksm.so|cc899b719fa11d844c65908d7fdc18600451324d
  system_ext/lib64/libwfduibcinterface.so|432d54b072d8f1c80409b6e11f4f833ca9576937
  system_ext/lib64/libwfduibcsink.so|d12b05bbcefdff6addc2c31567a656b7540d7489
+diff --git a/sepolicy/vendor/batterysecret.te b/sepolicy/vendor/batterysecret.te
+index 05adfe0e22f8d4790a600dfe57365c9c56a50d9f..eddda0672a0719473657258d54cb3407f3859696 100644
+--- a/sepolicy/vendor/batterysecret.te
++++ b/sepolicy/vendor/batterysecret.te
+@@ -1,3 +1,5 @@
++type vendor_sysfs_usb_c, sysfs_type, fs_type;
++
+ define(`batterysecret_sysfs', `{
+   vendor_sysfs_battery_supply
+   vendor_sysfs_usb_c
