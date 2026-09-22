@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.log
+*.zip
+*.img
+*.so
+*.apk
+*.pem
+*.key
+out/
+.ccache/
+.repo/

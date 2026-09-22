@@ -1,0 +1,7 @@
+{
+  "manifest_url": "https://github.com/Evolution-X/manifest.git",
+  "manifest_commit": "973677cdd8fed962dcfca70f59898c21d682aa6f",
+  "branch": "cnb",
+  "repository_count": 1261,
+  "libjxl_note": "Local revert/reapply commits 85143a69 and 0edddbee have zero net source changes. Lock uses their upstream parent 8f6c04effd294e395427e0bac642145e0fa28712"
+}

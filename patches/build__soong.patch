@@ -1,0 +1,18 @@
+diff --git a/ui/build/soong.go b/ui/build/soong.go
+index 4521b4abef559c568e568dc6c113d385339d14fd..121a6de4e7845b795de1411c8c996f8145f8e5a3 100644
+--- a/ui/build/soong.go
++++ b/ui/build/soong.go
+@@ -215,6 +215,13 @@ func (pb PrimaryBuilderFactory) primaryBuilderInvocation(config Config) bootstra
+ 
+ 	commonArgs = append(commonArgs, "-l", filepath.Join(pb.config.FileListDir(), "Android.bp.list"))
+ 	invocationEnv := make(map[string]string)
++	// The primary builder runs under env -i. Preserve opt-in Go GC tuning
++	// so memory-constrained hosts can limit analysis heap growth.
++	for _, key := range []string{"GOGC", "GOMEMLIMIT"} {
++		if value := os.Getenv(key); value != "" {
++			invocationEnv[key] = value
++		}
++	}
+ 	if pb.debugPort != "" {
+ 		//debug mode
+ 		commonArgs = append(commonArgs, "--delve_listen", pb.debugPort,

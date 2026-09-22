@@ -1,0 +1,13 @@
+diff --git a/Android.bp b/Android.bp
+index c792e92fdb93bc11e1a166be1da51d6123aeb85d..8e1252fd4e852b85c24a546ce92a96fc1ab9a5f4 100644
+--- a/Android.bp
++++ b/Android.bp
+@@ -12630,7 +12630,7 @@ cc_prebuilt_library_shared {
+                 "libaudioclient",
+                 "libaudiofoundation",
+                 "audioclient-types-aidl-cpp",
+-                "android.media.audio.common.types-V4-cpp",
++                "android.media.audio.common.types-V5-cpp",
+                 "libwfdmmsrc_system",
+                 "libwfdavenhancements",
+                 "libhidlbase",

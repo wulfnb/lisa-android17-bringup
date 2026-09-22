@@ -1,0 +1,33 @@
+diff --git a/Android.mk b/Android.mk
+index c9018e57f47c3f850b39d5173cccec7988318f14..d0f6cfe0f58d8f3611fb506a9b6fb8fa3ac2d98b 100644
+--- a/Android.mk
++++ b/Android.mk
+@@ -10,7 +10,11 @@ ifeq ($(TARGET_DEVICE),lisa)
+ 
+ $(info Including firmware for lisa...)
+ 
+-FIRMWARE_IMAGES := $(wildcard $(LOCAL_PATH)/images/*)
++# The integrated lisa vendor tree already packages its radio images with
++# checksum verification. Only supply firmware not provided there.
++FIRMWARE_IMAGES := $(filter-out \
++    $(addprefix $(LOCAL_PATH)/images/,$(notdir $(wildcard vendor/xiaomi/lisa/radio/*.img))), \
++    $(wildcard $(LOCAL_PATH)/images/*.img))
+ 
+ $(foreach f, $(notdir $(FIRMWARE_IMAGES)), \
+     $(call add-radio-file,images/$(f)))
+diff --git a/BoardConfigVendor.mk b/BoardConfigVendor.mk
+index d5d66318966b9f394a4f761cf5721b7ae77e18d3..f54b8cb84e3ab3deac850bb64f3eae789312ad5a 100644
+--- a/BoardConfigVendor.mk
++++ b/BoardConfigVendor.mk
+@@ -4,7 +4,10 @@
+ # SPDX-License-Identifier: Apache-2.0
+ #
+ 
+-FIRMWARE_IMAGES := $(wildcard vendor/xiaomi/lisa-firmware/images/*)
++# vendor/xiaomi/lisa/BoardConfigVendor.mk lists the integrated radio images.
++FIRMWARE_IMAGES := $(filter-out \
++    $(addprefix vendor/xiaomi/firmware-lisa/images/,$(notdir $(wildcard vendor/xiaomi/lisa/radio/*.img))), \
++    $(wildcard vendor/xiaomi/firmware-lisa/images/*.img))
+ 
+ AB_OTA_PARTITIONS += \
+     $(foreach f, $(notdir $(FIRMWARE_IMAGES)), $(basename $(f)))

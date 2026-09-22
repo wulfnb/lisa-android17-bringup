@@ -1,0 +1,6325 @@
+[
+  {
+    "path": "art",
+    "base_commit": "2ae0ac223eccfbdebc5ec5a4bb2795d58c13326d",
+    "managed": true
+  },
+  {
+    "path": "bionic",
+    "base_commit": "1773bf1e10796a0bd04a3ab4a5122a0921ac9bca",
+    "managed": true
+  },
+  {
+    "path": "bootable/deprecated-ota",
+    "base_commit": "a60893a68b92701ff76b366c44910915c5f1fed4",
+    "managed": true
+  },
+  {
+    "path": "bootable/libbootloader",
+    "base_commit": "b8c945e55a2e47eaa698f5f916c004bd83bcb811",
+    "managed": true
+  },
+  {
+    "path": "bootable/recovery",
+    "base_commit": "af859816808542007f5e3d9c14efbc49abadcaf0",
+    "managed": true
+  },
+  {
+    "path": "build/blueprint",
+    "base_commit": "7f2058de8155b05ea3c3f8317d33bfe732cacf8b",
+    "managed": true
+  },
+  {
+    "path": "build/make",
+    "base_commit": "f32fb5a1e908e68e08b776a3a07531591ffb27d0",
+    "managed": true
+  },
+  {
+    "path": "build/pesto",
+    "base_commit": "d853447257086aec2c8ade7056ec69e4ac706e14",
+    "managed": true
+  },
+  {
+    "path": "build/release",
+    "base_commit": "c85f4aebe46714235599a9bd6430a0fe30c6e8d5",
+    "managed": true
+  },
+  {
+    "path": "build/soong",
+    "base_commit": "ce8adbbbafd7376385a1fbcb5176563907e8010f",
+    "managed": true
+  },
+  {
+    "path": "cts",
+    "base_commit": "3d1bf2a7eb2b7aaa4636c854ef481f256c40c2dd",
+    "managed": true
+  },
+  {
+    "path": "dalvik",
+    "base_commit": "5013071e756f89aa2cea97b437af12aacb8d4485",
+    "managed": true
+  },
+  {
+    "path": "developers/build",
+    "base_commit": "31d9b329ddc56636a279c7340e154e0d67d9a6fb",
+    "managed": true
+  },
+  {
+    "path": "development",
+    "base_commit": "b73f9c4c56b9381366e368cae67e0684e9ec8b83",
+    "managed": true
+  },
+  {
+    "path": "device/common",
+    "base_commit": "9e48dd8859c3eb6b911bcc9d1ce48a4278bd03f5",
+    "managed": true
+  },
+  {
+    "path": "device/generic/arm64",
+    "base_commit": "71380158d818de918338e34a9cb72316fe3cfa4e",
+    "managed": true
+  },
+  {
+    "path": "device/generic/armv7-a-neon",
+    "base_commit": "b7153cb57f487ce183df8a3719248242765dbb31",
+    "managed": true
+  },
+  {
+    "path": "device/generic/art",
+    "base_commit": "d9c26558defdcdf2907c2abde9a9320dd404a7a9",
+    "managed": true
+  },
+  {
+    "path": "device/generic/car",
+    "base_commit": "03e089d3f9f225b305b44ec33af96aecef8f338e",
+    "managed": true
+  },
+  {
+    "path": "device/generic/common",
+    "base_commit": "2daf417b6d1ed7c43e45ad166343b9792a3b06f6",
+    "managed": true
+  },
+  {
+    "path": "device/generic/goldfish",
+    "base_commit": "c97eaa102f9594e1cc548279450854cf2039ee19",
+    "managed": true
+  },
+  {
+    "path": "device/generic/trusty",
+    "base_commit": "d890e0a3dd30d5e26280b1e340d8dd7b6164612c",
+    "managed": true
+  },
+  {
+    "path": "device/generic/x86",
+    "base_commit": "4394cdf90094161d5caf4f7237c883ab2862c2f2",
+    "managed": true
+  },
+  {
+    "path": "device/generic/x86_64",
+    "base_commit": "43ed01aceb08b2ab661b4fb50b9a5fe145012d4b",
+    "managed": true
+  },
+  {
+    "path": "device/google/atv",
+    "base_commit": "dfc2c1e2f341d2b75abc36d4c28ac41786cf8d9d",
+    "managed": true
+  },
+  {
+    "path": "device/google/contexthub",
+    "base_commit": "12ab57106caaa4f8849401a5fed6bdb6d751ee0a",
+    "managed": true
+  },
+  {
+    "path": "device/google/cuttlefish",
+    "base_commit": "283645aacf6cdb56cc31a9362f54d412dbc132a1",
+    "managed": true
+  },
+  {
+    "path": "device/google/cuttlefish_prebuilts",
+    "base_commit": "36f427b7c46682cfcdb2e61eee6893acbfb2a606",
+    "managed": true
+  },
+  {
+    "path": "device/google/cuttlefish_vmm",
+    "base_commit": "360473222a8700b6a935054b0c882cfbc2ba5701",
+    "managed": true
+  },
+  {
+    "path": "device/google/sdv",
+    "base_commit": "f4bfa128d5d9fb21adca8430694cc16c90b6144a",
+    "managed": true
+  },
+  {
+    "path": "device/google/sdv_display_safety",
+    "base_commit": "0971a46741bd2931c8c506e0afe950348af7c1d4",
+    "managed": true
+  },
+  {
+    "path": "device/google/trout",
+    "base_commit": "26ebd2c5706f28ec3a925b3b7f133a7b575abded",
+    "managed": true
+  },
+  {
+    "path": "device/google_car",
+    "base_commit": "cb434f2e702d45c3942eabaa00b09eb9a9744db9",
+    "managed": true
+  },
+  {
+    "path": "device/lineage/atv",
+    "base_commit": "32c40894271f41483075e9e1215c2734c3dc9abe",
+    "managed": true
+  },
+  {
+    "path": "device/lineage/car",
+    "base_commit": "0f3b40241c5ceff1be0d19dd41bffca028e7c75c",
+    "managed": true
+  },
+  {
+    "path": "device/lineage/sepolicy",
+    "base_commit": "d0397ad450e1c0098744da5a397d7e69c9b1d6aa",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy",
+    "base_commit": "9e8808ec261ed0c51872abfbefe621ba89c98c27",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy-legacy-um",
+    "base_commit": "3ba04b19a72afb83c5793c7c908670d559a1c5e6",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy_vndr/legacy-um",
+    "base_commit": "89590c1c54162f615fb912102517fe13e62378c3",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy_vndr/sm8450",
+    "base_commit": "94f46cb238b06d77878eaefe99dc77e85fea3085",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy_vndr/sm8550",
+    "base_commit": "9b2bbbb2bf3dd37fd2a03601aae1336a9e7f0c59",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy_vndr/sm8650",
+    "base_commit": "b8fce77f0dbdc9cf7f6c27098d7e1a60182bf89d",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy_vndr/sm8750",
+    "base_commit": "ec05d4507edd0e1df1b0db7862c3ce2aeec02454",
+    "managed": true
+  },
+  {
+    "path": "device/qcom/sepolicy_vndr/sm8850",
+    "base_commit": "bacc60b6bd567a078e431eac16b6fefa83413245",
+    "managed": true
+  },
+  {
+    "path": "device/sample",
+    "base_commit": "035858697891c2e1079255ef33656663618037a1",
+    "managed": true
+  },
+  {
+    "path": "device/xiaomi/lisa",
+    "base_commit": "f3fe46d81784eb8b6268c4a91bf83c56e45f8d6c",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/android_device_xiaomi_lisa.git",
+    "branch": "lineage-23.2"
+  },
+  {
+    "path": "device/xiaomi/sm8350-common",
+    "base_commit": "00777415f2fa32b5b18d06f1b35202a75a01d4cc",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/android_device_xiaomi_sm8350-common.git",
+    "branch": "lineage-23.2"
+  },
+  {
+    "path": "evolution/OTA",
+    "base_commit": "2f1f435a1c5739338e72d350de873cb911577b9d",
+    "managed": true
+  },
+  {
+    "path": "evolution/OTA-VANILLA",
+    "base_commit": "72c970945d8eeae3491fa62d2d0ae7e1b95c8ae8",
+    "managed": true
+  },
+  {
+    "path": "evolution/manifest",
+    "base_commit": "973677cdd8fed962dcfca70f59898c21d682aa6f",
+    "managed": true
+  },
+  {
+    "path": "external/AFLplusplus",
+    "base_commit": "42db19266843a4121d8539336b0d343936b54312",
+    "managed": true
+  },
+  {
+    "path": "external/ComputeLibrary",
+    "base_commit": "c74f72e604b78cd3a8f74556903cdd2ca9a1276a",
+    "managed": true
+  },
+  {
+    "path": "external/FP16",
+    "base_commit": "e6ad60074cdb730af563c2d1553f472dc6115bf5",
+    "managed": true
+  },
+  {
+    "path": "external/FXdiv",
+    "base_commit": "560f529230274a871c00993a42740e7515a645af",
+    "managed": true
+  },
+  {
+    "path": "external/FadingEdgeLayout",
+    "base_commit": "0165827a1c0c7076faa236fb01dcd5f877595ecf",
+    "managed": true
+  },
+  {
+    "path": "external/Little-CMS",
+    "base_commit": "3a0365353f955f5997dc835c28b7db4a49f890b1",
+    "managed": true
+  },
+  {
+    "path": "external/MPAndroidChart",
+    "base_commit": "cdaa76f6e0cc1f4dc0e1174d8497f9694c794a32",
+    "managed": true
+  },
+  {
+    "path": "external/OpenCL-CLHPP",
+    "base_commit": "9b7d3c2580185e2386871268bba7c835bcb005f3",
+    "managed": true
+  },
+  {
+    "path": "external/OpenCL-CTS",
+    "base_commit": "a500678ea8980eab6ff17093ca7766fd4ba36bc5",
+    "managed": true
+  },
+  {
+    "path": "external/OpenCL-Headers",
+    "base_commit": "d913d98c16acade2c469777f2f51ee25b683d3e1",
+    "managed": true
+  },
+  {
+    "path": "external/OpenCL-ICD-Loader",
+    "base_commit": "2d4f45c4f4022dc68597bd14faead1c8cf060a8b",
+    "managed": true
+  },
+  {
+    "path": "external/OpenCSD",
+    "base_commit": "d49531098e271b938a261077d69b9d8b485f53d9",
+    "managed": true
+  },
+  {
+    "path": "external/SPIRV-Headers",
+    "base_commit": "a979a537d8f176eef59085c22d1efed0ce3d31d2",
+    "managed": true
+  },
+  {
+    "path": "external/SPIRV-Tools",
+    "base_commit": "18ee9e0503cb77245a989b742f00fff7518a7d7b",
+    "managed": true
+  },
+  {
+    "path": "external/TestParameterInjector",
+    "base_commit": "39be45d7f8988b7b051e14644bc6c51fe856b8f2",
+    "managed": true
+  },
+  {
+    "path": "external/XMP-Toolkit-SDK",
+    "base_commit": "45acb237cd13c19708f963247c732250cd43a4a5",
+    "managed": true
+  },
+  {
+    "path": "external/XNNPACK",
+    "base_commit": "b75c2e2a9e7db7557cf66f9b33d66e9d3b1ed501",
+    "managed": true
+  },
+  {
+    "path": "external/aac",
+    "base_commit": "41f344ffc0bacea87cac5bb1756bd40761265d1e",
+    "managed": true
+  },
+  {
+    "path": "external/abseil-cpp",
+    "base_commit": "474258796bcf112de75a1f89d022ba80b6d0b746",
+    "managed": true
+  },
+  {
+    "path": "external/accessibility-test-framework",
+    "base_commit": "c56129fcdf507265b54b7c0c9247aceb3a4c7478",
+    "managed": true
+  },
+  {
+    "path": "external/accompanist",
+    "base_commit": "948612768f72052191bd0f1b951b1f9ae5bbe28e",
+    "managed": true
+  },
+  {
+    "path": "external/acpica",
+    "base_commit": "b9728fcc71021231093192378e66f990fa0e1ea0",
+    "managed": true
+  },
+  {
+    "path": "external/android-browser-helper",
+    "base_commit": "49d155f26586a540266fd854c868a067f6db9204",
+    "managed": true
+  },
+  {
+    "path": "external/android-key-attestation",
+    "base_commit": "87b8030626b04e16a7efbe2e15c673e2548eef52",
+    "managed": true
+  },
+  {
+    "path": "external/android-nn-driver",
+    "base_commit": "fc603efb3fef0519812ed300c03b47958d3cf377",
+    "managed": true
+  },
+  {
+    "path": "external/android_onboarding",
+    "base_commit": "12a35b34784196d729e27f05e2ba9de7fa8fdb44",
+    "managed": true
+  },
+  {
+    "path": "external/androidplot",
+    "base_commit": "e67b5c11b0a39d07706faa2f5faf820db3848005",
+    "managed": true
+  },
+  {
+    "path": "external/angle",
+    "base_commit": "1f4500d3906c24de59eec5b9cda17a2ad2a8ba2d",
+    "managed": true
+  },
+  {
+    "path": "external/animal-sniffer",
+    "base_commit": "59bee157c06f9ab19289ac99b29641414a6b3c77",
+    "managed": true
+  },
+  {
+    "path": "external/anonymous-counting-tokens",
+    "base_commit": "3579bbb782f7142cb626fb1b2c2897fc44d126c0",
+    "managed": true
+  },
+  {
+    "path": "external/ant-wireless/hidl",
+    "base_commit": "ce589dc08e4215b063bfac73eb7b9b52cf46d944",
+    "managed": true
+  },
+  {
+    "path": "external/antlr",
+    "base_commit": "16467b971bd3e2009fad32dd79016f2c7e421deb",
+    "managed": true
+  },
+  {
+    "path": "external/apache-commons-bcel",
+    "base_commit": "ad3f46d73e83b9e2c303dbce4f86cfa37d6db6c4",
+    "managed": true
+  },
+  {
+    "path": "external/apache-commons-compress",
+    "base_commit": "65f18cb2abd2963bf5663e1f35d6aca08504f79d",
+    "managed": true
+  },
+  {
+    "path": "external/apache-commons-io",
+    "base_commit": "1925eace5c3c652318a9262a45a1289daf1a55bd",
+    "managed": true
+  },
+  {
+    "path": "external/apache-commons-lang",
+    "base_commit": "1d59c3c747e15d6bbb09d564e474eaaf43beb828",
+    "managed": true
+  },
+  {
+    "path": "external/apache-commons-math",
+    "base_commit": "5b1a8fb3a14fdd9516c27236b1b48637e0a25423",
+    "managed": true
+  },
+  {
+    "path": "external/apache-harmony",
+    "base_commit": "41f08cad2cddba0acfe40c9f5d9c63863f561c49",
+    "managed": true
+  },
+  {
+    "path": "external/apache-http",
+    "base_commit": "bc93e03486b05decf4ebd030563a9d0b23999a0d",
+    "managed": true
+  },
+  {
+    "path": "external/apache-velocity-engine",
+    "base_commit": "81a10899890a8351a6a0ea46f6692b03a2a08632",
+    "managed": true
+  },
+  {
+    "path": "external/apache-xml",
+    "base_commit": "81c0feea7cb0987ae36811db43392c703576fb8f",
+    "managed": true
+  },
+  {
+    "path": "external/arm-neon-tests",
+    "base_commit": "40281b2d87d61d2ef92fa9041094fba67993fe21",
+    "managed": true
+  },
+  {
+    "path": "external/arm-optimized-routines",
+    "base_commit": "498b3de1a06e8cd87b2f9d49d1d8a23ebba5cc5a",
+    "managed": true
+  },
+  {
+    "path": "external/arm-trusted-firmware",
+    "base_commit": "54fd6939e177f8ff529b10183254802c76df6d08",
+    "managed": true
+  },
+  {
+    "path": "external/armnn",
+    "base_commit": "4cf966a4f7472ac86a2d06a83732d22d898325bb",
+    "managed": true
+  },
+  {
+    "path": "external/auto",
+    "base_commit": "d97ec6e9cc1ad7f282cdc14bddcbe4dd64cc0d1c",
+    "managed": true
+  },
+  {
+    "path": "external/automotive-design-compose-protos",
+    "base_commit": "e08ce1e517622bef645e673d341631385da32bf6",
+    "managed": true
+  },
+  {
+    "path": "external/avb",
+    "base_commit": "cb5eae91a6b83e1394882decbf6de133239107e1",
+    "managed": true
+  },
+  {
+    "path": "external/aws-crt-java",
+    "base_commit": "66ff24fdb36d9ed8fe233a433b811fdfb48cfe2a",
+    "managed": true
+  },
+  {
+    "path": "external/aws-eventstream-java",
+    "base_commit": "f84cc12c15f8bf5e39f813c51f7e7b14efba5cd8",
+    "managed": true
+  },
+  {
+    "path": "external/aws-sdk-java-v2",
+    "base_commit": "70cc86933f02733a05d260bf401e5e297bcfbf3c",
+    "managed": true
+  },
+  {
+    "path": "external/bash",
+    "base_commit": "1094f161361ad75af92c968da680f2f5b3cf752b",
+    "managed": true
+  },
+  {
+    "path": "external/bazelbuild-remote-apis",
+    "base_commit": "dd21df2f7c701a04e4d8699dd15cad5fe1b7c008",
+    "managed": true
+  },
+  {
+    "path": "external/bc",
+    "base_commit": "683fc6fd48adab655b30f96ffdb931ba192047cb",
+    "managed": true
+  },
+  {
+    "path": "external/bcc",
+    "base_commit": "79791945c2f1db4a6b2a1443524f3f5d19338609",
+    "managed": true
+  },
+  {
+    "path": "external/blktrace",
+    "base_commit": "4172785427289db0804f06dd13176b52bd35451a",
+    "managed": true
+  },
+  {
+    "path": "external/boringssl",
+    "base_commit": "0cd1f6a94b670e6b61af95a06e71e690ae8e3262",
+    "managed": true
+  },
+  {
+    "path": "external/bouncycastle",
+    "base_commit": "56e5dac751581c7bd6dbe363d7ba3f8e8862c5bf",
+    "managed": true
+  },
+  {
+    "path": "external/bpftool",
+    "base_commit": "707a2f3848c4b87b1b37890da1f4ca5d22390ee0",
+    "managed": true
+  },
+  {
+    "path": "external/brotli",
+    "base_commit": "a927860e79169483cd0ae4f8ad52937bd2c6d377",
+    "managed": true
+  },
+  {
+    "path": "external/bsdiff",
+    "base_commit": "6bbcf65f3b25bd09fc39d8166070f9adea325089",
+    "managed": true
+  },
+  {
+    "path": "external/bzip2",
+    "base_commit": "3395226d307f42172f7f2350f1f54a62ca394353",
+    "managed": true
+  },
+  {
+    "path": "external/cairo",
+    "base_commit": "1dc4568707a2dcd4f2db917e5db351ba3e8d18fe",
+    "managed": true
+  },
+  {
+    "path": "external/caliper",
+    "base_commit": "d7bb09dccd464969498584337b0e68a9347b4d40",
+    "managed": true
+  },
+  {
+    "path": "external/capstone",
+    "base_commit": "9a0e4156d50a75a99ec4f1653a0e9602a5d45c18",
+    "managed": true
+  },
+  {
+    "path": "external/cblas",
+    "base_commit": "15c79d2eeb7903cf4f730df9871968c055319bd8",
+    "managed": true
+  },
+  {
+    "path": "external/cbor-java",
+    "base_commit": "48f4d31b8c1944862c63151515585973cbd91c36",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-crossbench",
+    "base_commit": "699cf1888f91829e1af2a5e361656d852ac96094",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-trace",
+    "base_commit": "108ba83473a1d40627306632a4629d4d13747cf3",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-web-tests",
+    "base_commit": "9e6255ebc1eeff6dc5b5fac397bf0dace769c1a6",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-webview/patches",
+    "base_commit": "b29edaec0c61bac615a30263b70cc965c2551ffd",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-webview/prebuilt/arm",
+    "base_commit": "9f672a0b29b66e75333f9e0984a60615724f0a20",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-webview/prebuilt/arm64",
+    "base_commit": "11fd8afe58c011d04cb3c1b2259f406ec9fd49f2",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-webview/prebuilt/x86",
+    "base_commit": "69d94d6d5c7e82dec3364bb5767db1fcabca0a07",
+    "managed": true
+  },
+  {
+    "path": "external/chromium-webview/prebuilt/x86_64",
+    "base_commit": "d676fedf7ac7cdec6228f4e4173f753f1e906829",
+    "managed": true
+  },
+  {
+    "path": "external/chromiumos-config",
+    "base_commit": "0f9ee62b2480d7ffa81c1584407813e7a6d930ca",
+    "managed": true
+  },
+  {
+    "path": "external/clang",
+    "base_commit": "bdc4d062dc4550869e0825da19fe8fa720db860a",
+    "managed": true
+  },
+  {
+    "path": "external/cldr",
+    "base_commit": "412929f8652bc3df352af8c9084338ed836d4360",
+    "managed": true
+  },
+  {
+    "path": "external/clpeak",
+    "base_commit": "7566a8c770341e26c0cdc07b95698ae14391b34b",
+    "managed": true
+  },
+  {
+    "path": "external/clspv",
+    "base_commit": "47d91f252d9e927fa8e7865133db4f868304c6f0",
+    "managed": true
+  },
+  {
+    "path": "external/clvk",
+    "base_commit": "1baa08de7eb3757e563444366a05b51758a79a02",
+    "managed": true
+  },
+  {
+    "path": "external/cn-cbor",
+    "base_commit": "5a89860ea70dab6d2c01c6c8bca6167e6763744f",
+    "managed": true
+  },
+  {
+    "path": "external/compiler-rt",
+    "base_commit": "a36a1bcac7ec7ac9be29d8b0b5e669d53f7886f7",
+    "managed": true
+  },
+  {
+    "path": "external/connectedappssdk",
+    "base_commit": "a892af49f8b58ef4631a1c050516053f831c0b20",
+    "managed": true
+  },
+  {
+    "path": "external/conscrypt",
+    "base_commit": "fd1a430323b5ab9945a15fce6c4a824aeffff685",
+    "managed": true
+  },
+  {
+    "path": "external/cpu_features",
+    "base_commit": "76df2471cbea083fd15823ef051bbd85a7cddabb",
+    "managed": true
+  },
+  {
+    "path": "external/cpuinfo",
+    "base_commit": "b6372c1f38d5cda04a74685271e7233bb180841d",
+    "managed": true
+  },
+  {
+    "path": "external/cronet",
+    "base_commit": "e184145f12ee023d07372bd6db33341b671cee27",
+    "managed": true
+  },
+  {
+    "path": "external/crosvm",
+    "base_commit": "c7dd8d6950912fa5e6fde7ec2d1616e0ddc090f8",
+    "managed": true
+  },
+  {
+    "path": "external/curl",
+    "base_commit": "8db9a00c327b7cf77fe43f2b6ca6137b5cacabfc",
+    "managed": true
+  },
+  {
+    "path": "external/dagger2",
+    "base_commit": "57aa7c004b11466c0154144865e937b9a46a4688",
+    "managed": true
+  },
+  {
+    "path": "external/deqp",
+    "base_commit": "eae519aaa6980b2a34ec07141bb19de3f6ddf69e",
+    "managed": true
+  },
+  {
+    "path": "external/deqp-deps/SPIRV-Headers",
+    "base_commit": "d425c460bde47239483e36ccbec5674cf39eb431",
+    "managed": true
+  },
+  {
+    "path": "external/deqp-deps/SPIRV-Tools",
+    "base_commit": "4e0aa7940f17b47e67f7be80442d526b4fc54142",
+    "managed": true
+  },
+  {
+    "path": "external/deqp-deps/amber",
+    "base_commit": "e2217d1616b410dc65f72d0cdd0b73f0b72a860d",
+    "managed": true
+  },
+  {
+    "path": "external/deqp-deps/glslang",
+    "base_commit": "14422bdc57fb93221192a0c542dde144980dfb69",
+    "managed": true
+  },
+  {
+    "path": "external/dexmaker",
+    "base_commit": "e476b06efb29b9a8e70a63ec23a3bb7f6208cfaa",
+    "managed": true
+  },
+  {
+    "path": "external/dlmalloc",
+    "base_commit": "01a95ac67e502c00c9d546c3ccee2a00313f90ee",
+    "managed": true
+  },
+  {
+    "path": "external/dng_sdk",
+    "base_commit": "104f789f8d920ee34ef7e5d4a374dc4b41760399",
+    "managed": true
+  },
+  {
+    "path": "external/dnsmasq",
+    "base_commit": "37720d7ebe90b68428dc265204cebf26990f4edd",
+    "managed": true
+  },
+  {
+    "path": "external/doclava",
+    "base_commit": "8ba62cbc49f438f38c5d108f0e80953096b43e25",
+    "managed": true
+  },
+  {
+    "path": "external/dokka",
+    "base_commit": "d8345c012eec458555e2c027eff03a0f2726a19e",
+    "managed": true
+  },
+  {
+    "path": "external/double-conversion",
+    "base_commit": "d1eefb5e4345307e4c591d340f51951236f55f31",
+    "managed": true
+  },
+  {
+    "path": "external/downloader",
+    "base_commit": "8ed02f3b4f3393e617141a55f9d80a0e8b1ef57a",
+    "managed": true
+  },
+  {
+    "path": "external/drm_hwcomposer",
+    "base_commit": "87daba89b05fabc7f1e9316e3f283f19fd0c45cd",
+    "managed": true
+  },
+  {
+    "path": "external/dtc",
+    "base_commit": "c1197f56b8f468effbbf5e79feae353c4280e2ea",
+    "managed": true
+  },
+  {
+    "path": "external/dynamic_depth",
+    "base_commit": "a723797020a551c75726e8d91e068087ea489757",
+    "managed": true
+  },
+  {
+    "path": "external/e2fsprogs",
+    "base_commit": "347a1592a840e193b9c52674227d72c9c3cc1a69",
+    "managed": true
+  },
+  {
+    "path": "external/easymock",
+    "base_commit": "06a9728c3609f856e87db38a6602196cec3ab727",
+    "managed": true
+  },
+  {
+    "path": "external/eigen",
+    "base_commit": "711c7cdce03a5e52d73f6f85bbe198324bfccc0b",
+    "managed": true
+  },
+  {
+    "path": "external/elfutils",
+    "base_commit": "219c3a368b121307f2e05593cee89b8591cc40b9",
+    "managed": true
+  },
+  {
+    "path": "external/emboss",
+    "base_commit": "e06f586857f7f7a814a4621deba91a9f586d930c",
+    "managed": true
+  },
+  {
+    "path": "external/emma",
+    "base_commit": "6afa969af5725e9502e757ae65a1dcb65c40af0c",
+    "managed": true
+  },
+  {
+    "path": "external/epson-inkjet-printer-escpr",
+    "base_commit": "78a5d0cfaa4418dd9777c3c3f68080b03a6fa4f8",
+    "managed": true
+  },
+  {
+    "path": "external/erofs-utils",
+    "base_commit": "abbde14092ad3abd8908b864fa9b04685820577b",
+    "managed": true
+  },
+  {
+    "path": "external/error_prone",
+    "base_commit": "1667c79d1fe4211579c8210773961d65fc0d32a9",
+    "managed": true
+  },
+  {
+    "path": "external/escapevelocity",
+    "base_commit": "03b11f293548ad5fd65b5164b46aca08a96968f5",
+    "managed": true
+  },
+  {
+    "path": "external/ethtool",
+    "base_commit": "20cd76af5d2d1ea8b4c210ab012518b1b10f66fd",
+    "managed": true
+  },
+  {
+    "path": "external/exfatprogs",
+    "base_commit": "2914cbb8e7514e824a4792dc3389913c1c4a76ac",
+    "managed": true
+  },
+  {
+    "path": "external/exoplayer",
+    "base_commit": "36366ad807e842c4a523cc15bdb28acfcb807388",
+    "managed": true
+  },
+  {
+    "path": "external/expat",
+    "base_commit": "9cc7a1ca765061a58e196f101fc601d23845c89a",
+    "managed": true
+  },
+  {
+    "path": "external/f2fs-tools",
+    "base_commit": "c64468cb6397fb63bded0f549438b472f7e7cf88",
+    "managed": true
+  },
+  {
+    "path": "external/failsafe",
+    "base_commit": "3bf2627e66d4ed1dab62ed59157acbe7eaea9ba3",
+    "managed": true
+  },
+  {
+    "path": "external/fastrpc",
+    "base_commit": "418b791d679beb2078b579a3b6936cf330c41799",
+    "managed": true
+  },
+  {
+    "path": "external/fdlibm",
+    "base_commit": "34840811850a2924f1fcc7eee23dde1193e39eb6",
+    "managed": true
+  },
+  {
+    "path": "external/fec",
+    "base_commit": "90857deb7973c0ca24c79b9c1809fc9667f32c4f",
+    "managed": true
+  },
+  {
+    "path": "external/federated-compute",
+    "base_commit": "3ca3a393cca6a0594237ceeb3662671811c1d641",
+    "managed": true
+  },
+  {
+    "path": "external/fft2d",
+    "base_commit": "fa0ad63f8b666836f56a823de546390a6e4ff4b6",
+    "managed": true
+  },
+  {
+    "path": "external/fhir/spec/r4",
+    "base_commit": "8feeb7dabdaf4b99434215b64a8295cf6fc0d0d0",
+    "managed": true
+  },
+  {
+    "path": "external/fio",
+    "base_commit": "c3d64cc2c3679ce98bb8831cc4dc7f27cd6fb716",
+    "managed": true
+  },
+  {
+    "path": "external/firebase-messaging",
+    "base_commit": "89f472808d35023144347fb28c0c5afc8771d193",
+    "managed": true
+  },
+  {
+    "path": "external/flac",
+    "base_commit": "e638bb3ad98981fdc762c7c80666101ba7a21bfe",
+    "managed": true
+  },
+  {
+    "path": "external/flashrom",
+    "base_commit": "e7cc04ef0fc9d3506246d4cca878d7f7c9f27613",
+    "managed": true
+  },
+  {
+    "path": "external/flatbuffers",
+    "base_commit": "a321165845235e5fa63a5455ee866f4a5008b7c6",
+    "managed": true
+  },
+  {
+    "path": "external/fmtlib",
+    "base_commit": "e3bef0ad2e9d4ea38ba3b4b2b59e0514f7025fed",
+    "managed": true
+  },
+  {
+    "path": "external/fonttools",
+    "base_commit": "97cf2c42d30e48e1e6f7432079544dcd8b0af23c",
+    "managed": true
+  },
+  {
+    "path": "external/freetype",
+    "base_commit": "698bebbc462fd7fbb9847907e3dd52a515c23160",
+    "managed": true
+  },
+  {
+    "path": "external/fsck_msdos",
+    "base_commit": "dc0d0efc50ad7246c283bd218d06ee2d41c14cc7",
+    "managed": true
+  },
+  {
+    "path": "external/fsverity-utils",
+    "base_commit": "d229a02345e07b8105c805c7563b902a7d2f9206",
+    "managed": true
+  },
+  {
+    "path": "external/gemmlowp",
+    "base_commit": "9304d9b673e827202f9526913d161e3cb49a1560",
+    "managed": true
+  },
+  {
+    "path": "external/geojson-jackson",
+    "base_commit": "e2daf4b146e15048406f25a9656830755a7a68be",
+    "managed": true
+  },
+  {
+    "path": "external/geonames",
+    "base_commit": "35da0d8e3b4413757a262eb48348126518e6ef37",
+    "managed": true
+  },
+  {
+    "path": "external/gflags",
+    "base_commit": "9e187e1e29654d52867626553ce23096994c95c0",
+    "managed": true
+  },
+  {
+    "path": "external/giflib",
+    "base_commit": "9fc55623d7fec25b699eab680041798de98f5c86",
+    "managed": true
+  },
+  {
+    "path": "external/glide",
+    "base_commit": "6f0c411fc6a83cc87278259dc2013ec128843586",
+    "managed": true
+  },
+  {
+    "path": "external/gmmlib",
+    "base_commit": "8d467d6958f28d04bc0d163ac4ffbd4737398b39",
+    "managed": true
+  },
+  {
+    "path": "external/go-cmp",
+    "base_commit": "2f92873cfcd27cbe5efa168d8399038980aef6be",
+    "managed": true
+  },
+  {
+    "path": "external/golang-protobuf",
+    "base_commit": "fcb969a6e0df55f1460721e1b9c4f2c4d2b5a47f",
+    "managed": true
+  },
+  {
+    "path": "external/google-auth-library-java",
+    "base_commit": "63f7331819e1472b02edc5002a66d1d92a2ae912",
+    "managed": true
+  },
+  {
+    "path": "external/google-benchmark",
+    "base_commit": "c42745dfc2b140fde975369e41a097b0ccddc346",
+    "managed": true
+  },
+  {
+    "path": "external/google-breakpad",
+    "base_commit": "f906bd1cc04bdfbe4bd821de3f9251401c9b094a",
+    "managed": true
+  },
+  {
+    "path": "external/google-cloud-java",
+    "base_commit": "0d4b4f69761488b423a7625947d710be0c9cb33b",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/arbutus-slab",
+    "base_commit": "633f6ac9dd04d5da2fbafd7ae96f9057929ab8fd",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/arvo",
+    "base_commit": "2373c29eb1766fe191c66de77edae598808fae9a",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/barlow",
+    "base_commit": "83ab24c72274f472474004157f0c77ca420ad714",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/big-shoulders-text",
+    "base_commit": "b360c36a124978f24eadced46f6202cb80c9276e",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/carrois-gothic-sc",
+    "base_commit": "34e696f9dd9272607c3089a24bdd19b9f0e99e3c",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/coming-soon",
+    "base_commit": "d4dc7bbf8f7560c16016d920413bca6f0f62df81",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/cutive-mono",
+    "base_commit": "670e926c3f6f8a9f0dcfe0174f2ec138124424ed",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/dancing-script",
+    "base_commit": "dc191e60cf6b573e4e280b75c39343a2a70b1175",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/fraunces",
+    "base_commit": "d4ee78207845a8ffaf61dfbc864867d4a4909c02",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/karla",
+    "base_commit": "88eb02ddd6a1910700f778db0fcb9018a0c2a7e5",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/lato",
+    "base_commit": "4eaadada91b714e4aa449e7ab9a40b95845bc26b",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/lustria",
+    "base_commit": "12827f84fd0adc4db95ade52c5e2636f79b7365b",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/rubik",
+    "base_commit": "91d3ea647a30dc401baecd4a5b2d73cf36229513",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/source-sans-pro",
+    "base_commit": "c099ab73c712ed9c67f87e1caa32a231c6897351",
+    "managed": true
+  },
+  {
+    "path": "external/google-fonts/zilla-slab",
+    "base_commit": "805aa20e5741e200c94b0e525297104171122738",
+    "managed": true
+  },
+  {
+    "path": "external/google-fruit",
+    "base_commit": "fc3515ca5657a9f4f513fbf4a14ab8361ed9c672",
+    "managed": true
+  },
+  {
+    "path": "external/google-highway",
+    "base_commit": "94b90ab8cb9df9b3719a64751ea2fcb62caa3391",
+    "managed": true
+  },
+  {
+    "path": "external/google-java-format",
+    "base_commit": "2c19037fdc89d385f66b702705610bec74f3b349",
+    "managed": true
+  },
+  {
+    "path": "external/google-smali",
+    "base_commit": "e84eba8d574589a839c18f099c0f42ae7f55e204",
+    "managed": true
+  },
+  {
+    "path": "external/googleapis",
+    "base_commit": "53efb8a56baa3b802407e7c0d1050328aeb31671",
+    "managed": true
+  },
+  {
+    "path": "external/googletest",
+    "base_commit": "9bcfc87429e9a9e02ccf2b8424b748f05c4842a5",
+    "managed": true
+  },
+  {
+    "path": "external/gptfdisk",
+    "base_commit": "1b4c182411747173deb1a5cccdcdd3d36b87295b",
+    "managed": true
+  },
+  {
+    "path": "external/grpc-grpc",
+    "base_commit": "a7112f326a9df61597d1bfdbdad7ad9ef3f764b7",
+    "managed": true
+  },
+  {
+    "path": "external/grpc-grpc-java",
+    "base_commit": "90a34c38cfdd92823eb332eeff0fd1270b6346c8",
+    "managed": true
+  },
+  {
+    "path": "external/gsc-utils",
+    "base_commit": "3b55ffb55d664228916121fceeff7e36b3f80c71",
+    "managed": true
+  },
+  {
+    "path": "external/gson",
+    "base_commit": "31bf8505d546aa682b84f742aced9af1cf93eeb9",
+    "managed": true
+  },
+  {
+    "path": "external/gturri-aXMLRPC",
+    "base_commit": "5ccb732178c8d9e2288fd00ff4520df83163fc6a",
+    "managed": true
+  },
+  {
+    "path": "external/gturri-jISO8601",
+    "base_commit": "978574d0fb2ee86bff526bdc340769771ec25954",
+    "managed": true
+  },
+  {
+    "path": "external/guava",
+    "base_commit": "f53eb3ca330b274507e184b4261e5284fd29b4b3",
+    "managed": true
+  },
+  {
+    "path": "external/guice",
+    "base_commit": "183ae373d36f0367d2215e513be237edca4b5977",
+    "managed": true
+  },
+  {
+    "path": "external/gwp_asan",
+    "base_commit": "54826e96fc883088ac6cfc80240c094e671d6e24",
+    "managed": true
+  },
+  {
+    "path": "external/hafnium",
+    "base_commit": "508c28c16f26c7ea56f98d79c03c7272ae9ae062",
+    "managed": true
+  },
+  {
+    "path": "external/hamcrest",
+    "base_commit": "9580841c6c1546d56fcb22ef41a9f560a5e9ba42",
+    "managed": true
+  },
+  {
+    "path": "external/harfbuzz_ng",
+    "base_commit": "31e11a7283dce4ffc573fc8d249b3483988f8bde",
+    "managed": true
+  },
+  {
+    "path": "external/hplip",
+    "base_commit": "d37ce064e1e2763e4f2307c7dea7aad0c2044aa6",
+    "managed": true
+  },
+  {
+    "path": "external/htop",
+    "base_commit": "ff411eb6f0b716294440dbb5b24a090a1ad67af9",
+    "managed": true
+  },
+  {
+    "path": "external/hyphenation-patterns",
+    "base_commit": "487eaf7776fa0733d9835747032288ab0b549a70",
+    "managed": true
+  },
+  {
+    "path": "external/iamf_tools",
+    "base_commit": "686f2a5d576144e52d9bae9e86d2be9b09a31aad",
+    "managed": true
+  },
+  {
+    "path": "external/icing",
+    "base_commit": "3baefcdf2131527429d780b2f89bb2b845e44bb6",
+    "managed": true
+  },
+  {
+    "path": "external/icu",
+    "base_commit": "00c713278f65a4db343c388f0c4f8501f70387b9",
+    "managed": true
+  },
+  {
+    "path": "external/igt-gpu-tools",
+    "base_commit": "4134b84e0361e82dadcabca302626c4d48c12cc3",
+    "managed": true
+  },
+  {
+    "path": "external/image_io",
+    "base_commit": "581886c43a33d47101cae26c447ed7be07a8b626",
+    "managed": true
+  },
+  {
+    "path": "external/ims",
+    "base_commit": "e0534954b785ee366e228ca96ae05f86dfcc7feb",
+    "managed": true
+  },
+  {
+    "path": "external/intel-pmt-metadata",
+    "base_commit": "2539294566681c5e16ab6c0c571a0077ea2f1a8b",
+    "managed": true
+  },
+  {
+    "path": "external/iperf3",
+    "base_commit": "fadbfe033199a1fc330dc44a16aec8fc0c6352d4",
+    "managed": true
+  },
+  {
+    "path": "external/iproute2",
+    "base_commit": "98d58311c2235def6596bda3a0da9366de2979e0",
+    "managed": true
+  },
+  {
+    "path": "external/iptables",
+    "base_commit": "df1a07fd3d0c157a71a4c157cc728062a01032b2",
+    "managed": true
+  },
+  {
+    "path": "external/iputils",
+    "base_commit": "9c014e33395657c45db7f074ea4f822e1cfadb0b",
+    "managed": true
+  },
+  {
+    "path": "external/iw",
+    "base_commit": "1581c75718298473bbc2fb2670bddbb667104782",
+    "managed": true
+  },
+  {
+    "path": "external/jackson-annotations",
+    "base_commit": "1c7572b0e17962526a149b7da3fd5288e0be9b0c",
+    "managed": true
+  },
+  {
+    "path": "external/jackson-core",
+    "base_commit": "4587e3723df3ef0e440f14a65c29013ea340cbf5",
+    "managed": true
+  },
+  {
+    "path": "external/jackson-databind",
+    "base_commit": "bae0cbc2f3d02f17139813485dab566cb7e8e358",
+    "managed": true
+  },
+  {
+    "path": "external/jacoco",
+    "base_commit": "b2918806063b27668501eb728168277a7fbc7944",
+    "managed": true
+  },
+  {
+    "path": "external/jakarta.inject",
+    "base_commit": "75b5356ec832b8306d8706eb7fae46fef9cbb1d3",
+    "managed": true
+  },
+  {
+    "path": "external/jarjar",
+    "base_commit": "384ed55d6afe79ec6a143118c2cdd422e68c8e42",
+    "managed": true
+  },
+  {
+    "path": "external/java-diff-utils",
+    "base_commit": "5f49ae74dac240ea886d38ab09ac1d382e5fa8d0",
+    "managed": true
+  },
+  {
+    "path": "external/javaparser",
+    "base_commit": "c65eac405e7a34754245921eb50b1ee3932cb0e2",
+    "managed": true
+  },
+  {
+    "path": "external/javapoet",
+    "base_commit": "8c6c067900f2e80bbb561652820b6f3f038b3892",
+    "managed": true
+  },
+  {
+    "path": "external/javasqlite",
+    "base_commit": "21a7a89b822718efd3dc699586a431e844de7d4d",
+    "managed": true
+  },
+  {
+    "path": "external/javassist",
+    "base_commit": "93591c6475187cb709e85228c0dcb0d007fead13",
+    "managed": true
+  },
+  {
+    "path": "external/jazzer-api",
+    "base_commit": "70ad0cedacf5ee3dfacaac8d693b711007b5cfc2",
+    "managed": true
+  },
+  {
+    "path": "external/jcommander",
+    "base_commit": "92ee1ba50a02446768fde6a55404d4f75f93a6d7",
+    "managed": true
+  },
+  {
+    "path": "external/jctools",
+    "base_commit": "6e765ad5bfcfbe0be210939931d1dc9688974bda",
+    "managed": true
+  },
+  {
+    "path": "external/jemalloc_new",
+    "base_commit": "ea1b5aa6741805a9464a2ee9b5716bcd1516b56e",
+    "managed": true
+  },
+  {
+    "path": "external/jetpack-camera-app",
+    "base_commit": "bb818454ac4029c9bb073d029b526730d510fb0f",
+    "managed": true
+  },
+  {
+    "path": "external/jimfs",
+    "base_commit": "cd18acbf0036a7c6a3443e7e58b5091cacf327cf",
+    "managed": true
+  },
+  {
+    "path": "external/jipp",
+    "base_commit": "a3982c864f5bd8d1921f4844b69ff5bf3567d3f5",
+    "managed": true
+  },
+  {
+    "path": "external/jline",
+    "base_commit": "b5919080e114b31afbc1c9d51408371dc9d54a95",
+    "managed": true
+  },
+  {
+    "path": "external/jmustache",
+    "base_commit": "ac781dac6cf4026016f2dacf824b2f0b0fba91c2",
+    "managed": true
+  },
+  {
+    "path": "external/jsilver",
+    "base_commit": "754d8c4235def553d7d5d0a8a85ffb8dcb234001",
+    "managed": true
+  },
+  {
+    "path": "external/jsmn",
+    "base_commit": "347e976387aa0026cd584c7dafcaff8e25a694fe",
+    "managed": true
+  },
+  {
+    "path": "external/json-c",
+    "base_commit": "53b84fa96d174d7debafa3ac560dc36271872637",
+    "managed": true
+  },
+  {
+    "path": "external/json-schema-validator",
+    "base_commit": "fcb4fca89222fb8f7d41a51e35a939ff942a09ce",
+    "managed": true
+  },
+  {
+    "path": "external/jsoncpp",
+    "base_commit": "97cca484243e0dadc1da054e63823a5ce7478e54",
+    "managed": true
+  },
+  {
+    "path": "external/jsoup",
+    "base_commit": "35efb01f783ee767de7554aa663e7a47d1970faa",
+    "managed": true
+  },
+  {
+    "path": "external/jspecify",
+    "base_commit": "af61f8ce0b6851abd4fc230ab2c1861c16b4fe56",
+    "managed": true
+  },
+  {
+    "path": "external/jsr305",
+    "base_commit": "2b168afb93e04776c7e185c7fcb8b00137121725",
+    "managed": true
+  },
+  {
+    "path": "external/jsr330",
+    "base_commit": "2360bfd8d364aa446599981df8cf83cdc5eafb34",
+    "managed": true
+  },
+  {
+    "path": "external/junit",
+    "base_commit": "03edf7d5a0d9c3fb8d4043d029dd3099e6f0f6b0",
+    "managed": true
+  },
+  {
+    "path": "external/junit-params",
+    "base_commit": "1a5f3f8b0c829e257386c56cfda5e5a442377282",
+    "managed": true
+  },
+  {
+    "path": "external/jxmpp",
+    "base_commit": "3bc8029798ca93f853d76a1d435dac4c4fccb39a",
+    "managed": true
+  },
+  {
+    "path": "external/kernel-headers",
+    "base_commit": "68a96878f2ce5dd13f49c366bb9dabe48975e2ad",
+    "managed": true
+  },
+  {
+    "path": "external/keyattestation",
+    "base_commit": "8d2b7f0885e92ec2a836d2874c8b9159b36a5486",
+    "managed": true
+  },
+  {
+    "path": "external/kmod",
+    "base_commit": "41034538d81a8ee44e98dfaf6bd9d46f1f45adac",
+    "managed": true
+  },
+  {
+    "path": "external/kotlin-compose-compiler",
+    "base_commit": "aaaf5275f3b0b9cea18998bb08a24987c7f4dbce",
+    "managed": true
+  },
+  {
+    "path": "external/kotlin.metadata",
+    "base_commit": "d707f76e54bfaa2c04e7fc6fd320e0738ba36eac",
+    "managed": true
+  },
+  {
+    "path": "external/kotlinc",
+    "base_commit": "200271076d3a9dc6b576497792a4a6fad78994fc",
+    "managed": true
+  },
+  {
+    "path": "external/kotlinpoet",
+    "base_commit": "1f60e73215577a48f66542ec09456cdc7f12f3d1",
+    "managed": true
+  },
+  {
+    "path": "external/kotlinx.atomicfu",
+    "base_commit": "867bc63054d694773bd0aef56eeb51296f2f6b03",
+    "managed": true
+  },
+  {
+    "path": "external/kotlinx.coroutines",
+    "base_commit": "16161f019a518241332c1cad686a3e9404c0d5cf",
+    "managed": true
+  },
+  {
+    "path": "external/kotlinx.metadata",
+    "base_commit": "b3c5df9e5590c600147c8df849e5ad7de3ceb2dd",
+    "managed": true
+  },
+  {
+    "path": "external/kotlinx.serialization",
+    "base_commit": "6e219320253dcd5c0a6f19b2785f1d37bc8edcf0",
+    "managed": true
+  },
+  {
+    "path": "external/ksoap2",
+    "base_commit": "651f29118090eaa09418b84358ff5c5bc7fb2d6c",
+    "managed": true
+  },
+  {
+    "path": "external/ksp",
+    "base_commit": "aa08926470a7d3afc856a08b0f40057293b8f437",
+    "managed": true
+  },
+  {
+    "path": "external/ktfmt",
+    "base_commit": "8c961a62480543a0d9417e9f8a4233e5e88509d8",
+    "managed": true
+  },
+  {
+    "path": "external/leakcanary2",
+    "base_commit": "7f2d1a769f8bfe3dda33bb0f2c437b7889f792ba",
+    "managed": true
+  },
+  {
+    "path": "external/leveldb",
+    "base_commit": "44ab4b0eaa3cc029cf101e00f1908aa4e7530c18",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/disarm",
+    "base_commit": "9b5a361a349f56857500b22b46ad4190c17ad0e9",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/fadec",
+    "base_commit": "99a4fdf7f7235dac880bc842368c18cbb4ce642a",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/lfi-bind",
+    "base_commit": "df63f06cfc6acb28b3b58df40428cfc48368442c",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/lfi-runtime",
+    "base_commit": "9277e9878ebe22953d60bae4920c556baac53181",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/lfi-verifier",
+    "base_commit": "6b90b0551236c8f915da26a17e501b1ec54e087b",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/rlbox",
+    "base_commit": "e5d051ca66961f4f551cf54921288a4fdf3b7b5f",
+    "managed": true
+  },
+  {
+    "path": "external/lfi/rlbox-lfi",
+    "base_commit": "7dd4ded0514868c9af199b96cf7b4b75315d2ea1",
+    "managed": true
+  },
+  {
+    "path": "external/libaom",
+    "base_commit": "6fee3c0be559ce785a5491d46e0b5eb3bd5f34b1",
+    "managed": true
+  },
+  {
+    "path": "external/libavc",
+    "base_commit": "4275faf783bc1ce1eb67fe56043f6f052c0de355",
+    "managed": true
+  },
+  {
+    "path": "external/libbackup",
+    "base_commit": "29a82e5701bcfb4780da2ba690d54d597be2880d",
+    "managed": true
+  },
+  {
+    "path": "external/libbpf",
+    "base_commit": "9723b4de6459ab48b361aed3bae5df3c1bd20cb8",
+    "managed": true
+  },
+  {
+    "path": "external/libbrillo",
+    "base_commit": "eae502014c9048318fc1c072e66924bcd88267d6",
+    "managed": true
+  },
+  {
+    "path": "external/libburnia/libburn",
+    "base_commit": "747398815728125446b4b88e6b0755dcb7afa5a4",
+    "managed": true
+  },
+  {
+    "path": "external/libburnia/libisoburn",
+    "base_commit": "a9f000c9e46aa7a92059a4489f967e0a9fe29cf2",
+    "managed": true
+  },
+  {
+    "path": "external/libburnia/libisofs",
+    "base_commit": "7d1925f80bdd8079f7aa237bbbd9dc2b591d1803",
+    "managed": true
+  },
+  {
+    "path": "external/libcamera",
+    "base_commit": "3ab4b94ccdb390661317bdece4acbe0990caeb6c",
+    "managed": true
+  },
+  {
+    "path": "external/libcap",
+    "base_commit": "9a2ead0b5a377a75849cb0656aa553b5452a7080",
+    "managed": true
+  },
+  {
+    "path": "external/libcap-ng",
+    "base_commit": "8dd5e09d5faf27a871e8654ddaa2d2af7c696578",
+    "managed": true
+  },
+  {
+    "path": "external/libchrome",
+    "base_commit": "0aba0dccfcd93d8303678a4beb61594f7582c73c",
+    "managed": true
+  },
+  {
+    "path": "external/libchrome-gestures",
+    "base_commit": "6c2310952338e9f094a1aeb6a83f7356ff5d6042",
+    "managed": true
+  },
+  {
+    "path": "external/libconfig",
+    "base_commit": "71c612c5997130b7b3b303627c1b6052a1a1a19c",
+    "managed": true
+  },
+  {
+    "path": "external/libcups",
+    "base_commit": "71b9b1b2fd81701120924b3e56f4af4f06344b44",
+    "managed": true
+  },
+  {
+    "path": "external/libcupsfilters",
+    "base_commit": "69f64894c810da761c18d1c1be4465c4b650e1b5",
+    "managed": true
+  },
+  {
+    "path": "external/libcxx",
+    "base_commit": "88894a62bb97313ed9bf79a546f1486de4b2e723",
+    "managed": true
+  },
+  {
+    "path": "external/libcxxabi",
+    "base_commit": "84450eba5a24fe5b7df77ed1307bfada05b14dc7",
+    "managed": true
+  },
+  {
+    "path": "external/libdav1d",
+    "base_commit": "6c7f95fe604762ee0ed15d53fbcbf34c7d670e26",
+    "managed": true
+  },
+  {
+    "path": "external/libdisplay-info",
+    "base_commit": "ece44313d723c11983e8d2fb01411eb11e717e3f",
+    "managed": true
+  },
+  {
+    "path": "external/libdivsufsort",
+    "base_commit": "1aef56c457874c2f09abefe2949c1bd4ac17950f",
+    "managed": true
+  },
+  {
+    "path": "external/libdrm",
+    "base_commit": "12b44e2c3b5186a7e84a5f21830b077cb8587861",
+    "managed": true
+  },
+  {
+    "path": "external/libese",
+    "base_commit": "3b223bce9ad5b25f6ca849ec54b539172d65aa68",
+    "managed": true
+  },
+  {
+    "path": "external/libevent",
+    "base_commit": "44754c0dfee5dc81723013498398034176e6d81e",
+    "managed": true
+  },
+  {
+    "path": "external/libexif",
+    "base_commit": "e180c53a25cc0f26e6e0caf4a2708c41b8ec5214",
+    "managed": true
+  },
+  {
+    "path": "external/libffi",
+    "base_commit": "05b4080d903415b269d5145a4bbfa53d044fedd2",
+    "managed": true
+  },
+  {
+    "path": "external/libfuse",
+    "base_commit": "47f83ca03e9ce8f8dc014605d059e3377ad2eafe",
+    "managed": true
+  },
+  {
+    "path": "external/libgav1",
+    "base_commit": "2d513c5304d2224bb8109b54f60d2fc9da043c0c",
+    "managed": true
+  },
+  {
+    "path": "external/libgsm",
+    "base_commit": "8ec969cea971fe25ff2d3933a5a9f8504f8e86c9",
+    "managed": true
+  },
+  {
+    "path": "external/libhevc",
+    "base_commit": "e0c3a0dc07174cf6b5821e12711bd5a73e70ebf6",
+    "managed": true
+  },
+  {
+    "path": "external/libjpeg-turbo",
+    "base_commit": "a83d12ab3266dae9a9a0ab8f3c1799459d24ed96",
+    "managed": true
+  },
+  {
+    "path": "external/libjxl",
+    "base_commit": "8f6c04effd294e395427e0bac642145e0fa28712",
+    "managed": true
+  },
+  {
+    "path": "external/libkmsxx",
+    "base_commit": "047c958480e774bf69b7dee238f6f5cbf3a69d90",
+    "managed": true
+  },
+  {
+    "path": "external/liblc3",
+    "base_commit": "d4ada0ad25414490456e206da71f466bc2440da1",
+    "managed": true
+  },
+  {
+    "path": "external/libldac",
+    "base_commit": "6a46753fd39349b31ee01715204144f70b107dd0",
+    "managed": true
+  },
+  {
+    "path": "external/libmnl",
+    "base_commit": "9607f96e5cb1d36088df84cb2e2f37955e2889cf",
+    "managed": true
+  },
+  {
+    "path": "external/libmonet",
+    "base_commit": "f56ffa0d810eb127200cded0895c412a907dfa6d",
+    "managed": true
+  },
+  {
+    "path": "external/libmpeg2",
+    "base_commit": "2c13bc536f823725e2035d89f40389af5f8e878f",
+    "managed": true
+  },
+  {
+    "path": "external/libncurses",
+    "base_commit": "cf8d1a3f3b0ab6f9385c3361e1aada7ecc635ad6",
+    "managed": true
+  },
+  {
+    "path": "external/libnetfilter_conntrack",
+    "base_commit": "683fe2e7476f9685fd9314b7ff05a57d245b615c",
+    "managed": true
+  },
+  {
+    "path": "external/libnfnetlink",
+    "base_commit": "a376eb3279f225b393114c4820c780cbda860a6c",
+    "managed": true
+  },
+  {
+    "path": "external/libnl",
+    "base_commit": "2be7f4458cf7c7831df8fbac395e6a7222d0d13f",
+    "managed": true
+  },
+  {
+    "path": "external/libogg",
+    "base_commit": "d47fa80bba2b28d555a429b32a972d9f26d1bd2f",
+    "managed": true
+  },
+  {
+    "path": "external/libopenapv",
+    "base_commit": "1f7d75914d98c47ec2109d94c9561aa9718bd75c",
+    "managed": true
+  },
+  {
+    "path": "external/libopus",
+    "base_commit": "31712864928e8c681b383eddbc0e9b9d58596b0c",
+    "managed": true
+  },
+  {
+    "path": "external/libpalmrejection",
+    "base_commit": "8fed07868a7efb8cad6467119c3de47bace7999f",
+    "managed": true
+  },
+  {
+    "path": "external/libpcap",
+    "base_commit": "d50bbbacc6b05706a9f99e073eab8b251ce461fb",
+    "managed": true
+  },
+  {
+    "path": "external/libpciaccess",
+    "base_commit": "c8ac1fdc006b4bc8338496eb28969cb883dfc836",
+    "managed": true
+  },
+  {
+    "path": "external/libphonenumber",
+    "base_commit": "0b437881ecebeace98400b7c5d4874f5bff68692",
+    "managed": true
+  },
+  {
+    "path": "external/libpng",
+    "base_commit": "e092faae2320e16f61cf0ef51b6dad2ea832e3f8",
+    "managed": true
+  },
+  {
+    "path": "external/libppd",
+    "base_commit": "1d50d9fda9df49e37b9d23c481643debd1664110",
+    "managed": true
+  },
+  {
+    "path": "external/libprotobuf-mutator",
+    "base_commit": "efc3e23145023945be5776c556f254155c027112",
+    "managed": true
+  },
+  {
+    "path": "external/libsrtp2",
+    "base_commit": "f50e3237d9f6d20e95293ffce692aaa60b7c81be",
+    "managed": true
+  },
+  {
+    "path": "external/libtextclassifier",
+    "base_commit": "2973bcf11b21bcd40064f1751638d06cf6023e47",
+    "managed": true
+  },
+  {
+    "path": "external/libtraceevent",
+    "base_commit": "85c8733eda44d09a9a5a1c0b08613b77fd26f23f",
+    "managed": true
+  },
+  {
+    "path": "external/libtracefs",
+    "base_commit": "97a49477fc3dff66170ed394cb23b09a063b01d7",
+    "managed": true
+  },
+  {
+    "path": "external/libudev-zero",
+    "base_commit": "0d432fda68b2db5d8c4e687c76a3035c334c1d55",
+    "managed": true
+  },
+  {
+    "path": "external/libultrahdr",
+    "base_commit": "4a5906659019f5b73b211759d0bfca0375fc6300",
+    "managed": true
+  },
+  {
+    "path": "external/liburing",
+    "base_commit": "92f1e7127f05803171ee50c757b7e262767a10eb",
+    "managed": true
+  },
+  {
+    "path": "external/libusb",
+    "base_commit": "70460fc2b43c3948f9caae1fd4eacd2d666a872b",
+    "managed": true
+  },
+  {
+    "path": "external/libutf",
+    "base_commit": "abf38f0bc29916df7c239f4cee441ebd53fae3bc",
+    "managed": true
+  },
+  {
+    "path": "external/libva",
+    "base_commit": "708c1b8e2c877fa4224056eab2edc1a855abee89",
+    "managed": true
+  },
+  {
+    "path": "external/libva-utils",
+    "base_commit": "1a362e3a393acbece19f6ca7d30735b841ac2cfe",
+    "managed": true
+  },
+  {
+    "path": "external/libvpx",
+    "base_commit": "a928fb11c99d88c4daf3ee03b7c329bfde509535",
+    "managed": true
+  },
+  {
+    "path": "external/libwebm",
+    "base_commit": "6e0215e85c6f3e59ef266e2e2167741980965e92",
+    "managed": true
+  },
+  {
+    "path": "external/libwebsockets",
+    "base_commit": "428f94dc05f8405684ae647db5bf3db06ec722c5",
+    "managed": true
+  },
+  {
+    "path": "external/libxaac",
+    "base_commit": "8d9809f480fb56c68ff6b76927aceb382d55045e",
+    "managed": true
+  },
+  {
+    "path": "external/libxkbcommon",
+    "base_commit": "fc67986a8d259b977f6ecc6759794796825eb679",
+    "managed": true
+  },
+  {
+    "path": "external/libxml2",
+    "base_commit": "e57cff8da55134774646a521a797bb03d46babd8",
+    "managed": true
+  },
+  {
+    "path": "external/libyaml",
+    "base_commit": "318d5470782bfe531d234e29a0d7f4b68617cfec",
+    "managed": true
+  },
+  {
+    "path": "external/libyuv",
+    "base_commit": "49130481509c59cdd486a05595fd809adafedf39",
+    "managed": true
+  },
+  {
+    "path": "external/licenseclassifier",
+    "base_commit": "138a524227f441af0b7ae0faf21a771954e3324d",
+    "managed": true
+  },
+  {
+    "path": "external/linux-firmware",
+    "base_commit": "3379b004bff7f1542480fe62fd426f82146b6fab",
+    "managed": true
+  },
+  {
+    "path": "external/linux-kselftest",
+    "base_commit": "2ff537a5c9fa225ed2839554090562f556af32cf",
+    "managed": true
+  },
+  {
+    "path": "external/llvm",
+    "base_commit": "429d6c6097aea3326e49fc8e87cc7658b750c5d7",
+    "managed": true
+  },
+  {
+    "path": "external/llvm-libc",
+    "base_commit": "95e08d1d4ccefa41921bc00a369008f7618b7101",
+    "managed": true
+  },
+  {
+    "path": "external/lottie",
+    "base_commit": "f21c8dba91039320eeb9d964d8272d9a22f38d72",
+    "managed": true
+  },
+  {
+    "path": "external/ltp",
+    "base_commit": "3fe7435d5b984b46d1d1528cc9850a48d888d8c8",
+    "managed": true
+  },
+  {
+    "path": "external/lua",
+    "base_commit": "32927b80c3fcba2cee73f03d1cc4a982a9426032",
+    "managed": true
+  },
+  {
+    "path": "external/lz4",
+    "base_commit": "734e07032602e9a72fcc9701028b0aee45147fcd",
+    "managed": true
+  },
+  {
+    "path": "external/lzma",
+    "base_commit": "ff4977aa409384e7622a53230323981a785e621d",
+    "managed": true
+  },
+  {
+    "path": "external/marisa-trie",
+    "base_commit": "82e515bcaac323a3f745567b65f25816ec931e9a",
+    "managed": true
+  },
+  {
+    "path": "external/mbedtls",
+    "base_commit": "dd118e8e248588871479dd3b82fab993a58c99d6",
+    "managed": true
+  },
+  {
+    "path": "external/mdnsresponder",
+    "base_commit": "3e0189c4d3be5272398b1ea6ad2f223a973d0ea2",
+    "managed": true
+  },
+  {
+    "path": "external/mesa3d",
+    "base_commit": "875160ed32cc5bc32777fa04870a0a57ed38c987",
+    "managed": true
+  },
+  {
+    "path": "external/mime-support",
+    "base_commit": "9d71d482603aac054815958c9834ae1cd036f024",
+    "managed": true
+  },
+  {
+    "path": "external/minidns",
+    "base_commit": "25200e92a0e8ff40266d2b23e6cae835fccc2274",
+    "managed": true
+  },
+  {
+    "path": "external/minigbm",
+    "base_commit": "ce79bbee67b3e2ea7abb110e1415e9ceceaa6471",
+    "managed": true
+  },
+  {
+    "path": "external/minijail",
+    "base_commit": "26ff82bac9c77ef25d0a913ee09ed11ccdfdab78",
+    "managed": true
+  },
+  {
+    "path": "external/mksh",
+    "base_commit": "35d7cce387b94c2a33fd3e64a48301552fce7fd5",
+    "managed": true
+  },
+  {
+    "path": "external/ml_dtypes",
+    "base_commit": "5a2db782144be7906545ca5ce65518da7d6c00d0",
+    "managed": true
+  },
+  {
+    "path": "external/mobile-data-download",
+    "base_commit": "db9b110f0d59fcc70fe8f3c37230e0c4a55db3c3",
+    "managed": true
+  },
+  {
+    "path": "external/mobly-bundled-snippets",
+    "base_commit": "dcb370e6b35c036a8709fe17fe332449d872fa35",
+    "managed": true
+  },
+  {
+    "path": "external/mobly-snippet-lib",
+    "base_commit": "fcbe611cef61ea47d55107c6d70ac1b4706a6217",
+    "managed": true
+  },
+  {
+    "path": "external/mockftpserver",
+    "base_commit": "455cd7f2c2b34bb2a1bbd8163e4a6c4368513a2b",
+    "managed": true
+  },
+  {
+    "path": "external/mockito",
+    "base_commit": "39b32cedf78fc19d1f7d21bd796718333a5bf6be",
+    "managed": true
+  },
+  {
+    "path": "external/mockito-kotlin",
+    "base_commit": "709411a57d6b6d8aa7495d281e3f48b4f5f67796",
+    "managed": true
+  },
+  {
+    "path": "external/mockwebserver",
+    "base_commit": "e63d64d845e3f12d5970fa66120a023aab9b23fe",
+    "managed": true
+  },
+  {
+    "path": "external/modp_b64",
+    "base_commit": "5dac538059455079c873d306d25e0c6c75ea3845",
+    "managed": true
+  },
+  {
+    "path": "external/moshi",
+    "base_commit": "c5142d8e6c754b8512938cc57818dd9bc22f7dfb",
+    "managed": true
+  },
+  {
+    "path": "external/mp4parser",
+    "base_commit": "5fb3a384c61d89c24954a5eac2e98ea83d4abf7c",
+    "managed": true
+  },
+  {
+    "path": "external/mpdecimal",
+    "base_commit": "ed7ca08a5e74aab5f0c5a15cbc08f2364dbe69a3",
+    "managed": true
+  },
+  {
+    "path": "external/ms-tpm-20-ref",
+    "base_commit": "fb134dfd4d859f3dbd389baf2a8f4420260282c2",
+    "managed": true
+  },
+  {
+    "path": "external/mtools",
+    "base_commit": "f8b0c55d92741eae113cdf2177e49f53f0bd3fb5",
+    "managed": true
+  },
+  {
+    "path": "external/musl",
+    "base_commit": "e8872353b6db70a58369d66ec40562cfbe16b653",
+    "managed": true
+  },
+  {
+    "path": "external/nano",
+    "base_commit": "b83fc23d564c5377fc7c3322e5f75e81d8dad37e",
+    "managed": true
+  },
+  {
+    "path": "external/nanohttpd",
+    "base_commit": "4711b67f075d8ed195ca46785b125dbea03982c3",
+    "managed": true
+  },
+  {
+    "path": "external/nanopb-c",
+    "base_commit": "11c0a81eb894486d883f0543b23d0cdab9f9d5ec",
+    "managed": true
+  },
+  {
+    "path": "external/naver-fonts",
+    "base_commit": "84a4fd4c38c3fe0bed6953a8c6303efe866cdc85",
+    "managed": true
+  },
+  {
+    "path": "external/neon_2_sse",
+    "base_commit": "80a68eefdccd99baeea4880baa1b4c25f2618725",
+    "managed": true
+  },
+  {
+    "path": "external/neven",
+    "base_commit": "09a3bc2b0b971b159074707c36669520a47b684f",
+    "managed": true
+  },
+  {
+    "path": "external/newfs_msdos",
+    "base_commit": "c5ec86d6f3515fad6481e01c1798457ca0ec40d1",
+    "managed": true
+  },
+  {
+    "path": "external/nist-pkits",
+    "base_commit": "de62530b71e1f6c1cb2b80a4675fbdd4edda0990",
+    "managed": true
+  },
+  {
+    "path": "external/nist-sip",
+    "base_commit": "95f225c116d2ce3f099277bbdb2dad3afc7d9050",
+    "managed": true
+  },
+  {
+    "path": "external/nos/host/generic",
+    "base_commit": "fd50a4667c9500729f9b76afc294b203f48ad0d9",
+    "managed": true
+  },
+  {
+    "path": "external/noto-fonts",
+    "base_commit": "ccb4a70ee63245e2f48b15d188e408427bc8616d",
+    "managed": true
+  },
+  {
+    "path": "external/ntfs-3g",
+    "base_commit": "e2415df401538976fb89aa20370903e0c46e51ff",
+    "managed": true
+  },
+  {
+    "path": "external/nullaway",
+    "base_commit": "a26e0fdf6b94bde54d9095d6fd93036c9d8d322d",
+    "managed": true
+  },
+  {
+    "path": "external/oauth",
+    "base_commit": "bb1a7bd835d7a38ea2516d2d4e5ea8b558356be7",
+    "managed": true
+  },
+  {
+    "path": "external/obex",
+    "base_commit": "1f2d427cdd6b022d2e8b713c6e449c2c162d112f",
+    "managed": true
+  },
+  {
+    "path": "external/objenesis",
+    "base_commit": "26a2fb53712b58f59c7d42edf9ae6df1ab27d469",
+    "managed": true
+  },
+  {
+    "path": "external/oboe",
+    "base_commit": "0f51312ecdf768579447d49b4d74483f88bb2871",
+    "managed": true
+  },
+  {
+    "path": "external/obstack",
+    "base_commit": "44c78067a97ec001ed0f51be62aafb7e8fa4787b",
+    "managed": true
+  },
+  {
+    "path": "external/oj-libjdwp",
+    "base_commit": "ab81637dadc368957348561dbd1f45c0adf71fe7",
+    "managed": true
+  },
+  {
+    "path": "external/okhttp",
+    "base_commit": "7fec69d8a7874ed20e11a9211d04b9fca71dcd72",
+    "managed": true
+  },
+  {
+    "path": "external/okio",
+    "base_commit": "57616eee95561a34a1ed65fffc4bcf5060c90c29",
+    "managed": true
+  },
+  {
+    "path": "external/one-true-awk",
+    "base_commit": "dd362b6ae0e8b3e7742edaf45dcee7fe4f25a422",
+    "managed": true
+  },
+  {
+    "path": "external/open-dice",
+    "base_commit": "ffb1ac65de9b449e31fa8e13fa7f679982f020bd",
+    "managed": true
+  },
+  {
+    "path": "external/opencensus-java",
+    "base_commit": "6544ec1ee31db50ad8a71e0550843a3156cb7341",
+    "managed": true
+  },
+  {
+    "path": "external/opencl/llvm-project",
+    "base_commit": "37c265b53612ef8085c15455d10ec718590bba00",
+    "managed": true
+  },
+  {
+    "path": "external/openscreen",
+    "base_commit": "3f982cf4871df8771c9d4abe6e9a6f8d829b2736",
+    "managed": true
+  },
+  {
+    "path": "external/openssh",
+    "base_commit": "60ca88651d39f699932f63d41409facc18c5ad19",
+    "managed": true
+  },
+  {
+    "path": "external/openthread",
+    "base_commit": "39a30a1f966eebc95599d22550e904a6d2568d64",
+    "managed": true
+  },
+  {
+    "path": "external/openwrt-prebuilts",
+    "base_commit": "96431a690ac28f262097a8a4725aa77195425379",
+    "managed": true
+  },
+  {
+    "path": "external/openxr-sdk",
+    "base_commit": "61e07c08f18759d069502db8e54075c8edf89ba1",
+    "managed": true
+  },
+  {
+    "path": "external/opus-experimental",
+    "base_commit": "5822dc6ac2902f705cca5750a7250e463b197962",
+    "managed": true
+  },
+  {
+    "path": "external/ot-br-posix",
+    "base_commit": "03168f06007263a05c2ae3d171a959f40dc6b178",
+    "managed": true
+  },
+  {
+    "path": "external/ow2-asm",
+    "base_commit": "e20c32fc7f8a49e712a907bcc827a6db074ea582",
+    "managed": true
+  },
+  {
+    "path": "external/owasp/java-encoder",
+    "base_commit": "32f6548e4538288c334179ddc84fc56aab1a1c2b",
+    "managed": true
+  },
+  {
+    "path": "external/owasp/sanitizer",
+    "base_commit": "c99b5ba49b4abda41b3cc3d4ef16275da7e69e00",
+    "managed": true
+  },
+  {
+    "path": "external/pandora/mmi2grpc",
+    "base_commit": "ad261ed1348aa9342461569321580180a4bdca3d",
+    "managed": true
+  },
+  {
+    "path": "external/parameter-framework",
+    "base_commit": "c7e796fc64ba556e515bd7135d850a87a477f9a8",
+    "managed": true
+  },
+  {
+    "path": "external/pciutils",
+    "base_commit": "0f51416bd0ef5b859c3e4f6b1a2731629c8bd01d",
+    "managed": true
+  },
+  {
+    "path": "external/pcollections",
+    "base_commit": "70927ace9a591d3692f8a531290889d64e2751fd",
+    "managed": true
+  },
+  {
+    "path": "external/pcre",
+    "base_commit": "0198d28487954eb6dff5e2d086b3a635a4aa6e26",
+    "managed": true
+  },
+  {
+    "path": "external/pdfium",
+    "base_commit": "aac15c2e18a72f66df14f08b93492fd0c493aa77",
+    "managed": true
+  },
+  {
+    "path": "external/perfetto",
+    "base_commit": "ece66975738007dd0978b911d8a2077e49b8f31e",
+    "managed": true
+  },
+  {
+    "path": "external/perfmark",
+    "base_commit": "46c6d3d1b654148dbfd5487fd0bc69a5ed8217c4",
+    "managed": true
+  },
+  {
+    "path": "external/pffft",
+    "base_commit": "9bc003aef1c0c120735aeeb1098ef830c265c98c",
+    "managed": true
+  },
+  {
+    "path": "external/piex",
+    "base_commit": "f036cb56369c876cd9b03b5acfa60d2511837b17",
+    "managed": true
+  },
+  {
+    "path": "external/pigweed",
+    "base_commit": "db5cb0db8513b2598ae7c1fa8a6441ff7f8808b5",
+    "managed": true
+  },
+  {
+    "path": "external/pixman",
+    "base_commit": "94a1ec36e51d40fd4fdc2b9cbe3db392b8ad53db",
+    "managed": true
+  },
+  {
+    "path": "external/ply",
+    "base_commit": "a7a2535527a6e0effc114ecc41a15b6a23df6ce4",
+    "managed": true
+  },
+  {
+    "path": "external/pogreb",
+    "base_commit": "46b62444a3e31bf834331a78234deedee386ad88",
+    "managed": true
+  },
+  {
+    "path": "external/private-join-and-compute",
+    "base_commit": "f262bde0610200d90934c00d647bf326e2a4a24e",
+    "managed": true
+  },
+  {
+    "path": "external/protobuf",
+    "base_commit": "db06feae31e2a10ffc7ddaccd9e285ff7c13c0ab",
+    "managed": true
+  },
+  {
+    "path": "external/pthreadpool",
+    "base_commit": "ca4de83d1bc260c5aa6be083ca7084dce5996026",
+    "managed": true
+  },
+  {
+    "path": "external/puffin",
+    "base_commit": "343e23db1b4d81045e91a10244244893f5acd73b",
+    "managed": true
+  },
+  {
+    "path": "external/python/absl-py",
+    "base_commit": "0bd198a006d34d3d0a49eebd6c9edbfc0476c973",
+    "managed": true
+  },
+  {
+    "path": "external/python/apitools",
+    "base_commit": "16dd5d32ad23dcfb51f6cc705b0726963bf4b98a",
+    "managed": true
+  },
+  {
+    "path": "external/python/asn1crypto",
+    "base_commit": "9c8aba4af13251320a9df7c4c1783e18b4d1e97d",
+    "managed": true
+  },
+  {
+    "path": "external/python/bumble",
+    "base_commit": "ee1fb44f96ef0c7907bc7c07ea753853c68e7cce",
+    "managed": true
+  },
+  {
+    "path": "external/python/cachetools",
+    "base_commit": "e7fc0ce906fa64166504aba2bd2b5ef96087f96d",
+    "managed": true
+  },
+  {
+    "path": "external/python/cpplint",
+    "base_commit": "bf1a5fdfa7b53b8b85ccab25f03091ae9193ac92",
+    "managed": true
+  },
+  {
+    "path": "external/python/cpython3",
+    "base_commit": "122b02112f61db489ac6d741da60296e800d54a4",
+    "managed": true
+  },
+  {
+    "path": "external/python/dateutil",
+    "base_commit": "93a86c17644654fae7df03f20cb7b61f672315da",
+    "managed": true
+  },
+  {
+    "path": "external/python/enum34",
+    "base_commit": "3ba8a936b2bfeefca87d0dbffd5aa52b8e0e4471",
+    "managed": true
+  },
+  {
+    "path": "external/python/fdt",
+    "base_commit": "c5610d434bea5a449aff429d09ddc49d71369c94",
+    "managed": true
+  },
+  {
+    "path": "external/python/google-api-python-client",
+    "base_commit": "9bb5d18c9e8dcc25f8be6359e2dcffba23851acb",
+    "managed": true
+  },
+  {
+    "path": "external/python/google-auth-library-python",
+    "base_commit": "46e96844758592ebba0935bbc7757a4d460b9920",
+    "managed": true
+  },
+  {
+    "path": "external/python/httplib2",
+    "base_commit": "d9d5963848fc2f3e6abf5c115166ebecdcd69484",
+    "managed": true
+  },
+  {
+    "path": "external/python/ipaddress",
+    "base_commit": "19c5e177c75bcc802f5ac1c6e5b2db1d64f2e280",
+    "managed": true
+  },
+  {
+    "path": "external/python/jinja",
+    "base_commit": "db4425b00090bad6d41aecc08ce24252d7ffd53d",
+    "managed": true
+  },
+  {
+    "path": "external/python/mako",
+    "base_commit": "b0e8e2239f9f6b4cee9cf42cab82391dc24f600e",
+    "managed": true
+  },
+  {
+    "path": "external/python/markupsafe",
+    "base_commit": "eda387a01ffc563c29997d3021330e0d5586194c",
+    "managed": true
+  },
+  {
+    "path": "external/python/mobly",
+    "base_commit": "76a74eb1a96d005f13fcbe64964eb919bb14c548",
+    "managed": true
+  },
+  {
+    "path": "external/python/oauth2client",
+    "base_commit": "7055ce09e3ed196a6da5365a86317046473a3374",
+    "managed": true
+  },
+  {
+    "path": "external/python/parse_type",
+    "base_commit": "f7d29d019668002c9455e53db78c60eb8903294f",
+    "managed": true
+  },
+  {
+    "path": "external/python/pexpect",
+    "base_commit": "7793a0b7967d4c02165cb380e7f151cc46eae2cc",
+    "managed": true
+  },
+  {
+    "path": "external/python/portpicker",
+    "base_commit": "5a15790dbdcaa7c47f1b5dcdfab55ee63983df65",
+    "managed": true
+  },
+  {
+    "path": "external/python/ptyprocess",
+    "base_commit": "1706b823e44633721e3a65b990d8d08a25a342d0",
+    "managed": true
+  },
+  {
+    "path": "external/python/pyasn1",
+    "base_commit": "0071cbf57b52336b8261f3903612a2d4d81669af",
+    "managed": true
+  },
+  {
+    "path": "external/python/pyasn1-modules",
+    "base_commit": "98f5febb5f61c53f8d3831eafdbe0ec23cb97e32",
+    "managed": true
+  },
+  {
+    "path": "external/python/pycparser",
+    "base_commit": "89730bc24e31958c06746901caa844ebea48a6f7",
+    "managed": true
+  },
+  {
+    "path": "external/python/pyee",
+    "base_commit": "d67e4b09ff002069a025bfb232836eecab6dab52",
+    "managed": true
+  },
+  {
+    "path": "external/python/pyfakefs",
+    "base_commit": "fb425ade1f96cbb1bed51732664358b1a16e90b4",
+    "managed": true
+  },
+  {
+    "path": "external/python/pyserial",
+    "base_commit": "96a96b5f0d96f196f16e099c04f0785f1556f683",
+    "managed": true
+  },
+  {
+    "path": "external/python/python-api-core",
+    "base_commit": "57ebd58f04b400e908b44ff532db2c2cfc366e3a",
+    "managed": true
+  },
+  {
+    "path": "external/python/pyyaml",
+    "base_commit": "8fe78f37a81c964bdafb69ecf1af9f0e47c9606b",
+    "managed": true
+  },
+  {
+    "path": "external/python/rsa",
+    "base_commit": "b7be4df622ff5b8902da876cc39a379e569406ef",
+    "managed": true
+  },
+  {
+    "path": "external/python/six",
+    "base_commit": "d8b3ade33c59575efe12c2a009d7dcbdaa05ba4d",
+    "managed": true
+  },
+  {
+    "path": "external/python/snippet-uiautomator",
+    "base_commit": "5dbbc2e9f543b88b6353b6d66f23dcb071f565a7",
+    "managed": true
+  },
+  {
+    "path": "external/python/timeout-decorator",
+    "base_commit": "56d60bebfc3172ab4224c5a64136c9cf3ee2dc6f",
+    "managed": true
+  },
+  {
+    "path": "external/python/typing",
+    "base_commit": "0083103df096c352afa620e039c34309650602e1",
+    "managed": true
+  },
+  {
+    "path": "external/python/typing_extensions",
+    "base_commit": "8430d542d65e5607ece1e810e247b982384b32f9",
+    "managed": true
+  },
+  {
+    "path": "external/python/uritemplates",
+    "base_commit": "3936369be2a971ef0b37742e8f9cf93cd10bcc41",
+    "managed": true
+  },
+  {
+    "path": "external/python/watchdog",
+    "base_commit": "0b66557116f53002852d98db711d5488e838c966",
+    "managed": true
+  },
+  {
+    "path": "external/qdl",
+    "base_commit": "da7709d3a94a2c331173716b6f619b700031250d",
+    "managed": true
+  },
+  {
+    "path": "external/qpdf",
+    "base_commit": "e570aea8d89b62cbfa06c1febdc195c52936e235",
+    "managed": true
+  },
+  {
+    "path": "external/rappor",
+    "base_commit": "2abb31345f6c95944768b5222a9a5ed3fc68cc00",
+    "managed": true
+  },
+  {
+    "path": "external/regex-re2",
+    "base_commit": "1b18ee77492041f7f0a7063ad8e02b5694aa6683",
+    "managed": true
+  },
+  {
+    "path": "external/renderscript-intrinsics-replacement-toolkit",
+    "base_commit": "20fb8137c52626304c492c574aec5516962deedb",
+    "managed": true
+  },
+  {
+    "path": "external/replicaisland",
+    "base_commit": "db2a3cfa0c07f1aebed52b92cba70b1d6cb161ee",
+    "managed": true
+  },
+  {
+    "path": "external/rmi4utils",
+    "base_commit": "a248dafd7653b99fc45f9d29e5f139b04f2f28bc",
+    "managed": true
+  },
+  {
+    "path": "external/rnnoise",
+    "base_commit": "1295d6828459cc82c3c29cc5d7d297215250a74b",
+    "managed": true
+  },
+  {
+    "path": "external/robolectric",
+    "base_commit": "87aa52b08f0a6bc65f373e0f542a33d8cfb3cfc1",
+    "managed": true
+  },
+  {
+    "path": "external/roboto-flex-fonts",
+    "base_commit": "458ec4e262a822f055206ae4630fd0cb7fab9ea9",
+    "managed": true
+  },
+  {
+    "path": "external/roboto-fonts",
+    "base_commit": "48287c08f5e74537296b9ddbfb98e4ff09139b9d",
+    "managed": true
+  },
+  {
+    "path": "external/roboto-mono",
+    "base_commit": "f635dd46089bcd5abb811828cb294470b6d5f15e",
+    "managed": true
+  },
+  {
+    "path": "external/rootdev",
+    "base_commit": "57a9ae3787d1bb3b5bc940763fc54939ce622efe",
+    "managed": true
+  },
+  {
+    "path": "external/rsync",
+    "base_commit": "6a2e628ca95b172243abfdad1e86b88fb895fb3f",
+    "managed": true
+  },
+  {
+    "path": "external/rust/android-crates-io",
+    "base_commit": "1f5e95cd6e996995023c9c0f7df0f15a8a43269e",
+    "managed": true
+  },
+  {
+    "path": "external/rust/autocxx",
+    "base_commit": "07cee73ed86e736981a806f6d1354935963e1529",
+    "managed": true
+  },
+  {
+    "path": "external/rust/beto-rust",
+    "base_commit": "7e58deea80bb81100bf42c5530f5038c0c4966f9",
+    "managed": true
+  },
+  {
+    "path": "external/rust/crabbyavif",
+    "base_commit": "c718caf5bc658d3f806a442666800781c66a5274",
+    "managed": true
+  },
+  {
+    "path": "external/rust/crates/openssl",
+    "base_commit": "4dcd52051b37d6319ad67daa6aa9174d94d1015c",
+    "managed": true
+  },
+  {
+    "path": "external/rust/crates/v4l2r",
+    "base_commit": "cb16254d4db8422ffe6cd00fba74be6b85f82b08",
+    "managed": true
+  },
+  {
+    "path": "external/rust/crates/vhost-device-vsock",
+    "base_commit": "28233ae213b24a9a35f25e9e49bcadee2bf93821",
+    "managed": true
+  },
+  {
+    "path": "external/rust/cros-libva",
+    "base_commit": "d0cde109413733250e4bf3d8ca595afcaf903a5a",
+    "managed": true
+  },
+  {
+    "path": "external/rust/cxx",
+    "base_commit": "41972f6ebbe9c21eeed3fdf5c1b0805f2c8b824c",
+    "managed": true
+  },
+  {
+    "path": "external/rust/ninja-to-soong",
+    "base_commit": "3dc658e03e909865a5bb0782341f3f0c2b29072b",
+    "managed": true
+  },
+  {
+    "path": "external/rust/pica",
+    "base_commit": "acc7e0fd31988f0076a510372d254f3b11852c58",
+    "managed": true
+  },
+  {
+    "path": "external/rust/rutabaga_gfx",
+    "base_commit": "1f181b0b3e4b821459f21fd9025cd4c408c4f9ec",
+    "managed": true
+  },
+  {
+    "path": "external/ruy",
+    "base_commit": "c165d6b0f1a1be9ddd2f904e8f87a4c1d9b38c43",
+    "managed": true
+  },
+  {
+    "path": "external/s2-geometry-library-java",
+    "base_commit": "a10958a1b10a93535328702c53a18df70dc6d188",
+    "managed": true
+  },
+  {
+    "path": "external/sandboxed-api",
+    "base_commit": "e0a83b9164067857cc294fa91c4e5b3e8b8e343f",
+    "managed": true
+  },
+  {
+    "path": "external/scapy",
+    "base_commit": "825c73720a094ed76d5416e44bd387f6f4dd67fd",
+    "managed": true
+  },
+  {
+    "path": "external/scrypt",
+    "base_commit": "958140511cebc42a79e9eec852a4f7dfa2bd2755",
+    "managed": true
+  },
+  {
+    "path": "external/scudo",
+    "base_commit": "15715589eebe155c799ce6fe27005bc8775b86ad",
+    "managed": true
+  },
+  {
+    "path": "external/sdk-platform-java",
+    "base_commit": "6d2fca4e20b4b96b6f3f13311646786b9c60f272",
+    "managed": true
+  },
+  {
+    "path": "external/sdv/vsomeip",
+    "base_commit": "906331c2086438e2eadfc2a311fafca2367dedc9",
+    "managed": true
+  },
+  {
+    "path": "external/seccomp-tests",
+    "base_commit": "47a2844676ba1ef247aef2ab4faf4fbeed7bd227",
+    "managed": true
+  },
+  {
+    "path": "external/selinux",
+    "base_commit": "a8c5e74f85f869bf236a01ba24181b78f5e39a52",
+    "managed": true
+  },
+  {
+    "path": "external/setfilters",
+    "base_commit": "b5c75d11718a9b2617dd53bcb7cf5476041220e4",
+    "managed": true
+  },
+  {
+    "path": "external/setupcompat",
+    "base_commit": "7c6b5a62beca73bc914f322fbe1a1183d144c5f7",
+    "managed": true
+  },
+  {
+    "path": "external/setupdesign",
+    "base_commit": "79dbf5860322236cd02e74e2ca0855591d95195c",
+    "managed": true
+  },
+  {
+    "path": "external/sg3_utils",
+    "base_commit": "83bbff8f39afc2607e0eab885be63728f52da95e",
+    "managed": true
+  },
+  {
+    "path": "external/shaderc/spirv-headers",
+    "base_commit": "26c374cbb481bb1d063a205e65cdfee92bdbbd64",
+    "managed": true
+  },
+  {
+    "path": "external/shflags",
+    "base_commit": "6c115774a7a909719174fbebf6c404e56eb109da",
+    "managed": true
+  },
+  {
+    "path": "external/skia",
+    "base_commit": "508606366e71a3daa933a4e08bc49b84e387ec18",
+    "managed": true
+  },
+  {
+    "path": "external/sl4a",
+    "base_commit": "ad278ef33ec42d029a8e9f89aec5c407ab7295ef",
+    "managed": true
+  },
+  {
+    "path": "external/slf4j",
+    "base_commit": "657d9e5f71a92118f891d598dffd64163d8dbbbc",
+    "managed": true
+  },
+  {
+    "path": "external/smack",
+    "base_commit": "ebbe4ce8d56a8fa85236d5ea7b6cb5a28df23bf8",
+    "managed": true
+  },
+  {
+    "path": "external/snakeyaml",
+    "base_commit": "629862ff4a73e7656df0ae02ae0cd24fabf603ae",
+    "managed": true
+  },
+  {
+    "path": "external/sonic",
+    "base_commit": "c990de089156bad9b895a11f03c3fbb9978f37e9",
+    "managed": true
+  },
+  {
+    "path": "external/sonivox",
+    "base_commit": "7d778d6a9a6861284cfce2397a55686ca314fba0",
+    "managed": true
+  },
+  {
+    "path": "external/spdx-tools",
+    "base_commit": "2be2ac6049b9dfc88b9d047ae7b06b6207290cd6",
+    "managed": true
+  },
+  {
+    "path": "external/speex",
+    "base_commit": "1a255c4507c278c58b7bae5979d51de6c4bfb8fd",
+    "managed": true
+  },
+  {
+    "path": "external/sqlite",
+    "base_commit": "7961228217942c86f2b0bd2ae4115d00e157fc0b",
+    "managed": true
+  },
+  {
+    "path": "external/squashfs-tools",
+    "base_commit": "0f1afb009e699504301b3c670fe00a679c5192ad",
+    "managed": true
+  },
+  {
+    "path": "external/starlark-go",
+    "base_commit": "4947cdc739c985f6d86941e22894f5cefe7c9e9a",
+    "managed": true
+  },
+  {
+    "path": "external/stg",
+    "base_commit": "d183ac9bff508225d6401a498a6ae17f6cdfffce",
+    "managed": true
+  },
+  {
+    "path": "external/strace",
+    "base_commit": "4da9987aca2eedf386d1e22e19994a1b0de53c45",
+    "managed": true
+  },
+  {
+    "path": "external/stressapptest",
+    "base_commit": "1ca74ce7aa4532f67c6e0ccee408ef269579f12f",
+    "managed": true
+  },
+  {
+    "path": "external/subsampling-scale-image-view",
+    "base_commit": "df1bfa7a40fa53bf7118a25733caf22ee765dd5b",
+    "managed": true
+  },
+  {
+    "path": "external/swiftshader",
+    "base_commit": "9a22bb9de00f5d8ddf4fc5ba5c2f425c2816e679",
+    "managed": true
+  },
+  {
+    "path": "external/tagsoup",
+    "base_commit": "2f796dab146419542a7d44da9035bb3853fd6361",
+    "managed": true
+  },
+  {
+    "path": "external/tcpdump",
+    "base_commit": "435ac48f51456ba3e57b4131fb7667b38e5ab142",
+    "managed": true
+  },
+  {
+    "path": "external/tensorflow",
+    "base_commit": "d6bfb0bfab3e7565df0be176c3ebaa45ff9000ec",
+    "managed": true
+  },
+  {
+    "path": "external/testng",
+    "base_commit": "09146f4eadc469dcd62f494d5c963ab6d7ad112f",
+    "managed": true
+  },
+  {
+    "path": "external/tflite-support",
+    "base_commit": "eb3d7debd9c042d5449efc1613eb61cc30877eb8",
+    "managed": true
+  },
+  {
+    "path": "external/threetenbp",
+    "base_commit": "b64ac3cf52ca73a80ae09d127efacb52bf7a91f8",
+    "managed": true
+  },
+  {
+    "path": "external/timezone-boundary-builder",
+    "base_commit": "5faee155df90f28ed98c61ab796596534dc56839",
+    "managed": true
+  },
+  {
+    "path": "external/tink",
+    "base_commit": "e7b1675dde1b92d52ec075b0a92829627f2c52a5",
+    "managed": true
+  },
+  {
+    "path": "external/tink-java",
+    "base_commit": "e73e85f387715b27ad2a2b4bf3683bb088e3fddb",
+    "managed": true
+  },
+  {
+    "path": "external/tinyalsa",
+    "base_commit": "28a6a6bff916f5c617b73dcb0fec1a9ade7b9335",
+    "managed": true
+  },
+  {
+    "path": "external/tinyalsa_new",
+    "base_commit": "faac725f32811c68eb40e2d5956eadc51dbb8a60",
+    "managed": true
+  },
+  {
+    "path": "external/tinycompress",
+    "base_commit": "7a3ded281c0068322b89eb49438308fa5f46dfa1",
+    "managed": true
+  },
+  {
+    "path": "external/tinyxml",
+    "base_commit": "30b01f5b6ece6c5204d46f6b2ea90745dbc69826",
+    "managed": true
+  },
+  {
+    "path": "external/tinyxml2",
+    "base_commit": "33ba115074c80a720826efffab1937d5b355c3b8",
+    "managed": true
+  },
+  {
+    "path": "external/toolchain-utils",
+    "base_commit": "13b0aca13b9a3cd116199b0e7643251349f6de1a",
+    "managed": true
+  },
+  {
+    "path": "external/toybox",
+    "base_commit": "962f9d0777975da7dd508bbb8db9a09715b1f692",
+    "managed": true
+  },
+  {
+    "path": "external/tpm2-tss",
+    "base_commit": "3b8b4cf06fdcfbd4c2d091ff74c77f41e97c289e",
+    "managed": true
+  },
+  {
+    "path": "external/trace-cmd",
+    "base_commit": "fcf35f74fefe45d9b7d0a3a0029a38bd79960ca6",
+    "managed": true
+  },
+  {
+    "path": "external/tremolo",
+    "base_commit": "100623061b6dd645e61a2431a35e9b5a2bd7e61e",
+    "managed": true
+  },
+  {
+    "path": "external/trusty/arm-trusted-firmware",
+    "base_commit": "1a7dc6816bbe464e400a3607bec02aeab51ee7af",
+    "managed": true
+  },
+  {
+    "path": "external/trusty/bootloader",
+    "base_commit": "1b0e72282564b2176b673de4f703566a71e9e093",
+    "managed": true
+  },
+  {
+    "path": "external/trusty/headers",
+    "base_commit": "adbfb1d942a19974bb5418cd12147eccb5d51138",
+    "managed": true
+  },
+  {
+    "path": "external/trusty/lk",
+    "base_commit": "88b0dd09802a19f07869d45dcd9a87a291803201",
+    "managed": true
+  },
+  {
+    "path": "external/trusty/musl",
+    "base_commit": "1d82c49d30e1f5ad1dc1e78e9e20aa4c9b6fbc78",
+    "managed": true
+  },
+  {
+    "path": "external/truth",
+    "base_commit": "376bc673f686d4eb0310813a938cb839147ad29b",
+    "managed": true
+  },
+  {
+    "path": "external/turbine",
+    "base_commit": "d7291b840521106cbecff04967d64e8c774cf4ab",
+    "managed": true
+  },
+  {
+    "path": "external/ublksrv",
+    "base_commit": "e5e6aea584863ff187b6f0d29a33bbd87c470143",
+    "managed": true
+  },
+  {
+    "path": "external/unicode",
+    "base_commit": "9e5313262c629525ca0a2e7c706c7b3d6a51c9a1",
+    "managed": true
+  },
+  {
+    "path": "external/unrar",
+    "base_commit": "140cfb9e8fc984cab5060cd09983e6d33a2fae41",
+    "managed": true
+  },
+  {
+    "path": "external/usb-ids",
+    "base_commit": "c69b20f6f7081fa88fd7cabf15fcfbd9d10b35fd",
+    "managed": true
+  },
+  {
+    "path": "external/uwb",
+    "base_commit": "3f12770ae3933ff040d024e3d3aa9918fcc115bb",
+    "managed": true
+  },
+  {
+    "path": "external/v4l-utils",
+    "base_commit": "c39be2de7d3867cacd891e56d625b205bfd7758b",
+    "managed": true
+  },
+  {
+    "path": "external/v4l2_codec2",
+    "base_commit": "6685af1c65467d0b550d7b904418f65059bc3cbb",
+    "managed": true
+  },
+  {
+    "path": "external/vboot_reference",
+    "base_commit": "f3f0485012135cbcff3822f129f3ac5b16c345b1",
+    "managed": true
+  },
+  {
+    "path": "external/vim",
+    "base_commit": "f31199df8fca8148b61ae94bbfcb834021f5bdd9",
+    "managed": true
+  },
+  {
+    "path": "external/virtio-media",
+    "base_commit": "b6071a2fbc949f954cef5f679615cb9ea972fd79",
+    "managed": true
+  },
+  {
+    "path": "external/vixl",
+    "base_commit": "ce11d32c9cc395fd0fd961e30b1ab56e06fd30dc",
+    "managed": true
+  },
+  {
+    "path": "external/vkoverhead",
+    "base_commit": "dc3b5d47bafee8395efdb301ac793060132578f7",
+    "managed": true
+  },
+  {
+    "path": "external/vogar",
+    "base_commit": "01222ca75074657434082ec7774f4c6d12a98af3",
+    "managed": true
+  },
+  {
+    "path": "external/volley",
+    "base_commit": "c6aa5225d163d29057db2f6a30dc52f743879d3d",
+    "managed": true
+  },
+  {
+    "path": "external/vulkan-headers",
+    "base_commit": "ee4343a1f27d9faca189b9ac2c064254e23ba2e2",
+    "managed": true
+  },
+  {
+    "path": "external/vulkan-validation-layers",
+    "base_commit": "50dabcac1d49e8fb5ac287d96d938d1c6204342d",
+    "managed": true
+  },
+  {
+    "path": "external/walt",
+    "base_commit": "b825fedf65997edb5194583c274e477b1ce91488",
+    "managed": true
+  },
+  {
+    "path": "external/wayland",
+    "base_commit": "591bd295dcd97362b58c4f6ee72d910761a49da9",
+    "managed": true
+  },
+  {
+    "path": "external/wayland-protocols",
+    "base_commit": "2dabfe6879b25981e0340823eb1b6d037d21577f",
+    "managed": true
+  },
+  {
+    "path": "external/webp",
+    "base_commit": "e39d7f63945d02f6e2f8262f57e74a38172e72fd",
+    "managed": true
+  },
+  {
+    "path": "external/webrtc",
+    "base_commit": "1895dc1134c158561e0ef668734d86d6bb20d993",
+    "managed": true
+  },
+  {
+    "path": "external/wireless-regdb",
+    "base_commit": "4bd0ffde4a8b98d8b22b29cb1eb95097b34cc8d6",
+    "managed": true
+  },
+  {
+    "path": "external/wmediumd",
+    "base_commit": "7709c75d690087daca341f8ca6a30bea5c2ece9e",
+    "managed": true
+  },
+  {
+    "path": "external/wpa_supplicant_8",
+    "base_commit": "1063d796b547c4cd2c23c21da72ed988ac70a84a",
+    "managed": true
+  },
+  {
+    "path": "external/wuffs-mirror-release-c",
+    "base_commit": "11c7df296d76dc00991111c1aebd9dfb48b8812e",
+    "managed": true
+  },
+  {
+    "path": "external/wycheproof",
+    "base_commit": "d2f888409e224dae9e9d4b02fa3d1b2e8b72d374",
+    "managed": true
+  },
+  {
+    "path": "external/xmp_toolkit",
+    "base_commit": "b2b4b27bcc9fb87c8cbf1953b0e477def2a3d2d1",
+    "managed": true
+  },
+  {
+    "path": "external/xz-embedded",
+    "base_commit": "d2c16535d139cb185e89120452531bba6b36d3c6",
+    "managed": true
+  },
+  {
+    "path": "external/xz-java",
+    "base_commit": "c7be7f9413bfe9ccd270dd75c79c04ddef288550",
+    "managed": true
+  },
+  {
+    "path": "external/yapf",
+    "base_commit": "c02be9e2a93779f6e5f9622519165d98d5653f2b",
+    "managed": true
+  },
+  {
+    "path": "external/zlib",
+    "base_commit": "8731e6760935ad5289fd64c37d28155a0fa289e3",
+    "managed": true
+  },
+  {
+    "path": "external/zopfli",
+    "base_commit": "eef2dd4266802ab1b7f26cb72cb1fc9b8ed3f55b",
+    "managed": true
+  },
+  {
+    "path": "external/zstd",
+    "base_commit": "1bfdf8aef6bdec0e817c1f75aeaf382db22de668",
+    "managed": true
+  },
+  {
+    "path": "external/zucchini",
+    "base_commit": "e256025d9d9c906caba814fd7b99a311ac8b8ec1",
+    "managed": true
+  },
+  {
+    "path": "external/zxing",
+    "base_commit": "d89286b7d32c7860f796e95380b22e99618d00c1",
+    "managed": true
+  },
+  {
+    "path": "frameworks/av",
+    "base_commit": "726c7d331f582b00f80a64851296254246c4c034",
+    "managed": true
+  },
+  {
+    "path": "frameworks/base",
+    "base_commit": "850ce30cf3110e52cddfaa68d6ec3b148dcbdf3f",
+    "managed": true
+  },
+  {
+    "path": "frameworks/compile/libbcc",
+    "base_commit": "943016fade3dbbb725c363d0dc60a6e962bd88e5",
+    "managed": true
+  },
+  {
+    "path": "frameworks/compile/mclinker",
+    "base_commit": "22f2506e585270da53cb910f6fda92395f6550c1",
+    "managed": true
+  },
+  {
+    "path": "frameworks/compile/slang",
+    "base_commit": "4080160ebeff7fef5d5ce7062b571830c8cc937e",
+    "managed": true
+  },
+  {
+    "path": "frameworks/ex",
+    "base_commit": "4080c2d3e5a6387e0d064ce5744d56fc6a7c9bb7",
+    "managed": true
+  },
+  {
+    "path": "frameworks/hardware/interfaces",
+    "base_commit": "9de6d032a248523c22d0bd86e224d1762355c41e",
+    "managed": true
+  },
+  {
+    "path": "frameworks/layoutlib",
+    "base_commit": "0e32f7696581815e283c3ea277692a638cdce628",
+    "managed": true
+  },
+  {
+    "path": "frameworks/libs/binary_translation",
+    "base_commit": "1290e88c60304844bd6e1c0778241ca249d64019",
+    "managed": true
+  },
+  {
+    "path": "frameworks/libs/gsma_services",
+    "base_commit": "a4dfac7fa31dac63e84149dfa563050c397889a4",
+    "managed": true
+  },
+  {
+    "path": "frameworks/libs/modules-utils",
+    "base_commit": "a11fa5c814cc3239217ce4d093bfc5c808f73785",
+    "managed": true
+  },
+  {
+    "path": "frameworks/libs/native_bridge_support",
+    "base_commit": "3d6ed1bcc2f0be54f92cf40458253647e8891176",
+    "managed": true
+  },
+  {
+    "path": "frameworks/libs/service_entitlement",
+    "base_commit": "c3c4a033756be7157925a288c9678f54b598d212",
+    "managed": true
+  },
+  {
+    "path": "frameworks/libs/systemui",
+    "base_commit": "bbdabb45579be65fe802330f6cf4651333b967ae",
+    "managed": true
+  },
+  {
+    "path": "frameworks/minikin",
+    "base_commit": "915f1232cff2f38be1ed2273769c5ffd00928dff",
+    "managed": true
+  },
+  {
+    "path": "frameworks/multidex",
+    "base_commit": "5d0f52831fc7de91d1b74aa737e748e740338a9e",
+    "managed": true
+  },
+  {
+    "path": "frameworks/native",
+    "base_commit": "29d1b7b78a8a4be1bb72631b749e25ac752f4f4e",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/bitmap",
+    "base_commit": "958affd2e0b70e659f5e5a32157e0ba3b7b558c1",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/calendar",
+    "base_commit": "05dcdbfcff3e74a73b7047f3f90c625e41392481",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/car/services",
+    "base_commit": "2bb3349c1a84b9b15c5ef05ef9c2e3dc6dde427a",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/car/setupwizard",
+    "base_commit": "1e1de04405291025244448dfddda320fb0b47b42",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/chips",
+    "base_commit": "62e43ce168adf3938f77961e856ff8a218ff811c",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/colorpicker",
+    "base_commit": "1ccf7a77e726d2c6f526fc9c7e1cd11141039bc0",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/localepicker",
+    "base_commit": "c0fcacc99dbf7b6004140b809d61ffd4c383804b",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/net/ims",
+    "base_commit": "314c843f3627f936c46c9e6d61cb30017bd71fd3",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/net/voip",
+    "base_commit": "cf87c6f8a075fc7544a7e3bae57f992c1db243ff",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/net/wifi",
+    "base_commit": "7470b724aec45d3f366a7b073aaef2aaa87e4bb4",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/photoviewer",
+    "base_commit": "96edd77748fdc5d9e113e464dbc78072ee977edc",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/setupwizard",
+    "base_commit": "776f9d8f9e72df725d7059c03e7270b0132c39d7",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/telephony",
+    "base_commit": "f568dfc13da78d939fb62bc71cae832a717f273b",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/timezonepicker",
+    "base_commit": "32f38a793edf8659b21055e16cadd6e912fefcff",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/tv/tvsystem",
+    "base_commit": "cedcb3021237950b50a40b14ea4bfd2816c46508",
+    "managed": true
+  },
+  {
+    "path": "frameworks/opt/vcard",
+    "base_commit": "e33e498766f7860fb58fca9f2757123ec78c983e",
+    "managed": true
+  },
+  {
+    "path": "frameworks/proto_logging",
+    "base_commit": "a07b791ea1e2a4dae1c535c8423235fdc22aaf02",
+    "managed": true
+  },
+  {
+    "path": "frameworks/rs",
+    "base_commit": "2efe31da05c6075dd280c9f1b1ea18108971798e",
+    "managed": true
+  },
+  {
+    "path": "frameworks/wilhelm",
+    "base_commit": "cbc8f246cd0c18d3c286ab39620846badd0676fb",
+    "managed": true
+  },
+  {
+    "path": "hardware/broadcom/libbt",
+    "base_commit": "a4004b63a0d4e8b495a3bf36505801589a7210c5",
+    "managed": true
+  },
+  {
+    "path": "hardware/broadcom/wlan",
+    "base_commit": "0e0536bfdf7098633e31eec2c66786629fa9daa4",
+    "managed": true
+  },
+  {
+    "path": "hardware/dolby",
+    "base_commit": "4d65bb6e75af1200c1acd3c2b8918fe8b8734229",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/android_hardware_dolby.git",
+    "branch": "sony-1.5"
+  },
+  {
+    "path": "hardware/google/apf",
+    "base_commit": "ed844b2ed7997f2e5599db9a52321e7c5fdb96de",
+    "managed": true
+  },
+  {
+    "path": "hardware/google/av",
+    "base_commit": "90139de6fdd1a179f150861980a47480973b558b",
+    "managed": true
+  },
+  {
+    "path": "hardware/google/camera",
+    "base_commit": "02ce1b699c02dc02f1360bcf921992a7e0d35f37",
+    "managed": true
+  },
+  {
+    "path": "hardware/google/gfxstream",
+    "base_commit": "b46f0d4b4545def09bdf30651d4bf848b2ba0c34",
+    "managed": true
+  },
+  {
+    "path": "hardware/google/interfaces",
+    "base_commit": "a36774a8665b72a64cb495501984e8fa0cbb0e53",
+    "managed": true
+  },
+  {
+    "path": "hardware/google/pixel",
+    "base_commit": "8e3a91851a182c6be19cd9d8809ec636b77e179e",
+    "managed": true
+  },
+  {
+    "path": "hardware/google/pixel-sepolicy",
+    "base_commit": "35b8a9e0b8601b6d443e55e9aed52f8b55663510",
+    "managed": true
+  },
+  {
+    "path": "hardware/interfaces",
+    "base_commit": "155b3182d06f79b71c05afabc0d696fcf9c94f7a",
+    "managed": true
+  },
+  {
+    "path": "hardware/knowles/athletico/sound_trigger_hal",
+    "base_commit": "16e4d7f6d3201905f103d36ff7195d9e21ce1671",
+    "managed": true
+  },
+  {
+    "path": "hardware/libhardware",
+    "base_commit": "d7f13275b6a210f56110b46609a2e83b2feccd99",
+    "managed": true
+  },
+  {
+    "path": "hardware/libhardware_legacy",
+    "base_commit": "2a073cd42ec822914ed4e680e7b708485d3a172b",
+    "managed": true
+  },
+  {
+    "path": "hardware/lineage/compat",
+    "base_commit": "9a7a916bb5d88514d66014bb3f753fa834a16b31",
+    "managed": true
+  },
+  {
+    "path": "hardware/lineage/generic-ims",
+    "base_commit": "fef6f46eadf41cdee5282c068af40cce511624c5",
+    "managed": true
+  },
+  {
+    "path": "hardware/lineage/interfaces",
+    "base_commit": "da284a233d877581aa25cdfb10f693f67dfeaa59",
+    "managed": true
+  },
+  {
+    "path": "hardware/nxp/keymint",
+    "base_commit": "57d6ddafd1b6780557548f68c4de77a0f1044696",
+    "managed": true
+  },
+  {
+    "path": "hardware/nxp/nfc",
+    "base_commit": "f032114b8752cf3977854d87b1acc268a0637749",
+    "managed": true
+  },
+  {
+    "path": "hardware/nxp/nxp_mcu_loader",
+    "base_commit": "c3e3b459ff02a90fa307c2748c020df21659b3e0",
+    "managed": true
+  },
+  {
+    "path": "hardware/nxp/secure_element",
+    "base_commit": "4b5f88a55ec8413ef08f7eae94a368630c71a0a9",
+    "managed": true
+  },
+  {
+    "path": "hardware/nxp/uwb",
+    "base_commit": "635ca3e04cec7ce93dd969397c46fa2d02857a90",
+    "managed": true
+  },
+  {
+    "path": "hardware/nxp/weaver",
+    "base_commit": "c6a2c5f729b1b0f50d2351b368166924ab73f3bc",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/bootctrl",
+    "base_commit": "25092672e644459db328b43fd1c7c57cbff65c91",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/common",
+    "base_commit": "f21bd87d77a577e8a2e7a84dea86fdf88d4e51af",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/msm8953/audio",
+    "base_commit": "f9ff4f29d8f330a8a97c4d3b49de5d9f37ebcb8a",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/msm8953/display",
+    "base_commit": "fd1cfe095f3cb4073f2ac6216e4d4457ba50f312",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/msm8953/media",
+    "base_commit": "9861d78316d1933b3d0a20cf9139a3a23aa88fd7",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/msm8996/audio",
+    "base_commit": "560c079979144611f90e32f5a7485e631ef022c9",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/msm8996/display",
+    "base_commit": "92dc6b713dc4b4d37959b6af1078b98dd73ba740",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/msm8996/media",
+    "base_commit": "cff2d89174901b16d404df2461e76cc8c9b24d8c",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sdm660/audio",
+    "base_commit": "90647c475fc51315a1a09fd244cdf5592f0e295b",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sdm660/display",
+    "base_commit": "0ce1694ece44c596362d97c8f375fa7a861b7865",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sdm660/media",
+    "base_commit": "2098857ca9e357840703605c1520c9a9b4c21ff2",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8150/audio",
+    "base_commit": "d1ae1d822e49422a2a02e9864578fb92491b355e",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8150/display",
+    "base_commit": "6e9e061073de8c0ae6568cb71a168cc6a2bad5d9",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8150/media",
+    "base_commit": "67641d710ec876fa922fcd10f6f65f7632e5ca08",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8250/audio",
+    "base_commit": "da531fc8a1348373308ccacaca5fdbb15baf700d",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8250/display",
+    "base_commit": "576a08e130c95ac930187ddb72773e65974fbc2c",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8250/media",
+    "base_commit": "de3a6cfed8654aaf187bd9c69127f3c5bf0f98ac",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8350/audio",
+    "base_commit": "9596e4bcde851fdff2e312c69a13ac06645c6681",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8350/display",
+    "base_commit": "e9bbe9a980d408af36b52f2abaae7c35647b7425",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/audio/agm",
+    "base_commit": "58c1c901810528802a10560399d6bc20d8bb29ce",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/audio/graphservices",
+    "base_commit": "704ed68ff3361831c7a6e001e884e3b77d72e8b5",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/audio/pal",
+    "base_commit": "8342f6301e7a241675349319a16d894bb455a27f",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/audio/primary-hal",
+    "base_commit": "05535e853a1be7a4d3a555a3bc451e51427665e9",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/data-ipa-cfg-mgr",
+    "base_commit": "74b11514ae6cfeff008aba6aa0b6d7c204bd8479",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/dataipa",
+    "base_commit": "3296f05f239a4f01772084d68ca5adc2f9cb1e6b",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/display/core",
+    "base_commit": "372783d5eff5310aaf498349d930c6b2ccd45c2c",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/display/hal",
+    "base_commit": "ce8d3bb79a8519a1241049d68f8b73d73ff4f400",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450-6.6/display/intf",
+    "base_commit": "321608d1ce7f0364d69d93ee9cf3c759d54fec55",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450/audio/agm",
+    "base_commit": "35c3491ff5566de4f60a64ad47e74fb39cd192e0",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450/audio/graphservices",
+    "base_commit": "75d5e460413cad62a53f4621f9d9bd04ab664afd",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450/audio/pal",
+    "base_commit": "c6f8e48dd5de9b4ed07b697ec4e7329e98d42e69",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450/audio/primary-hal",
+    "base_commit": "9f4dec53710a32af11cfffd89256daf7de2a9dee",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450/data-ipa-cfg-mgr",
+    "base_commit": "a17b3e29dcbef0ebf49cbd8e9e5f5eda1e2bc72c",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8450/display",
+    "base_commit": "222878b523a9140dd1c1364230c95655228b8039",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/audio/agm",
+    "base_commit": "10316d1cf67a187721ab56af7e7359837c693885",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/audio/graphservices",
+    "base_commit": "1d2e82222dbc35b9b2cff966281cd2b7a26d081a",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/audio/pal",
+    "base_commit": "0dca40908353988b66aff994f2ef2162dcc6ed82",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/audio/primary-hal",
+    "base_commit": "aa1495561e9ca90e80c5a2b898a67f75406dc874",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/data-ipa-cfg-mgr",
+    "base_commit": "a37a4556aceab0da28a60e21fd1b887fe83347c7",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/dataipa",
+    "base_commit": "a964339653ed78a7638b391487aa63b932ce80b6",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8550/display",
+    "base_commit": "d679d895cd1e35d088b67bfd19d9141c76da5207",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/audio/agm",
+    "base_commit": "ec6b675a3487fa6481756a6978fcc1f0d8b9a0b3",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/audio/graphservices",
+    "base_commit": "49a735ba16fe132dbb2075590ff51603eafb68f7",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/audio/pal",
+    "base_commit": "11390828f46ae7036dfac2002f28993b2f5ed67a",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/audio/primary-hal",
+    "base_commit": "2aa541f626ecc029fce24f3882aaee84c11fb161",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/data-ipa-cfg-mgr",
+    "base_commit": "0b5c34253eb7786e84ba5f99b7c53c0f0331b839",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/dataipa",
+    "base_commit": "1311e1cb35a327cc18fbd774852f725df13f4f67",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8650/display",
+    "base_commit": "fe6db19f67a58c43a794b9517eade8426dcce71c",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/audio/agm",
+    "base_commit": "853c0f6afd242b506636c9af47cb4ed64a4056f0",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/audio/graphservices",
+    "base_commit": "62591b81ddb14cb1ddecf2a8e7162f2082456793",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/audio/pal",
+    "base_commit": "c0f825a2320577b9069783947ceec764bef8f672",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/audio/primary-hal",
+    "base_commit": "31964dd4cb5824bb71cadb19b39d82d77bd8b5a7",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/data-ipa-cfg-mgr",
+    "base_commit": "5c754092b8e85dd72904b9a5c62a687bae9ce627",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/dataipa",
+    "base_commit": "c6206833bd59478caaa0a69e9d71f1bbfa866a96",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/display/core",
+    "base_commit": "89aa1914da50aae0fb1b2ebf3db38d34fba5f748",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/display/hal",
+    "base_commit": "9c00ef9bd5cc5799a441c13e442a09756b6db51e",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8750/display/intf",
+    "base_commit": "19b5c055b40bc3d7af4309662eea98c7e7a72cee",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/audio/agm",
+    "base_commit": "0c4287a3da5ebc78441f6b61234cdeed9f73ff08",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/audio/graphservices",
+    "base_commit": "80098a6384e3447fdf2dfb3bec0e9c61b950f42b",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/audio/pal",
+    "base_commit": "f75d1c5fa09e4ed507670fda90a5d6ac082f4dfd",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/audio/primary-hal",
+    "base_commit": "2eecda7324c82465e505ec79c05eea6540b82601",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/data-ipa-cfg-mgr",
+    "base_commit": "7609751c45981edb1a2c1be1e638b4748525c171",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/dataipa",
+    "base_commit": "d9bd0c38b288cd8b4e91cbc725f365067a3d6fc5",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/display/core",
+    "base_commit": "836105221e61bb0b6010391e7d890b11ac44becd",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/display/hal",
+    "base_commit": "511d5ca4731479f58c398150ff7f4a59615759f8",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/sm8850/display/intf",
+    "base_commit": "70a4f1221f36758cb22595470571fcee5b976561",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/thermal",
+    "base_commit": "a54c4bef6ae6df53684ec538e9fdd713775238cb",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/thermal-legacy-um",
+    "base_commit": "4a1526223983c5db137d0b87e8c2e1a752d2b72c",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom-caf/wlan",
+    "base_commit": "4593f9b377e25a7cd55b2319e7f85bf5ae35104b",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom/sm7250/display",
+    "base_commit": "d3fae6913731a30c135a6cd1fab803913da06998",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom/sm7250/gps",
+    "base_commit": "c0e0375f06c0335062f19e3d87cb84d3c27cbc57",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom/sm8150/display",
+    "base_commit": "bcae019f82f572efbe44fa4b68fde26690bce3c3",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom/sm8150/gps",
+    "base_commit": "c102ecaf661265a5bb4bab028c4dba8454016e1b",
+    "managed": true
+  },
+  {
+    "path": "hardware/qcom/wlan",
+    "base_commit": "4110d72de3eaee4c1091ba17af8b52449acb62a6",
+    "managed": true
+  },
+  {
+    "path": "hardware/ril",
+    "base_commit": "35d736e2410f8b49e3b6f3a5649dc9e9d24ccd3c",
+    "managed": true
+  },
+  {
+    "path": "hardware/samsung/nfc",
+    "base_commit": "493fc8ae26d9ad3e6ae7619db7daa1f67b0d2809",
+    "managed": true
+  },
+  {
+    "path": "hardware/sdv/interfaces",
+    "base_commit": "3682a3968292032a31d74c450380aa81d5e547ec",
+    "managed": true
+  },
+  {
+    "path": "hardware/st/nfc",
+    "base_commit": "7cf8d50bd425329cff555fe94dd64b20c89ad18a",
+    "managed": true
+  },
+  {
+    "path": "hardware/st/secure_element",
+    "base_commit": "a465a3bb3f148371d6b8d83c08b25c0da6cd3760",
+    "managed": true
+  },
+  {
+    "path": "hardware/st/secure_element2",
+    "base_commit": "c3785b404e9d3a9e19ef8dee1994557d304d38f4",
+    "managed": true
+  },
+  {
+    "path": "hardware/synaptics/wlan",
+    "base_commit": "28f23dd255a6c777bc51c330d5bea6dbf6d8230c",
+    "managed": true
+  },
+  {
+    "path": "hardware/telink/atv/refDesignRcu",
+    "base_commit": "8b2638afb82790baf7ea8149b762df2ce7c8a0b2",
+    "managed": true
+  },
+  {
+    "path": "hardware/ti/am57x",
+    "base_commit": "051ca1565ae8fb7e8e23f0dbcd94460f5a9ad522",
+    "managed": true
+  },
+  {
+    "path": "hardware/xiaomi",
+    "base_commit": "7d269993c2edc6bf563a20400ff84ee792dc1d77",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/android_hardware_xiaomi.git",
+    "branch": "lineage-23.0"
+  },
+  {
+    "path": "kernel/configs",
+    "base_commit": "23c046e2d6d78d20bb4195d8fa73218018e2b7c0",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.1/arm64",
+    "base_commit": "bfb3baed33d4497416d6f77fc015d71f726b838d",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.1/x86_64",
+    "base_commit": "f1a9310e363d905f5587fa58925a1059af58cc01",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.12/arm64",
+    "base_commit": "318576752b27af3d328e6deb5e6aa29b08f762c9",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.12/x86_64",
+    "base_commit": "cb8e8ee3babf4a27b742f59dcb92f59cf186299c",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.18/arm64",
+    "base_commit": "6b2d4fe8c0c7ffe9e72f64dbc9811d6a8d4d2907",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.18/x86_64",
+    "base_commit": "23cf6401297ea7e14f6b2365067f585f9143e51f",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.6/arm64",
+    "base_commit": "350899556b7cae26d5981c7055759428aef7598d",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/6.6/x86_64",
+    "base_commit": "b87e9b115da5dd1ed94b423657279c766057d5b3",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/trusty/6.12/arm64",
+    "base_commit": "36b655a113a38fe26146dac298262ea28878f9a2",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/trusty/6.6/arm64",
+    "base_commit": "3f7053bdf0a7147e001e69a1d61d9ce679404289",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.1/arm64",
+    "base_commit": "5c2c81e8c957851c06c5e8696105c796d885bed0",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.1/x86-64",
+    "base_commit": "c0d95b0f0520cdb63653802d6a4cfd51717c09d7",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.12/arm64",
+    "base_commit": "e6673fcbd05e63e6fcc2c2d2cf33246108b73b0c",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.12/x86-64",
+    "base_commit": "4463c45163d93baf9479744641a03961f58c1467",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.18/arm64",
+    "base_commit": "659b5e0fdcbb92fe1dd4a930fc861e744bd3f157",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.18/x86-64",
+    "base_commit": "8dcdc633a80d0a37f549fdf8fd1c48f2317f76fa",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.6/arm64",
+    "base_commit": "3aa5ec86b45a7eda3c85cd7e97ef2845d1b95b7f",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/6.6/x86-64",
+    "base_commit": "bd4fabf3d97e12cedebb1beafddc5116e3da5fde",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/mainline/arm64",
+    "base_commit": "c1b6f17450d64bb1c368b48aae97055563e5043e",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/common-modules/virtual-device/mainline/x86-64",
+    "base_commit": "8686f19c255c36095c0dcf087901a5a8f7a00750",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/mainline/arm64",
+    "base_commit": "49cdfc22db6be7a55ae951e522d5ecadf6293a90",
+    "managed": true
+  },
+  {
+    "path": "kernel/prebuilts/mainline/x86_64",
+    "base_commit": "51a4241eb8c63ce034bfcd798d8dff8eaa8325d0",
+    "managed": true
+  },
+  {
+    "path": "kernel/tests",
+    "base_commit": "bbc501af326dc8351cd6a6fa9efadcbce649d46f",
+    "managed": true
+  },
+  {
+    "path": "kernel/xiaomi/lisa",
+    "base_commit": "05cf5a16a3252dc2c3a5300da64adc79fff861f2",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/android_kernel_xiaomi_lisa.git",
+    "branch": "lineage-23.0"
+  },
+  {
+    "path": "libcore",
+    "base_commit": "015f87dfc4ed76b269374f4ed375de7a67d4400b",
+    "managed": true
+  },
+  {
+    "path": "libnativehelper",
+    "base_commit": "5b63a7e308ca88c5c4a2a74dfda9c73ed17cfebb",
+    "managed": true
+  },
+  {
+    "path": "lineage-sdk",
+    "base_commit": "e3b18d1e0da039a77261900c6e36b6477745e6db",
+    "managed": true
+  },
+  {
+    "path": "lineage/scripts",
+    "base_commit": "793aed4809652d7cf059843b124872ecd2be80cd",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Aperture",
+    "base_commit": "9ec3d514dce26beda1f85afbab538cc33224c556",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/AppLocker",
+    "base_commit": "93f26734c6720de000db1e9168fedf9dd8903115",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/AudioFX",
+    "base_commit": "f3017714ac9a239888c25764060c3b16d3160329",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/AvatarPicker",
+    "base_commit": "55ea46b9c63f0b9ab96a0b3550d5ca8a97520487",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Backgrounds",
+    "base_commit": "b087d2df6601aa25939e654028321bb59857d12e",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/BasicSmsReceiver",
+    "base_commit": "ec94235d6c82c1129f9594196703931968705dff",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Browser2",
+    "base_commit": "2f85dbea14947e3ee7194e95efb254f4464c41b4",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/BtHelper",
+    "base_commit": "fbcd1f249ce4c04b5631c0aa90a05e6e8ab43928",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Camelot",
+    "base_commit": "ef9cfc2fcced48ff46f6be580f3f653b05bae08e",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Camera2",
+    "base_commit": "3adb5275b9791c2128e78969579a69f03fe1ac00",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/CalendarPrebuilt",
+    "base_commit": "190ec8ba9667441b5029fb08ccf1368d7d9bc046",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/Cluster",
+    "base_commit": "1ae76ce4bda6b0027febe5895347fb2ca5c57236",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/DataSubscriptionReference",
+    "base_commit": "c08f2487c93de0185f57a8efde933d3ba9ca6419",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/DebuggingRestrictionController",
+    "base_commit": "67061f50c4cec21141b0cc963a153bc460565725",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/DialerPrebuilt",
+    "base_commit": "2126f18623328ae4edc5667e45e5fbd1696cf699",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/DriverUIPrebuilt",
+    "base_commit": "859f56e807da87f00e368bd46d0cc72f0b52d903",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/LatinIME",
+    "base_commit": "56b0401e3ffc0c9472476ab47ecae17470ca1142",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/Launcher",
+    "base_commit": "c659bc32c8950675af9a06df3f0163dd88022f28",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/LinkViewer",
+    "base_commit": "25ae1df5f36586af05a8dc1452c27764f7e63498",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/LocalMediaPlayer",
+    "base_commit": "322eab0f3f36effd61297be2862554186eb78319",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/MediaPrebuilt",
+    "base_commit": "bdfcae1a5b96866b7b26549c1015404d6cec8566",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/MessengerPrebuilt",
+    "base_commit": "edbbf9269cb4d705f658a8959d6cc0ce5216f439",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/Notification",
+    "base_commit": "3a16b569630ebca138288ef7404f41b73343ad6c",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/Provision",
+    "base_commit": "120c18f855f2925ce9c02c44b24d5525b64453ff",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/RadioPrebuilt",
+    "base_commit": "b298643068bd2daa2174d05ea93f75882e464e8f",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/References",
+    "base_commit": "d331a46fd82e6b28c8c737838e3c8a36acb3eaf8",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/RotaryController",
+    "base_commit": "2892d42bac31367cadc14a45d84ad0610debba2d",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/RotaryImePrebuilt",
+    "base_commit": "1fa0b9b404fdc126f861b9881351d9a1b6bf0657",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/Settings",
+    "base_commit": "78a154612e983726a1d7b3529acf2f6cfda8feb6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/SettingsIntelligence",
+    "base_commit": "76850161869c2a49eb3755104eec27c6be523305",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/SystemUI",
+    "base_commit": "7d57597c4c292edf00d3b1b2f39bbb9a203aa895",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/SystemUpdater",
+    "base_commit": "51e4044a15ec92584e05d62e5c617a973070a27c",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/Templates",
+    "base_commit": "a21e168a69be9ccb90af3114fb0dc817fccb047a",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/TemplatesPrebuilt",
+    "base_commit": "313efd6bc05e28a99f7f4c3bb333c2897e9006df",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/VoiceControl",
+    "base_commit": "fcc1cd32dc5cf79112dab3b240f8fdbf5643e3d8",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Car/systemlibs",
+    "base_commit": "50c8ca46d83136931d49d1c82ad9029ca8354dc1",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/CarrierConfig",
+    "base_commit": "c9f82c3de8293731d4230758dc258916c12335a6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Catapult",
+    "base_commit": "149ddac56b7ba188646bb67546b4155e9d87c82f",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/CellBroadcastReceiver",
+    "base_commit": "a634487643ddc8061924ee925e78041c11ba88f6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/CertInstaller",
+    "base_commit": "3667349d355e2e064cb56bf4a8faf5fd5525db87",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/ColumbusService",
+    "base_commit": "a37be7db6fe0260cf2a137975df447e55261144e",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Contacts",
+    "base_commit": "28137197bf5b6a4e3baf9de36d52e0e471ac1d47",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/ContactsPicker",
+    "base_commit": "dcc20ec72ebfce794c7a2f72bf57cc46b8ab3261",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/DeskClock",
+    "base_commit": "f8d2258e6a673c1b576f009eec98781a5956ffdb",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/DeviceDiagnostics",
+    "base_commit": "08a7fc7b7d5366b8fabf5e6a11d769d7f5c3ae4c",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Dialer",
+    "base_commit": "6da8042323a97d5b3cba1fd975709cc42f29916f",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/DocumentsUI",
+    "base_commit": "5607eb9e94cdba7b5bbef7c22139b21483dd9770",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/EmergencyInfo",
+    "base_commit": "1366aeb0e0f822de861f07e0aee2a9adaf72e9cc",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Etar",
+    "base_commit": "29025dd0e4a38c7dd0a67b581689b4bbea3c4d8a",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/EuiccPolicy",
+    "base_commit": "7232f94f1a908272d4b72bf13277a54c889f9f2c",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/EvoEgg",
+    "base_commit": "5e3f85e9a58c59d36bca6d96c2f7dadfdff32b27",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Evolver",
+    "base_commit": "c701fea00c353c77e81c1ad3bd8f2aae3150a69d",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/ExactCalculator",
+    "base_commit": "af4a9397439223d0f572823d66c7985619da3e45",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/EyeDropper",
+    "base_commit": "225af0c6253316198738699de9041d1f28d0df44",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/FMRadio",
+    "base_commit": "095ae21580f2893b1f00f0bd9b503dc766899ad1",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/FaceUnlock",
+    "base_commit": "817e02a974215b100915814267fabbfdb5961f88",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/FlipFlap",
+    "base_commit": "0e9b6f6bc7991e3689348bc295ebd12e4b2e78ea",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Gallery2",
+    "base_commit": "73803da5c066e0d6f67319d28087c965234b7850",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/GameSpace",
+    "base_commit": "f046de4d28415ce074f85758c44d74764cd9a9e6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Glimpse",
+    "base_commit": "c7b5e8cfbb4e941473f3179322ec8513d83b4ca9",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/HTMLViewer",
+    "base_commit": "2e3e07363b649b1c86543bd9c4735a525952dba2",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/ImsServiceEntitlement",
+    "base_commit": "fc19d81ab2f3cc7903766ff67cc47b2d6722daa6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Jelly",
+    "base_commit": "06801d4d69ceb5dadafe7fb4421eba29c5a6a075",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/KeyChain",
+    "base_commit": "3f0e2b0c85f1f1939f83bab71271935c8cb2f6f8",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/LMOFreeform",
+    "base_commit": "bbd156fd62965346c26ba71cb9139489745d8f2c",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Launcher3",
+    "base_commit": "f55cf58ce1a7cdd3a737002509337b1a31a98fc6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/LineageCustomizer",
+    "base_commit": "84b03919bfb15aa3c72bacdd28c1f900df9385db",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/LineageParts",
+    "base_commit": "de2a16b800a1a15315573a1bee8bed1e78f0d71a",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Login",
+    "base_commit": "11395aad398f7a252f24c72b7cc7d64c11663240",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/ManagedProvisioning",
+    "base_commit": "dcb981579cbbe74a817ecbaf97e7b924be0cdaa0",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Messaging",
+    "base_commit": "6d131ed8e7249b0ece41169e17d8d0162beae7e0",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Multiuser",
+    "base_commit": "44f89da6503c7af07e70e0f6f0f2e2c7ea287c2f",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Music",
+    "base_commit": "4c8ba8ff9a387143194a63bbce9a589cbb29f07f",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/MusicFX",
+    "base_commit": "f77abb40ac7fe8cafb41b3856eca7a8943dadc76",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/OmniStyle",
+    "base_commit": "15432cf870458b15259312b6e4c27c3e194a9939",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/OnDeviceAppPrediction",
+    "base_commit": "4f74558f9fafcffb196d235537fa69cb2439dec5",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/PersonalContext",
+    "base_commit": "025cc78a5a242ab434161d462e8d67e327db64d3",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/PhoneCommon",
+    "base_commit": "c024bf5d7505001a59c904e96cd1b9b70dce31b3",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/PrivateSpace",
+    "base_commit": "2e54b4180f11ebf8292a754d7bc4dac74afc22c0",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Profiles",
+    "base_commit": "0abb3a177f1532b6b85621a7250a6431027f02a6",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Provision",
+    "base_commit": "b371531cac22752f5135471688e5924ce225414b",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/QuickAccessWallet",
+    "base_commit": "328a2433f9619ec63b1921e874ec34d86be74e24",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/QuickSearchBox",
+    "base_commit": "5ac9886bf8e116bff93eae5fdddbd5630763688d",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Recorder",
+    "base_commit": "4650818fbc158d996263b4a21b378af4deb9970a",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SafetyRegulatoryInfo",
+    "base_commit": "018d4fc7a32bfa2fab2ed2b313cc02de09f36814",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SampleLocationAttribution",
+    "base_commit": "0fd20325c8c02610a0bf2021a0d178ac3105a277",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Sandbox",
+    "base_commit": "8c1e9fdb0d9965f4c0c5e48df8e147f8888da093",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SecureElement",
+    "base_commit": "a478ba7d1209c2140a03f50b48727442d86e15f2",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Seedvault",
+    "base_commit": "29301617a99030c3ae0e14de64eadbc73bd2bd63",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Settings",
+    "base_commit": "6ca760a24873d5e188f89a278676be8cb151b480",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SettingsIntelligence",
+    "base_commit": "bafad007a790ecc45a3457693a0769e1a89c9b0e",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SetupWizard",
+    "base_commit": "c1cb7df61cb621232b9ce940d7baf1e80cec9d28",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SimpleDeviceConfig",
+    "base_commit": "a3f56e8b82558fecbea96137c092f22b051199ad",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SimpleSettingsConfig",
+    "base_commit": "4e6f18165761c7833967597bfe02d0f43273f91a",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Stk",
+    "base_commit": "0c7c29561ad125d6553b19f05029a429fac4eaff",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/StorageManager",
+    "base_commit": "8f36b26040e7e44e8436d7f0b9bf19b3e3dcde39",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/SystemUIGo",
+    "base_commit": "ecb57cba8518cee7ed6d42d9401f2714a4e2c5bc",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/TV",
+    "base_commit": "516b33d213d3ed48b33f9c422c27e6fb446d8f58",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Tag",
+    "base_commit": "51084dfd08dad2f1724542dde393c7d2af8b6201",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Test/connectivity",
+    "base_commit": "fe8d01bb832962ecda95df428cf3271c2f5edd60",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/ThemePicker",
+    "base_commit": "1180791f544d10758fcfae9fbd55a0b6caa3b819",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Traceur",
+    "base_commit": "958957ee3011541f2622b93223abd38071147d3f",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/TvFeedbackConsent",
+    "base_commit": "e2a35b7871c0c7d617a611c9817abc6eeab305a1",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/TvSettings",
+    "base_commit": "8a3d96cd0538590f11ef8a7c11d016443d7a1932",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/TvSystemUI",
+    "base_commit": "f1ceabe7f445cd8ebe424c697cd45a0c4ee3e175",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Twelve",
+    "base_commit": "ff47609217005427943b87355d7acdbf12321486",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/UniversalMediaPlayer",
+    "base_commit": "08d2f32520dee0574d7732c8543a1a1f8d4bd914",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/Updater",
+    "base_commit": "97100f79b13505842285eb475a4cc56d5b24ca44",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/VirtualGamepad",
+    "base_commit": "5656115c0e41da31ecf69ad3512b949019bc4193",
+    "managed": true
+  },
+  {
+    "path": "packages/apps/WallpaperPicker2",
+    "base_commit": "7a2a208c999d7304d6e62aa62ddd6bb09b415547",
+    "managed": true
+  },
+  {
+    "path": "packages/inputmethods/LatinIME",
+    "base_commit": "0f72f94247f4e2430dc27d228153a269b78a73ae",
+    "managed": true
+  },
+  {
+    "path": "packages/inputmethods/LeanbackIME",
+    "base_commit": "cdcc22e5e83b52b278ec7e71edc1d89dc673ebb5",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/AdServices",
+    "base_commit": "4bf3dbecdfbe7a8d7b1f9721aae72565bed1dedd",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/AppSearch",
+    "base_commit": "85ee215beafd0236559a12b8764d6f78421db215",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ArtPrebuilt",
+    "base_commit": "bee62eeff9f366e5887a439b71f17a43d678be81",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Bluetooth",
+    "base_commit": "aeeab722bce201de5c74ac6d70b4eec108e26a43",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/CaptivePortalLogin",
+    "base_commit": "586930a5bac4213c31f4b580e101653df145805c",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/CellBroadcastService",
+    "base_commit": "d55c713a4867986bb8f0ae322207d6e8c35355a1",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ConfigInfrastructure",
+    "base_commit": "333bc8067efc529ef4d197fec2f4f2cae1ad2ece",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Connectivity",
+    "base_commit": "c1b50222f2947b912adff22cea13b1176325da53",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/CrashRecovery",
+    "base_commit": "02451209cebd4648fd54ad3757f1a85ee9cd628b",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/DeviceLock",
+    "base_commit": "4a67922f3276adcdd46642957ba6e53114a3625a",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/DnsResolver",
+    "base_commit": "0aeaf9d222ec761b9e0443a01c7a06590b9d1b4f",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ExtServices",
+    "base_commit": "694f4c1a10811ed8873e79cf88df009731797469",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/GenericBootstrappingArchitecture",
+    "base_commit": "3cdd31636735bda84a54ea10ffd16b60bbde4d00",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/GeoTZ",
+    "base_commit": "65992e2d6687807024f1d7d8dbae1f5c02c032b3",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Gki",
+    "base_commit": "968142477afa61c98b9f7a1b9f4cce2d1ed5ca91",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/HealthFitness",
+    "base_commit": "a292a16a8ac82667b65d763c00fa935cc44e9925",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/IPsec",
+    "base_commit": "5c58f82cc230a9a4e22c80d6eaec62dffaec4444",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ImsMedia",
+    "base_commit": "aa3e6c5f070238cae1ec05d9997e6ac021a1e22e",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ImsStack",
+    "base_commit": "1e3981c23117d75d5ad304b32bb030327ad33eaa",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/IntentResolver",
+    "base_commit": "514e2233f8c1183308e31c86386aa932003c307a",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Media",
+    "base_commit": "efe6c6621fe6a6faee106a1230b010c32cb30c35",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ModuleMetadata",
+    "base_commit": "00b611a48a059cb88bd4186ecc2685c2a36d5d71",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/NetworkStack",
+    "base_commit": "928a826ae4887ce0e5d3c7209870e238cacbf548",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/NeuralNetworks",
+    "base_commit": "a44a9032ab9a8438c0e13aca765d6ee4edebba2c",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Nfc",
+    "base_commit": "5b3b95382170fde2d778f8521e6ae3fcbc73307a",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/NpuManager",
+    "base_commit": "d194f8ada2cab31b8487fb3aaac6fd383fc7e07f",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/OnDevicePersonalization",
+    "base_commit": "cc93f1e4164d0a4bb76dd277abc221f4eaf32efb",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Permission",
+    "base_commit": "6c36404f4a0c9f54c3906e95f38e90c15fa50e4c",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Profiling",
+    "base_commit": "8b3abe8eebc0e97890977d9658038f4966aa7df6",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/RemoteKeyProvisioning",
+    "base_commit": "d88e2305f9186661fe75ee2f00c8b250a76fdabe",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/RuntimeI18n",
+    "base_commit": "f48a4ddf92701d4dfba1b27d244a4a1e74c2d3ad",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Scheduling",
+    "base_commit": "5ff13b504b9c011408cbb7bdf044e9595267a3e0",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/SdkExtensions",
+    "base_commit": "3d78a2fea79f2a17831e6fad8c257deaeb8dee85",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/StatsD",
+    "base_commit": "8129a553528b0ef83e87e00c9f2604ed8afb2949",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Telecom",
+    "base_commit": "f6ffa23d448d05d000c250251fd25b24dbee046c",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Telephony",
+    "base_commit": "e04c40c70a0827d88a59920c2284aa01ccecdaaa",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/ThreadNetwork",
+    "base_commit": "15a242360e41f821aa793b3164defb0a40790e06",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/UprobeStats",
+    "base_commit": "7cffa93ccbe6c25182cf27a46eeba75f4f9f551f",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Uwb",
+    "base_commit": "77ac4a99761960023f732ba6cdcc3ce89211e747",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Virtualization",
+    "base_commit": "22f1c9ee92b146e10c8f5e71338618f77ab1631e",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/WebApp",
+    "base_commit": "551872e35de50df9fa39fa871129db512c18565b",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/WebViewBootstrap",
+    "base_commit": "7cbea3c7deff4017e7fd1b83a4109ec6fdea72cd",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/Wifi",
+    "base_commit": "bd162a1d735a03baa98a5015eb697097c70b52ec",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/adb",
+    "base_commit": "f83360242ba6a66ae7570e126009ab530eeef120",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/common",
+    "base_commit": "2c5d816b30e439bdfaf3a52a94e4ee8fbf6d739c",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/desktop/Serviceability",
+    "base_commit": "4859d689379ca4c3afbaa334bf42a626913b92ab",
+    "managed": true
+  },
+  {
+    "path": "packages/modules/vndk",
+    "base_commit": "bcab18ef7ad195c3452e78b2eaf9bf7e4998c171",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/BlockedNumberProvider",
+    "base_commit": "1ae3f1eedcefb508e6ee2f4aeca275a07d33176c",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/BookmarkProvider",
+    "base_commit": "053b026c73c7073c13bc4e7e6496deaa7cf0f7b1",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/CalendarProvider",
+    "base_commit": "8636011ebbb6f25cf45edd914700811275c1b0ba",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/CallLogProvider",
+    "base_commit": "3e0b666db218d97df9447a6d5a7d40726cfb9585",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/ContactsKeysProvider",
+    "base_commit": "f9df0eba9f0b22df6772ab1a3b381cb7529331bc",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/ContactsProvider",
+    "base_commit": "48149493947b89699c4e158a22739b5182136b57",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/DownloadProvider",
+    "base_commit": "cad751d4b97c23916354e949421f67c00760f03a",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/MediaProvider",
+    "base_commit": "cf3463bad69e071f28b2a6882b2925048add631d",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/PartnerBookmarksProvider",
+    "base_commit": "52b6d851e697d15aea1219588ba8a10d354b4594",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/TelephonyProvider",
+    "base_commit": "9fd378250c5aab56dfb460994d59dcb88d0dd290",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/TvProvider",
+    "base_commit": "8ddafb92c505568af7d649fbc871c0eb2d3acdb8",
+    "managed": true
+  },
+  {
+    "path": "packages/providers/UserDictionaryProvider",
+    "base_commit": "c2c6b446636f6229d2e1c4fb45b7bccd548178cd",
+    "managed": true
+  },
+  {
+    "path": "packages/resources/apps",
+    "base_commit": "eb5bf8bf77717974a9ef9cdfbcf44b8a9f991076",
+    "managed": true
+  },
+  {
+    "path": "packages/resources/devicesettings",
+    "base_commit": "e7e55acf2daace38abb48e2dbe853b5740c9794f",
+    "managed": true
+  },
+  {
+    "path": "packages/screensavers/Basic",
+    "base_commit": "c8978290ea444e37662452e9c5af9b354e700c98",
+    "managed": true
+  },
+  {
+    "path": "packages/screensavers/PhotoTable",
+    "base_commit": "f3451a4cc5403f9b6f66d4864c21c19676704932",
+    "managed": true
+  },
+  {
+    "path": "packages/services/AlternativeNetworkAccess",
+    "base_commit": "05e7eb66772bad8bea7e5c09e79a004141105d43",
+    "managed": true
+  },
+  {
+    "path": "packages/services/AxQuickLook",
+    "base_commit": "8499db252757d86d348a406eaae1f325ba4926f0",
+    "managed": true
+  },
+  {
+    "path": "packages/services/BuiltInPrintService",
+    "base_commit": "c343ebe454ba2de5309058657304e4c3f5c65303",
+    "managed": true
+  },
+  {
+    "path": "packages/services/Car",
+    "base_commit": "6a5269f716e0bd6510344d1a8a9a057346d1d79c",
+    "managed": true
+  },
+  {
+    "path": "packages/services/CrossDeviceSync",
+    "base_commit": "e11258b65bdf0091dfc440c2b2e2c782778688c3",
+    "managed": true
+  },
+  {
+    "path": "packages/services/DeviceAsWebcam",
+    "base_commit": "c5b6159d081ed2e417974388d8f98a58d6b57656",
+    "managed": true
+  },
+  {
+    "path": "packages/services/DroidfoodAttestationFixer",
+    "base_commit": "1a1da224fb9098f90c302b95384c19b9df58b6c5",
+    "managed": true
+  },
+  {
+    "path": "packages/services/Iwlan",
+    "base_commit": "ddf0eb7f277ea6a5a62c63678d17218714f38071",
+    "managed": true
+  },
+  {
+    "path": "packages/services/Mms",
+    "base_commit": "bfa475f6bd21c36ab56eb8835b1fdcb88abf240d",
+    "managed": true
+  },
+  {
+    "path": "packages/services/Mtp",
+    "base_commit": "45cd4c9d78a5eabb5a40c7d4e665ff6e534e4ca5",
+    "managed": true
+  },
+  {
+    "path": "packages/services/OmniJaws",
+    "base_commit": "22c7c89d7c12e0a379e83d0474ef49b7e2f564e2",
+    "managed": true
+  },
+  {
+    "path": "packages/services/QualifiedNetworksService",
+    "base_commit": "f1500926b882a189c7c5772368835d5de700b34f",
+    "managed": true
+  },
+  {
+    "path": "packages/services/Telecomm",
+    "base_commit": "fb585fcd9648898bbbe2a6f3871987ad6dc8b9c9",
+    "managed": true
+  },
+  {
+    "path": "packages/services/Telephony",
+    "base_commit": "2a6ef7d3ed54f0e4d3de3a48d122b40e3e74ef3f",
+    "managed": true
+  },
+  {
+    "path": "packages/services/display_safety",
+    "base_commit": "951af0fd68b691a69bab68542c981291ad4cf1c3",
+    "managed": true
+  },
+  {
+    "path": "packages/wallpapers/LivePicker",
+    "base_commit": "e8d8a14c5e366d21d091c74fcdf47e7a70aa88b3",
+    "managed": true
+  },
+  {
+    "path": "pdk",
+    "base_commit": "9004bdfba49df1ebe1913681d765970bab93b201",
+    "managed": true
+  },
+  {
+    "path": "platform_testing",
+    "base_commit": "6abefd291d50dee240ed2b22572d273175f070da",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/abi-dumps/ndk",
+    "base_commit": "4e094ebbfbc2824add9781a93247bdc07334ea22",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/abi-dumps/platform",
+    "base_commit": "ef217c4b8e3b217fb32938a4ddb016afc2c53dc0",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/abi-dumps/vndk",
+    "base_commit": "323441eaf866f31548025ea544432e9285e441fc",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/android-emulator",
+    "base_commit": "d4d262fa07952995d9fa4913d10365d878c8fdcf",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/asuite",
+    "base_commit": "f7c894b12c39ad8ca93f43776e1cece37ef026b2",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/bazel/common",
+    "base_commit": "e24e8ba7c6deed0e2e9c36ad6f255437acd98e0d",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/build-tools",
+    "base_commit": "9b6c8c6a2f582a9d7817fd8275c8014959c60cc4",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/bundletool",
+    "base_commit": "4d55b55cd444c97bc021d35316010f57f62d7844",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/checkcolor",
+    "base_commit": "47d4cfb86c5001ef70ef9f9fbed6db04209f1775",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/checkstyle",
+    "base_commit": "7cf36b70842a6aa8a3caf5e0169e71f04df7c238",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/cipd",
+    "base_commit": "77be212ebd99e7ec7b836f78b602545855552e4b",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/clang-tools",
+    "base_commit": "6d1683899a1fbb8e46424a231412b7cfe0151e28",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/clang/host/linux-x86",
+    "base_commit": "29182889399818f97baa65ea238c80e8117981eb",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/clang/kernel/linux-x86/clang-r416183b",
+    "base_commit": "54220fd601050b350b2af7adc913089ebf0e7aed",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/cmake/linux-x86",
+    "base_commit": "d3078fda401bc334507d7831e30fca9273630e8c",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/cmdline-tools",
+    "base_commit": "744a1b7a5649dfb8f51760f4c348c3f77fe5dbcd",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/devtools",
+    "base_commit": "4bfccde5c7e9ea06f821db40ef0af54f6695c320",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/extract-tools",
+    "base_commit": "aaeb969a477321411279c03799f45ae9f94f770b",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
+    "base_commit": "ae37c9849d97a20b97ff5ce93a5b171c6d5d02ab",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8",
+    "base_commit": "a6c64a6502e0a89ee8ad3e3f8be97223a69e5bd7",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/go/linux-x86",
+    "base_commit": "05bc4bad6bdd9e5615c147c54e6f1a53bf04c375",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/gradle-plugin",
+    "base_commit": "4192576c02f73eeac2e705cd6604cd3079969605",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/jdk/jdk21",
+    "base_commit": "ef5bcc92586b839ae3dbacc154127092fa4002ec",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/jdk/jdk25",
+    "base_commit": "0a0a50fd543600bc4a28f8731f6fd3a07a838c13",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/jdk/jdk8",
+    "base_commit": "6cd518be7a7147ed5b1053edfbf66379bf5a45f9",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/kernel-build-tools",
+    "base_commit": "811c6e2938d53b3c318d7635b03931601a68c765",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/ktlint",
+    "base_commit": "618c0e2bee4f545e49307b8a8e72a9ae4944632f",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/manifest-merger",
+    "base_commit": "93603b6f7483f14666f74f67977794a3a8fc1594",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/maven_repo/bumptech",
+    "base_commit": "509a65c09c81464e0d1a29d9d7d6d0ab3cec8655",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/misc",
+    "base_commit": "be7c3a630b5dc5eb3260035d77a81b2f322754f8",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/AdServices",
+    "base_commit": "03213da220bf4867446a332d2e39af5f313fe358",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/AppSearch",
+    "base_commit": "b37c6dcdb986c6aa69245ae35a6fae70afa86a47",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Bluetooth",
+    "base_commit": "e136781b5b67fafd3332787bc3a3b5ae72c53c4a",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/ConfigInfrastructure",
+    "base_commit": "93584837f4227f32a519e1635322e2d9e277c9e0",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Connectivity",
+    "base_commit": "f8f4f7a0c524dbdcbf7ff350256dfbbf44c47cec",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/CrashRecovery",
+    "base_commit": "91fedb63fbcf2840f4698348b6660537599c161c",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/DeviceLock",
+    "base_commit": "cf03d9f656e7ecb4e267eb93e34a7af3ac2c8395",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/HealthFitness",
+    "base_commit": "e3859f48d5c9c102fb52b84e046090d6ea544926",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/IPsec",
+    "base_commit": "c635651d0741535b6d37809c22678b3c76243a53",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Media",
+    "base_commit": "7ae21eb3b6c07b8bf0b45225e6facbbc1d03c879",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/MediaProvider",
+    "base_commit": "3fcb655064f109bbb7285363dddd9e0092ce03d7",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Nfc",
+    "base_commit": "758cc79ec8cb929f504308245428bd8135e3ddc1",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/NpuManager",
+    "base_commit": "88cc92533690866c65f08b175d6d01b4d33f6efe",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/OnDevicePersonalization",
+    "base_commit": "386a4a00db2a8b00ec62b3f6c70362cd101bff85",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Permission",
+    "base_commit": "6ab9786a0c66bc5b088aefad1e5d97490f7feed3",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Profiling",
+    "base_commit": "b766b7fbf4824a67ca752ac8cb50a3de878c0ef8",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/RemoteKeyProvisioning",
+    "base_commit": "286115573f23670e9b1cab06880d09c099d107d1",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Scheduling",
+    "base_commit": "6a906a88917fbe838ddc15af4c52dd13c9cc4a75",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/SdkExtensions",
+    "base_commit": "d678d8ab3fb3602f46f33801190df2abb4eaca39",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/StatsD",
+    "base_commit": "d1dcd195e72a31af961fb104c2d539fb758bedcb",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Telephony",
+    "base_commit": "0439cbfb71576a7afb59264497d377209849824f",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/UprobeStats",
+    "base_commit": "963118c820713533ccf4f5688c8eb2d3dbb653d4",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Uwb",
+    "base_commit": "9bb1ab6f551e97fcd8c9850e13a48dbe1cb7feac",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/WebApp",
+    "base_commit": "c1b0fba35c6be7c6751a300aaeb3544219527d28",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/WebViewBootstrap",
+    "base_commit": "12233701e08dffdb396143445ecbe5b99c5fcc22",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/Wifi",
+    "base_commit": "54f75b7c5c1e34dbfe2da770c26fc27e5220421b",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/art",
+    "base_commit": "28d24261d3f7d9b43e71feb9ecbfdbc2a4261457",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/module_sdk/conscrypt",
+    "base_commit": "b4558681b948c37ffd0d84c05bd424aa9214e642",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/ndk",
+    "base_commit": "07e4c9cedacc5d60276ab061f52684f57d7dc87e",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/qemu-kernel",
+    "base_commit": "7fe7e19e1bdb1850d637ce32b206db0b61fc937e",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/r8",
+    "base_commit": "65fe8f9f5c6769d35f91fe67b786b767a2db5249",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/remoteexecution-client",
+    "base_commit": "9158169c8c48a3f16dae517b8a44318ce3e0890a",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/runtime",
+    "base_commit": "8953fb3c61fef029312cba7bf2dcf0b1ec50523a",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/rust",
+    "base_commit": "8e6eb737e844d18c50bfbee8f212f76755e04b24",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/rust-toolchain/linux-musl-x86",
+    "base_commit": "401e0a9eaa7af8efaea9ea1ab129196b74b89847",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/rust-toolchain/linux-x86",
+    "base_commit": "fa2b1777b1f5c0471bb54ad4026feb1f6e94ea70",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/sdk",
+    "base_commit": "0f07e8d60ab0aba46129e427101f96ba459a95c1",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/siso",
+    "base_commit": "41809b921e1888ff851d1094459b1a6875e7f155",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/tools",
+    "base_commit": "b157d1c3bff39161f34ccc44dffbe9568f3bece2",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/tools-lineage",
+    "base_commit": "7cf9452c82a0265d00e8c444f25639b7aa66969d",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/vndk/v31",
+    "base_commit": "1a059a5a203352d3e0c2fd3ccff5719cc37fc340",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/vndk/v32",
+    "base_commit": "e1ba8043f8368220b412c18ee8392850ab009aae",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/vndk/v33",
+    "base_commit": "3e8438a4ff535f8f25445527ea70cb71c10e7b18",
+    "managed": true
+  },
+  {
+    "path": "prebuilts/vndk/v34",
+    "base_commit": "c6a2527f4e03a89896f9d44331bc6fe91f679aab",
+    "managed": true
+  },
+  {
+    "path": "sdk",
+    "base_commit": "4d155d6c08932904384ba2f5198dcc984e32501b",
+    "managed": true
+  },
+  {
+    "path": "system/acpi/bert_collector",
+    "base_commit": "37df48ddb5ae549805048bb857533bcfb137aafe",
+    "managed": true
+  },
+  {
+    "path": "system/apex",
+    "base_commit": "ce2bb9f710183c864040401d859874b5723e44d8",
+    "managed": true
+  },
+  {
+    "path": "system/authgraph",
+    "base_commit": "ee8b48b5344dd3a50eae5a87cdc1f46b7afd4263",
+    "managed": true
+  },
+  {
+    "path": "system/bpf",
+    "base_commit": "1787201ef62581ee5532fdb1e5b0cbc3fb137dab",
+    "managed": true
+  },
+  {
+    "path": "system/bpfprogs",
+    "base_commit": "60f086effe11d1afb248ff3c9a2a780b66a34506",
+    "managed": true
+  },
+  {
+    "path": "system/ca-certificates",
+    "base_commit": "0499c160c1c1d6ffa6b3fe3019de692bc8875458",
+    "managed": true
+  },
+  {
+    "path": "system/chre",
+    "base_commit": "a0edaf6836e32fb54a077c068cfd472f2cc1fca5",
+    "managed": true
+  },
+  {
+    "path": "system/connectivity/wificond",
+    "base_commit": "fefad78738af9d9753bb0acbafcf458691f8627c",
+    "managed": true
+  },
+  {
+    "path": "system/core",
+    "base_commit": "25781c353729b7ebe9f0fd3911a7c48c2293f34c",
+    "managed": true
+  },
+  {
+    "path": "system/dmesgd",
+    "base_commit": "635120841f515b63fe0ab0451ac9b17fb7d8cca6",
+    "managed": true
+  },
+  {
+    "path": "system/extras",
+    "base_commit": "378b92d7f4511cb3f23a34fecc694b9704530374",
+    "managed": true
+  },
+  {
+    "path": "system/fs/casefolding_remover",
+    "base_commit": "827aad0d89d0615bcdebc3dd93d1e8ae1c19f36d",
+    "managed": true
+  },
+  {
+    "path": "system/fs/fs_mgr",
+    "base_commit": "6db70ed0b12a6da338dfa652913c03b5524e216e",
+    "managed": true
+  },
+  {
+    "path": "system/gatekeeper",
+    "base_commit": "5b5e75b5bda9fccbc3132e9624cb25286babdaac",
+    "managed": true
+  },
+  {
+    "path": "system/gsid",
+    "base_commit": "35a92d40f529b605fad8ff622691e76901044cc8",
+    "managed": true
+  },
+  {
+    "path": "system/hardware/interfaces",
+    "base_commit": "9c3469aa3d4aeec5b2bc8e8ae8fdb4437dab4edb",
+    "managed": true
+  },
+  {
+    "path": "system/hwservicemanager",
+    "base_commit": "60271965cf6b055ed82b2e1ae0bf74b2c34a6af2",
+    "managed": true
+  },
+  {
+    "path": "system/incremental_delivery",
+    "base_commit": "6b853f9e5703a8c90648f82850a3a01d9763e619",
+    "managed": true
+  },
+  {
+    "path": "system/keymaster",
+    "base_commit": "f9007833c668b90f0c0f9b78808788cb86275113",
+    "managed": true
+  },
+  {
+    "path": "system/keymint",
+    "base_commit": "cfeefc94bf8c4f19d19dca193d376a1fc05e8e3e",
+    "managed": true
+  },
+  {
+    "path": "system/lfi",
+    "base_commit": "53ce7565563d70a205f48b20feb75415a51fc037",
+    "managed": true
+  },
+  {
+    "path": "system/libartpalette",
+    "base_commit": "9d680186fa4f024111b271feedb5cd7156768902",
+    "managed": true
+  },
+  {
+    "path": "system/libbase",
+    "base_commit": "fef4173e19d97cd4b4fc09a06bccbf800d0d3937",
+    "managed": true
+  },
+  {
+    "path": "system/libcppbor",
+    "base_commit": "2f12c70f4d829342814df74ab97412ad25735ef5",
+    "managed": true
+  },
+  {
+    "path": "system/libfmq",
+    "base_commit": "f727482ff0c6a26b4c64c5106c62c176415b2d81",
+    "managed": true
+  },
+  {
+    "path": "system/libhidl",
+    "base_commit": "061055fc4dad78e5d25a77d9217001794656f16b",
+    "managed": true
+  },
+  {
+    "path": "system/libhwbinder",
+    "base_commit": "3a07e34e48a56b2c6ba0ae80090be3ec9c77bc19",
+    "managed": true
+  },
+  {
+    "path": "system/libprocinfo",
+    "base_commit": "b58259e79c58deb1132e11d74ea90a2dc441d84f",
+    "managed": true
+  },
+  {
+    "path": "system/librustutils",
+    "base_commit": "7fbb3e4aaf608e51eaa210cf6ba94df5cb782bbc",
+    "managed": true
+  },
+  {
+    "path": "system/libskuconfig",
+    "base_commit": "3b1c8b5757b84e1e36c9812cdff9cd64fab93238",
+    "managed": true
+  },
+  {
+    "path": "system/libsysprop",
+    "base_commit": "feca0b466b9fa68a8e86a6e0b31579669e645f41",
+    "managed": true
+  },
+  {
+    "path": "system/libueventd-rs",
+    "base_commit": "43f41cd5506656e937d332d60cd725764dfca716",
+    "managed": true
+  },
+  {
+    "path": "system/libufdt",
+    "base_commit": "70c20864187df19f3e7d358ca8436f77d61a3f39",
+    "managed": true
+  },
+  {
+    "path": "system/liburingutils",
+    "base_commit": "3d6286bdd07ec68ee6a411381e56c1aaa6e11247",
+    "managed": true
+  },
+  {
+    "path": "system/libvintf",
+    "base_commit": "df89ad736e14ac375f61d50fa543ae7cd746a140",
+    "managed": true
+  },
+  {
+    "path": "system/libziparchive",
+    "base_commit": "8908f2ad624aa8b7ed15b2f877e0a26fb1156553",
+    "managed": true
+  },
+  {
+    "path": "system/linkerconfig",
+    "base_commit": "f6b4bd983b909a907cf7e9fae8a6365d827638b6",
+    "managed": true
+  },
+  {
+    "path": "system/logging",
+    "base_commit": "336e1707c8258adf1f1c5c5511218b533f3a22e8",
+    "managed": true
+  },
+  {
+    "path": "system/media",
+    "base_commit": "70748e396a731d53f555ea4ab55403125ccf09ae",
+    "managed": true
+  },
+  {
+    "path": "system/memory/amemdiff",
+    "base_commit": "f6587376bf3ef1b9672ddbfa5f86d61d5a524f96",
+    "managed": true
+  },
+  {
+    "path": "system/memory/guardian",
+    "base_commit": "5d6ceb06e332cb7e0f5c2fde4cc37a6a6f24bc52",
+    "managed": true
+  },
+  {
+    "path": "system/memory/libdmabufheap",
+    "base_commit": "e2b775649fa5c08d488796a2e299a0f67d7f3352",
+    "managed": true
+  },
+  {
+    "path": "system/memory/libion",
+    "base_commit": "abd899da1a42064c66067bc84f427bf27edd81f9",
+    "managed": true
+  },
+  {
+    "path": "system/memory/libmeminfo",
+    "base_commit": "d3872e43f68505ff928a0b7812da3a1e8a5bd003",
+    "managed": true
+  },
+  {
+    "path": "system/memory/libmemtrack",
+    "base_commit": "25ee95c80f9be933f4d0a2f399db1b98195f384d",
+    "managed": true
+  },
+  {
+    "path": "system/memory/libmemunreachable",
+    "base_commit": "c3dc0b2f3ce01b53388635a14b01ca7e7a7000cc",
+    "managed": true
+  },
+  {
+    "path": "system/memory/libwrapfd",
+    "base_commit": "f91e18ccc73c0cce1194f3aef4a841c1a15003b3",
+    "managed": true
+  },
+  {
+    "path": "system/memory/lmkd",
+    "base_commit": "c3601e823bd07c9c190f67e2f9bc7486e4978328",
+    "managed": true
+  },
+  {
+    "path": "system/memory/mmd",
+    "base_commit": "cf66bc31a4002e6f786da7c5a45e4088d19530ed",
+    "managed": true
+  },
+  {
+    "path": "system/netd",
+    "base_commit": "fb7e47052620fd1139522e2b3d1343c8680f7c0f",
+    "managed": true
+  },
+  {
+    "path": "system/nvram",
+    "base_commit": "da68dc39fb74baa6e110578636cde552efd148c5",
+    "managed": true
+  },
+  {
+    "path": "system/secretkeeper",
+    "base_commit": "c074ff08c0a82e1fdc04178d5b7ffc15c791d3a7",
+    "managed": true
+  },
+  {
+    "path": "system/secure_element",
+    "base_commit": "a9644a6b928ca9c7fce4b1939e04c9b74c5533bb",
+    "managed": true
+  },
+  {
+    "path": "system/security",
+    "base_commit": "123cc4af487922618cd99f28d05736e47eba7b00",
+    "managed": true
+  },
+  {
+    "path": "system/see/authmgr",
+    "base_commit": "8e67454ae22607f22d289d7458d383eabc7c2db2",
+    "managed": true
+  },
+  {
+    "path": "system/sepolicy",
+    "base_commit": "43e7593291333db7533395c28173139f42be76eb",
+    "managed": true
+  },
+  {
+    "path": "system/server_configurable_flags",
+    "base_commit": "5069ba739faebf91ae72096577ae17e13061af72",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/automotive_services",
+    "base_commit": "1d4dcb7f908a6df97b036a90a5802de8cedebd63",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/common",
+    "base_commit": "2b582a74e9b55b3aba268a626f977c279acaea94",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/health_monitor",
+    "base_commit": "a3ffbe9caf8b94041c013deac36c4e5f27b69932",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/lifecycle_management",
+    "base_commit": "74813463c7293bf12e0791701b2037b1a26f48f8",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/middleware",
+    "base_commit": "7ab87b58959e638fc9f1e5a5860cfed20ed29cab",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/orchestration",
+    "base_commit": "8a1c916216556c694734423047f20f7164d591fd",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/platform",
+    "base_commit": "1950882d8769fdd54bf567de711a3a45f75c6150",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/samples",
+    "base_commit": "e8cc5f41337edab1e7008729eb3f9442b864404b",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/sdv_gateway",
+    "base_commit": "c918480a3323177f1c66b6a852a3062a0edeff80",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/service_bundles_registry",
+    "base_commit": "7c7146d71a4f3056c47ad6bcce0d485c69a6b707",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/some_ip",
+    "base_commit": "27bff3fe163ed0a048c573889416f69e88316211",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/telemetry",
+    "base_commit": "c8cacbdbb584e28ad48f5c15416f5853e2fc33f4",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/tools",
+    "base_commit": "723897ec993840fe4aff99b824ebdae618b52529",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/update_manager",
+    "base_commit": "277473a5a3371c8b64d4b8d2df5a6c320535e44b",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/vpm",
+    "base_commit": "89af54955b1bc6f2b06f8a6438ebe60cf0cb24c0",
+    "managed": true
+  },
+  {
+    "path": "system/software_defined_vehicle/vsidl",
+    "base_commit": "9d6bfa55d7448844c36af7c5aeadb3e981b6c995",
+    "managed": true
+  },
+  {
+    "path": "system/teeui",
+    "base_commit": "e3011285b9883a300491d7bc45a12581e281287c",
+    "managed": true
+  },
+  {
+    "path": "system/testing/gtest_extras",
+    "base_commit": "19d4b13af4613002e7a80681acfa2c53f12271f2",
+    "managed": true
+  },
+  {
+    "path": "system/timezone",
+    "base_commit": "cbd571efcf6b551ba83a31147ec7a06182f8ec31",
+    "managed": true
+  },
+  {
+    "path": "system/tools/aidl",
+    "base_commit": "9a94664f74536bf28010207fd1804b04c6435e2c",
+    "managed": true
+  },
+  {
+    "path": "system/tools/hidl",
+    "base_commit": "5d0e05e6535fea94a674a359102bdd42944714f4",
+    "managed": true
+  },
+  {
+    "path": "system/tools/mkbootimg",
+    "base_commit": "4a27dd13adf9846e12d585d6fe99a375ebb58396",
+    "managed": true
+  },
+  {
+    "path": "system/tools/sysprop",
+    "base_commit": "deead2d06508faeca98c236feea7e59bb4c43c8c",
+    "managed": true
+  },
+  {
+    "path": "system/tools/xsdc",
+    "base_commit": "f1f0c793dc404e716ac73beb1a8bef9cef97a40d",
+    "managed": true
+  },
+  {
+    "path": "system/unwinding",
+    "base_commit": "31327c70da147fdc069598c4a5fd075aea8d3312",
+    "managed": true
+  },
+  {
+    "path": "system/update_engine",
+    "base_commit": "5b9591570c6603d73ab86f8526f4280ccfea1849",
+    "managed": true
+  },
+  {
+    "path": "system/usb",
+    "base_commit": "4a587a2ffcf50a483ae93eab2221c0ba692c0b15",
+    "managed": true
+  },
+  {
+    "path": "system/usb_info_tools",
+    "base_commit": "18c7131fce1fe75a65e434eb219acec3c32cbe86",
+    "managed": true
+  },
+  {
+    "path": "system/vold",
+    "base_commit": "6d1461e1b7618ba30272450633a5971f2e89710b",
+    "managed": true
+  },
+  {
+    "path": "system/weaver",
+    "base_commit": "2285b0ce1107a633074925eb75807587f3811063",
+    "managed": true
+  },
+  {
+    "path": "system/zygote",
+    "base_commit": "c24023080df0bdb5988c1e0c641d494574a97c40",
+    "managed": true
+  },
+  {
+    "path": "test/app_compat/csuite",
+    "base_commit": "ae20a186e7635ca3eb6b134f9a25e65e874d9b4b",
+    "managed": true
+  },
+  {
+    "path": "test/catbox",
+    "base_commit": "b735f77e93df1007da840eff044d2296365be8c8",
+    "managed": true
+  },
+  {
+    "path": "test/cts-root",
+    "base_commit": "f67250c5aaaafa808ded575e64f17258a43022f3",
+    "managed": true
+  },
+  {
+    "path": "test/dittosuite",
+    "base_commit": "3bea4ffba46e2642fac9352bd8b81f9bfbfd8690",
+    "managed": true
+  },
+  {
+    "path": "test/mlts/benchmark",
+    "base_commit": "4617f7e28793f979153f3b088a79ba796e0268b3",
+    "managed": true
+  },
+  {
+    "path": "test/mlts/models",
+    "base_commit": "cbb1ae5cfde49ed06ccf4afaa2fae1054364d4f3",
+    "managed": true
+  },
+  {
+    "path": "test/robolectric-extensions",
+    "base_commit": "94254a13a5969eec7a4742320cc3f91e141d5593",
+    "managed": true
+  },
+  {
+    "path": "test/suite_harness",
+    "base_commit": "37c7c43eeab409331d449e0c7899adf535894b0c",
+    "managed": true
+  },
+  {
+    "path": "test/vts",
+    "base_commit": "886725543e4078f87fc87aabb90b1871c7536b03",
+    "managed": true
+  },
+  {
+    "path": "test/vts-testcase/hal",
+    "base_commit": "61df1bdbc6b596dafeee213c04f5d2c8d7131b98",
+    "managed": true
+  },
+  {
+    "path": "test/vts-testcase/kernel",
+    "base_commit": "5420464b05bfc51b1654b5aa62dd25ca616da9f3",
+    "managed": true
+  },
+  {
+    "path": "test/vts-testcase/nbu",
+    "base_commit": "72a3bd47e665633df281314fd6be8b3e7d642f2a",
+    "managed": true
+  },
+  {
+    "path": "test/vts-testcase/performance",
+    "base_commit": "ccce5cfe7e4aa95865e85931bb35c1d454f5f59f",
+    "managed": true
+  },
+  {
+    "path": "test/vts-testcase/security",
+    "base_commit": "deabfe5072c16a907e93aaccd31aa52a9b82aa69",
+    "managed": true
+  },
+  {
+    "path": "test/vts-testcase/vndk",
+    "base_commit": "acae5734b29adfd8df22e95c41649356be14880f",
+    "managed": true
+  },
+  {
+    "path": "toolchain/pgo-profiles",
+    "base_commit": "44bae3346df2d8657cde54a5ee069067d607e689",
+    "managed": true
+  },
+  {
+    "path": "tools/aadevtools",
+    "base_commit": "b32fbb6340ee6fe4a25d7b39d84085c084465677",
+    "managed": true
+  },
+  {
+    "path": "tools/acloud",
+    "base_commit": "b9401a865060ec798a59fe8cda3206df6771e253",
+    "managed": true
+  },
+  {
+    "path": "tools/apifinder",
+    "base_commit": "ed3cc22572ea5fc243355a6e5093f0fcd823685c",
+    "managed": true
+  },
+  {
+    "path": "tools/apksig",
+    "base_commit": "179f60df00d242f6bb22acf828b0884eac2d5f72",
+    "managed": true
+  },
+  {
+    "path": "tools/apkzlib",
+    "base_commit": "9c3094a04dff8e70054da9eaa66b6011c81fa00d",
+    "managed": true
+  },
+  {
+    "path": "tools/asuite",
+    "base_commit": "744998cb744c401a5daa77170039ab6337ed7adb",
+    "managed": true
+  },
+  {
+    "path": "tools/carrier_settings",
+    "base_commit": "692fe76e72829e258a2deb85ee44b4b0a7fdf0a6",
+    "managed": true
+  },
+  {
+    "path": "tools/content_addressed_storage/prebuilts",
+    "base_commit": "973ab5876b89b0bf4b93a1620397b27183afaa6d",
+    "managed": true
+  },
+  {
+    "path": "tools/currysrc",
+    "base_commit": "95f68d6bb4e88c0e5739eb13d26ac5c5158c6f4b",
+    "managed": true
+  },
+  {
+    "path": "tools/deviceinfra/prebuilts",
+    "base_commit": "bb2d5f519bd0bf57641d74f40c12bab281423781",
+    "managed": true
+  },
+  {
+    "path": "tools/dexter",
+    "base_commit": "602760cb036bc9cfc9240939692603512e63fe4a",
+    "managed": true
+  },
+  {
+    "path": "tools/doc_generation",
+    "base_commit": "08aac91132a0b7109130271c27717b07f80ff8c3",
+    "managed": true
+  },
+  {
+    "path": "tools/external/fat32lib",
+    "base_commit": "11b1061d834666a605e7a02fe757341ef224a04d",
+    "managed": true
+  },
+  {
+    "path": "tools/external_updater",
+    "base_commit": "bf0e5e0e6a064a5d832102c39b0e4966e32e239a",
+    "managed": true
+  },
+  {
+    "path": "tools/extract-utils",
+    "base_commit": "ff6589c6b0a4a00c592e98940e9e6b6a50c76569",
+    "managed": true
+  },
+  {
+    "path": "tools/lint_checks",
+    "base_commit": "d260e8254709bb2884c072dd595f63c9c8d22527",
+    "managed": true
+  },
+  {
+    "path": "tools/loganalysis",
+    "base_commit": "bc129d03a7cbc8a133d5c482b65c8d451a9475b9",
+    "managed": true
+  },
+  {
+    "path": "tools/mainline",
+    "base_commit": "3f648d3d261af9da36c5c8664a27e8b26d3e0440",
+    "managed": true
+  },
+  {
+    "path": "tools/metalava",
+    "base_commit": "e33bb96bcd3279859f4d824ba3d17a36b56c2f68",
+    "managed": true
+  },
+  {
+    "path": "tools/ndkports",
+    "base_commit": "2e149f73a8e792fff6dc6aadc18d0d919a071282",
+    "managed": true
+  },
+  {
+    "path": "tools/netsim",
+    "base_commit": "71feaeea338b3bd7eda6914cc9b9b382d752957d",
+    "managed": true
+  },
+  {
+    "path": "tools/platform-compat",
+    "base_commit": "19ce1c9d406cec9feaf76618e7d772113883d73f",
+    "managed": true
+  },
+  {
+    "path": "tools/repohooks",
+    "base_commit": "2f92d46c54eef64e69fbd09f0d8e2f7f68d7a262",
+    "managed": true
+  },
+  {
+    "path": "tools/rootcanal",
+    "base_commit": "559446380c3e2cf01c82608897ba5a246996fe5c",
+    "managed": true
+  },
+  {
+    "path": "tools/rr_prebuilt",
+    "base_commit": "0d59375f6eb5bc1ad6248266bc03e6b78704fda7",
+    "managed": true
+  },
+  {
+    "path": "tools/security",
+    "base_commit": "e4e7ba1dabe64f33b9894624e43763bd8a3cbca5",
+    "managed": true
+  },
+  {
+    "path": "tools/strictdeps",
+    "base_commit": "11a85840e0ecc1e4d8ea09b4c0af0f6b3e5cfc40",
+    "managed": true
+  },
+  {
+    "path": "tools/test/connectivity",
+    "base_commit": "43cb53bc3bc76de2d9d497c74cc4798ee6243128",
+    "managed": true
+  },
+  {
+    "path": "tools/test/desktop/mobly",
+    "base_commit": "b77d8987bdd1d44645a015042130c8b7cba05b4b",
+    "managed": true
+  },
+  {
+    "path": "tools/test/mobly_extensions",
+    "base_commit": "fc6621351d8d17286870813678c96bf81555c1ad",
+    "managed": true
+  },
+  {
+    "path": "tools/test/mobly_snippets",
+    "base_commit": "9250e400d188fd7ef9a15b99495143efabf3077c",
+    "managed": true
+  },
+  {
+    "path": "tools/test/openhst",
+    "base_commit": "a64b367cb2361a732bb72cbcb30ac9ecb2a6cccb",
+    "managed": true
+  },
+  {
+    "path": "tools/tradefederation/contrib",
+    "base_commit": "c3ddf62492ebe457514987aa98184e1ed3312e1a",
+    "managed": true
+  },
+  {
+    "path": "tools/tradefederation/core",
+    "base_commit": "2139853a80ff1058cb333efd5e9984d3e09a14ec",
+    "managed": true
+  },
+  {
+    "path": "tools/tradefederation/prebuilts",
+    "base_commit": "cff1e97158caa95de4919a38abf6f3ac10409f37",
+    "managed": true
+  },
+  {
+    "path": "tools/treble",
+    "base_commit": "07f855c5b283a77b04617322aea8990d9d3cdf52",
+    "managed": true
+  },
+  {
+    "path": "tools/trebuchet",
+    "base_commit": "fb475730e55c847362a51b1978b16a633267deb9",
+    "managed": true
+  },
+  {
+    "path": "trusty/device/arm/generic-arm64",
+    "base_commit": "9f80db7a085746f38c9fd5c2f79cd3adc9a1d709",
+    "managed": true
+  },
+  {
+    "path": "trusty/device/arm/vexpress-a15",
+    "base_commit": "303ea92e4d6e24dc9225029a0e5130c2eeaf4f9a",
+    "managed": true
+  },
+  {
+    "path": "trusty/device/common",
+    "base_commit": "6b48a3e39a94093a693914779e9f9aa9859f5366",
+    "managed": true
+  },
+  {
+    "path": "trusty/device/desktop",
+    "base_commit": "f8d8267f8b20d05b1d3620bdcaffb5692f142b0d",
+    "managed": true
+  },
+  {
+    "path": "trusty/device/nxp/imx7d",
+    "base_commit": "b22c680157cb8b0bc688b19609144ebc0fe55a19",
+    "managed": true
+  },
+  {
+    "path": "trusty/device/x86/generic-x86_64",
+    "base_commit": "e9e36b2fc426938011f5bfb9ee8f018bf541c864",
+    "managed": true
+  },
+  {
+    "path": "trusty/hardware/nxp",
+    "base_commit": "b7edfedaf3b4660d1d1b57087424bb56e5f59bde",
+    "managed": true
+  },
+  {
+    "path": "trusty/host/common",
+    "base_commit": "7fe664f48ae35c1d13bbdc67ed94d3ed6627b91e",
+    "managed": true
+  },
+  {
+    "path": "trusty/kernel",
+    "base_commit": "837ece72a3c50f454dfaf3bb86d5ac2e843c142b",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/authmgr",
+    "base_commit": "b53363e45aad47c92ec1ecc4b94881727c13ad8d",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/avb",
+    "base_commit": "5381caec069f0c7059fae0b6985806e53e4b887b",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/cast-auth",
+    "base_commit": "df8e46e3f6fc866fe366970b33df407d465777b9",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/confirmationui",
+    "base_commit": "ff29a3a01fb0d0ea1e4eea76ab58a0168c54c45d",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/gatekeeper",
+    "base_commit": "7ac7c2862317c448ba88ce2d7dfcae0db4765174",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/keymaster",
+    "base_commit": "71fa167a63842d10d26cc4f51537de54b6eec3eb",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/keymint",
+    "base_commit": "48faccf3fd79ef3bc23171ed9373965e8c302b4c",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/sample",
+    "base_commit": "78e3bcb17ec4a0fc56af8f95c8db8e3983b52d1c",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/secretkeeper",
+    "base_commit": "fadb44b38b58a203a2d3e751e97b2dfbcf6a4861",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/app/storage",
+    "base_commit": "da6843dc5aaf97dfce448415a4c943186a8c65f7",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/base",
+    "base_commit": "165d46c463bd22524a7d33d177bf7f35dad46bf5",
+    "managed": true
+  },
+  {
+    "path": "trusty/user/desktop",
+    "base_commit": "b9615896a07dfe0c227cdc8f6a522b9a3788d086",
+    "managed": true
+  },
+  {
+    "path": "trusty/vendor/google/aosp",
+    "base_commit": "93e3ca36bc59e5d357b226e4e5254f8e478213f2",
+    "managed": true
+  },
+  {
+    "path": "vendor/apn",
+    "base_commit": "ea228279c663bc9ac174188ee78b64912cf45273",
+    "managed": true
+  },
+  {
+    "path": "vendor/codeaurora/telephony",
+    "base_commit": "5a048ec75771d4cc7becce6ab71c06de55f7a374",
+    "managed": true
+  },
+  {
+    "path": "vendor/extras",
+    "base_commit": "0cba1b863c02bbaac132901b5229eddfa55a9ef6",
+    "managed": true
+  },
+  {
+    "path": "vendor/gms",
+    "base_commit": "93f65d3449108c3ca8103d01ec42ab732cb56bdc",
+    "managed": true
+  },
+  {
+    "path": "vendor/gms-mosey",
+    "base_commit": "931dc880a8f4c76b6a55a37cf53b7fd449094e24",
+    "managed": true
+  },
+  {
+    "path": "vendor/google/overlays/ThemeIcons",
+    "base_commit": "f31418902bd408e8f00b5e72bb6d187aacbddff5",
+    "managed": true
+  },
+  {
+    "path": "vendor/lineage",
+    "base_commit": "8a400b2f917557326dd4b3a61de617f887c21418",
+    "managed": true
+  },
+  {
+    "path": "vendor/pixel-style",
+    "base_commit": "5dcc109baa0eb397df5d48538b484b04dcdb8c7a",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/audio-hal/st-hal",
+    "base_commit": "943789d6972cc2e05b9e26afbb21cd53253784d7",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/audio-hal/st-hal-ar",
+    "base_commit": "2b05733d2d7c0e6f3813d51ae0216160f4fef681",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/audio-hal/st-hal-ar-legacy",
+    "base_commit": "219a0a322c2dd330531a13ed55c507e9bc442fef",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/commonsys-intf/audio",
+    "base_commit": "50598b206c44cf5366dc6b00cb7173c616f233ec",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/commonsys-intf/display",
+    "base_commit": "67b6c4c4f7823da821d36eb92404be5a32bd6172",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/commonsys/audio",
+    "base_commit": "d73c0cdc4877aea38e4f159fde9991022c8740d9",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/commonsys/display",
+    "base_commit": "6ce6b29f83971ac0dca528ca45e27bf8ef5075b9",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/commonsys/fm",
+    "base_commit": "1fa107ad6e104ae60507443f00e92ded16547cd1",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/commonsys/wfd",
+    "base_commit": "b54a2fce355046c790949e9ec3445a7065dc5665",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/core-utils-sys",
+    "base_commit": "c149e22f0750751d34e42380e43087a3340f2288",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/core-utils-vendor",
+    "base_commit": "414fa42592568a6d9537f804c3d7dd4a95fcfd86",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
+    "base_commit": "897e6561f4c16cc1ab0bf397e6c0a657a1ed6231",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/dataservices",
+    "base_commit": "86a07cbb22386860173943ab55720461981f47b2",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/display",
+    "base_commit": "74a5c56b6229dbe518b43cf781e4c52e1a5ecb71",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/healthd-ext",
+    "base_commit": "7d565896ebdb1662daa2cf0f72e80206cfda104c",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/interfaces",
+    "base_commit": "6ba4b50c695d84a7dcc9a4f68d745f6498ed9f68",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/libfmjni",
+    "base_commit": "c5ace14ef01fc5842c64284daf26c4ee6b210811",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/libqspa",
+    "base_commit": "5349531e2b04b1fb3562cbf7298670210f89d676",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/libvmmem",
+    "base_commit": "a4a0b08614eb1de238dd1fbe4cef94213560d5f1",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/power",
+    "base_commit": "337f837cb5e0a9dd84d4c5617b7e7dca8a380975",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/thermal-engine",
+    "base_commit": "0815f34094ebc952c8e1dd3619e384c7f9d1195b",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/usb",
+    "base_commit": "7cfca29353e0d490fa5289e1d549506fedaa4ace",
+    "managed": true
+  },
+  {
+    "path": "vendor/qcom/opensource/vibrator",
+    "base_commit": "7ec51495bebe272097fc5b7f95cbf5ff92180e71",
+    "managed": true
+  },
+  {
+    "path": "vendor/xiaomi/firmware-lisa",
+    "base_commit": "43061172af85208a4609e254f172c9484bc49c2a",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/vendor_xiaomi_firmware-lisa.git",
+    "branch": "lineage-23.0"
+  },
+  {
+    "path": "vendor/xiaomi/lisa",
+    "base_commit": "253357467b4b3e85882e71462806bb4f7bb3e4e6",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/proprietary_vendor_xiaomi_lisa.git",
+    "branch": "lineage-23.2"
+  },
+  {
+    "path": "vendor/xiaomi/miuicamera-lisa",
+    "base_commit": "60e15aefe04ba8b0fceae612fd44e15c42e2333c",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/proprietary_vendor_xiaomi_miuicamera-lisa.git",
+    "branch": "lineage-23.1"
+  },
+  {
+    "path": "vendor/xiaomi/sm8350-common",
+    "base_commit": "31bf743048241e8fc111598029d1e06e9f33b9ec",
+    "managed": false,
+    "remote_url": "https://github.com/xiaomi-lisa-resources/proprietary_vendor_xiaomi_sm8350-common.git",
+    "branch": "lineage-23.2"
+  }
+]

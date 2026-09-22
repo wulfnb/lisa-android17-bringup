@@ -1,0 +1,28 @@
+diff --git a/megvii/Android.bp b/megvii/Android.bp
+index b3a8500a3e54e1c0623f25c383437b8f417e10c5..833d01ac3a27da780e9ddd511672fb503b50a54e 100644
+--- a/megvii/Android.bp
++++ b/megvii/Android.bp
+@@ -4,20 +4,6 @@
+ // SPDX-License-Identifier: Apache-2.0
+ //
+ 
+-cc_defaults {
+-    name: "libMegviiFacepp_defaults",
+-    vendor: true,
+-    srcs: [
+-        "megvii.c",
+-    ],
+-}
+-
+-cc_library_shared {
+-    name: "libMegviiFacepp-0.5.2",
+-    defaults: ["libMegviiFacepp_defaults"],
+-}
+-
+-cc_library_shared {
+-    name: "libmegface",
+-    vendor: true,
+-}
++// Android 17 provides libMegviiFacepp-0.5.2 and libmegface in
++// hardware/lineage/compat. Use those shared compatibility modules instead
++// of exporting duplicate libraries from the hardware/xiaomi namespace.

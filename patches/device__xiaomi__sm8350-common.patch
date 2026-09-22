@@ -1,0 +1,28 @@
+diff --git a/extract-files.py b/extract-files.py
+index 02f70a0f72c76d8d1f1bef01f4c1651367a36b68..c62442ea6ca6f147efa40b2ed3c1f869bd74fab4 100755
+--- a/extract-files.py
++++ b/extract-files.py
+@@ -44,6 +44,10 @@ lib_fixups: lib_fixups_user_type = {
+ }
+ 
+ blob_fixups: blob_fixups_user_type = {
++    # Android 17 platform audio libraries use V5; the WFD-imported common
++    # parcelables retain their V4 declarations. Keep ELF and build deps aligned.
++    'system_ext/lib64/libwfdservice.so': blob_fixup()
++        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
+     'system_ext/lib64/libwfdnative.so': blob_fixup()
+         .add_needed('libinput_shim.so'),
+     'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+diff --git a/proprietary-files.txt b/proprietary-files.txt
+index e60a8abdecc728150e74ac166e83bb21f2fca1aa..bde59dfe80c314d76b613b74b901321cecf56a0d 100644
+--- a/proprietary-files.txt
++++ b/proprietary-files.txt
+@@ -735,7 +735,7 @@ system_ext/lib64/libwfdmmsink.so|4569ce9941eb5d06db599146ed80b8a32d7cd97f
+ system_ext/lib64/libwfdmmsrc_system.so|0cc970954800566baddbf760b153b027940180f5
+ system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|9513bbbd813dd05fb063d3c9e72640a1bc9156c2|f2918bbd8e4c691299e840863e8cb502a47bb773
+ system_ext/lib64/libwfdrtsp.so|1ab4fc5b75d25f551df3593d5856e6f7893a4176
+-system_ext/lib64/libwfdservice.so|af0e31f17ed997a5d8bad64cdad486be28cb9f07
++system_ext/lib64/libwfdservice.so|af0e31f17ed997a5d8bad64cdad486be28cb9f07|b8ac918ddd45ae2982b96fe19183b14b32257a5f
+ system_ext/lib64/libwfdsinksm.so|cc899b719fa11d844c65908d7fdc18600451324d
+ system_ext/lib64/libwfduibcinterface.so|432d54b072d8f1c80409b6e11f4f833ca9576937
+ system_ext/lib64/libwfduibcsink.so|d12b05bbcefdff6addc2c31567a656b7540d7489

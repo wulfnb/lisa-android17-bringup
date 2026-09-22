@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "repository_count": 1261,
+  "projects": [
+    {
+      "path": "build/soong",
+      "base_commit": "ce8adbbbafd7376385a1fbcb5176563907e8010f",
+      "patch": "patches/build__soong.patch",
+      "files": [
+        "ui/build/soong.go"
+      ],
+      "patch_sha256": "ec463211a2cb4da810d22a79d8bd663612c4909a7ce9f74e97acda89218c6dbc"
+    },
+    {
+      "path": "device/xiaomi/lisa",
+      "base_commit": "f3fe46d81784eb8b6268c4a91bf83c56e45f8d6c",
+      "patch": "patches/device__xiaomi__lisa.patch",
+      "files": [
+        "AndroidProducts.mk",
+        "BoardConfig.mk"
+      ],
+      "patch_sha256": "beaf9c2ac5da39cedb82226478c3acbddbf188d4612f70f283f6a3dc2d78cd2d"
+    },
+    {
+      "path": "device/xiaomi/sm8350-common",
+      "base_commit": "00777415f2fa32b5b18d06f1b35202a75a01d4cc",
+      "patch": "patches/device__xiaomi__sm8350-common.patch",
+      "files": [
+        "extract-files.py",
+        "proprietary-files.txt"
+      ],
+      "patch_sha256": "649dfcf477b4d5e124a8dd0ca82520db4d2dc219c9f7dfd409f3c1d432003e18"
+    },
+    {
+      "path": "external/XMP-Toolkit-SDK",
+      "base_commit": "45acb237cd13c19708f963247c732250cd43a4a5",
+      "patch": "patches/external__XMP-Toolkit-SDK.patch",
+      "files": [
+        "Android.bp"
+      ],
+      "patch_sha256": "c74621699a1d8ebed18617086a3423c71d04bc9ab53b47ba997defa5e95081fc"
+    },
+    {
+      "path": "external/google-highway",
+      "base_commit": "94b90ab8cb9df9b3719a64751ea2fcb62caa3391",
+      "patch": "patches/external__google-highway.patch",
+      "files": [
+        "Android.bp"
+      ],
+      "patch_sha256": "a9598a98ec78e7cb65b0d7db7f8283703539cd48dcf45d8d89d1320fc301787f"
+    },
+    {
+      "path": "external/skia",
+      "base_commit": "508606366e71a3daa933a4e08bc49b84e387ec18",
+      "patch": "patches/external__skia.patch",
+      "files": [
+        "Android.bp"
+      ],
+      "patch_sha256": "38a81e97bf7f8767af0a6dc92ff5c4c21b342dd365cd1d5d960520e2856d18db"
+    },
+    {
+      "path": "hardware/xiaomi",
+      "base_commit": "7d269993c2edc6bf563a20400ff84ee792dc1d77",
+      "patch": "patches/hardware__xiaomi.patch",
+      "files": [
+        "megvii/Android.bp"
+      ],
+      "patch_sha256": "240990a8c52fa1364b2260a124d253d9a0a5628e311b25d0fb6da79c15582685"
+    },
+    {
+      "path": "vendor/qcom/opensource/display",
+      "base_commit": "74a5c56b6229dbe518b43cf781e4c52e1a5ecb71",
+      "patch": "patches/vendor__qcom__opensource__display.patch",
+      "files": [
+        "services/config/src/device_impl.h"
+      ],
+      "patch_sha256": "95b50ad79c90e7e7f07eca56cace861068338fe2c2d3774f2a2940638473c951"
+    },
+    {
+      "path": "vendor/xiaomi/firmware-lisa",
+      "base_commit": "43061172af85208a4609e254f172c9484bc49c2a",
+      "patch": "patches/vendor__xiaomi__firmware-lisa.patch",
+      "files": [
+        "Android.mk",
+        "BoardConfigVendor.mk"
+      ],
+      "patch_sha256": "01627376e52fad871f93ef8e33383cfd6b4b0dbcacf51dc9c3377a20e3ba7a29"
+    },
+    {
+      "path": "vendor/xiaomi/sm8350-common",
+      "base_commit": "31bf743048241e8fc111598029d1e06e9f33b9ec",
+      "patch": "patches/vendor__xiaomi__sm8350-common.patch",
+      "files": [
+        "Android.bp"
+      ],
+      "patch_sha256": "73ee92975bac84bcc30d93f0b003840feb48d243ff73f3b823571f3c0908d52e"
+    }
+  ],
+  "binary_fixups": [
+    {
+      "repository": "vendor/xiaomi/sm8350-common",
+      "path": "proprietary/system_ext/lib64/libwfdservice.so",
+      "original_sha1": "af0e31f17ed997a5d8bad64cdad486be28cb9f07",
+      "fixed_sha1": "b8ac918ddd45ae2982b96fe19183b14b32257a5f",
+      "from": "android.media.audio.common.types-V4-cpp.so",
+      "to": "android.media.audio.common.types-V5-cpp.so"
+    }
+  ]
+}

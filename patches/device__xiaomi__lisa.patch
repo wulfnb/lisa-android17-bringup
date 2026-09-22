@@ -1,0 +1,23 @@
+diff --git a/AndroidProducts.mk b/AndroidProducts.mk
+index 6e02a3555383f5b055499a45c9dd3c8d7e94a075..f78a0540eef1cdcdf7b55a9af85b2fe07ed5a941 100644
+--- a/AndroidProducts.mk
++++ b/AndroidProducts.mk
+@@ -5,3 +5,6 @@
+ 
+ PRODUCT_MAKEFILES := \
+     $(LOCAL_DIR)/lineage_lisa.mk
++
++COMMON_LUNCH_CHOICES := \
++    lineage_lisa-trunk_staging-userdebug
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index ecc74a58ae3672888520cc813240f59079abb7af..0bebf3b9dcf4ca12d3680ccd35a0ac44cfd3eb06 100644
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -40,4 +40,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+ -include vendor/xiaomi/miuicamera-$(PRODUCT_DEVICE)/BoardConfig.mk
+ 
+ # Include proprietary files
++# Firmware
++-include vendor/xiaomi/firmware-lisa/BoardConfigVendor.mk
++
+ include vendor/xiaomi/lisa/BoardConfigVendor.mk
