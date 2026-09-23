@@ -1,0 +1,12 @@
+diff --git a/ipacm/inc/IPACM_OffloadManager.h b/ipacm/inc/IPACM_OffloadManager.h
+index 146fde8a6a25914249e72f529763851ba0b73256..b2ead9dad2f3fdd6b1446102d0beb3ad7dba9cd1 100644
+--- a/ipacm/inc/IPACM_OffloadManager.h
++++ b/ipacm/inc/IPACM_OffloadManager.h
+@@ -30,6 +30,7 @@
+ #define _IPACM_OFFLOAD_MANAGER_H_
+
+ #include <list>
++#include <vector>
+ #include <stdint.h>
+ #include <IOffloadManager.h>
+ #include "IPACM_Defs.h"
