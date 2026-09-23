@@ -175,3 +175,12 @@ the current `.te` sources), then re-ran the failing `checkpolicy` step via
 leaving only the pre-existing, unrelated `hal_vm_capabilities_default`
 neverallow warning that was already present in the failing run's stderr.
 Full `m evolution` was not restarted by the assistant.
+
+| vendor/qcom/opensource/vibrator/aidl/VibratorSelector | Include memory directly in VibratorSelector.h for std::shared_ptr | Failed compile step re-run standalone via siso_failed_commands.sh; exits 0. Full m evolution resumed and passed this step |
+| bootable/recovery/volume_manager | Include vector directly in VolumeManager.h for std::vector | Failed compile step re-run standalone via siso_failed_commands.sh; exits 0. Full m evolution resumed and passed this step |
+| device/xiaomi/sm8350-common/gps/android/utils | Include mutex directly in battery_listener.cpp for std::mutex/std::lock_guard/std::unique_lock | Failed compile step re-run standalone via siso_failed_commands.sh; exits 0. Full m evolution resumed and passed this step |
+| hardware/qcom-caf/sm8350/audio/hal/audio_extn | Include mutex directly in battery_listener.cpp (byte-identical duplicate of the GPS copy, same missing include) | Failed compile step re-run standalone via siso_failed_commands.sh; exits 0. Full m evolution resumed and passed this step |
+| hardware/xiaomi/aidl/fingerprint | Include functional directly in Session.cpp for std::function/std::bind | Failed compile step re-run standalone via siso_failed_commands.sh; exits 0. Full m evolution resumed and passed this step |
+| vendor/qcom/opensource/audio-hal/st-hal | Declare dbg_trace_max_lab_reads extern in sound_trigger_hw.h instead of defining it directly (was defined per translation unit under the non-LINUX_ENABLED branch); added the one real definition to sound_trigger_hw.c | ld.lld duplicate-symbol error across 6 .o files in the same static link; full m evolution resumed after the fix and passed this step |
+| vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um | Include vector directly in IPACM_OffloadManager.h for std::vector | Failed compile step re-run standalone via siso_failed_commands.sh; exits 0. Full m evolution resumed and passed this step |
+| hardware/qcom-caf/wlan/qcwcn | Declare drv and bss extern in driver_cmd_nl80211_common.h instead of defining them directly (shared by 5 .c files); added the one real definition to driver_cmd_nl80211.c | ld.lld duplicate-symbol error for both drv and bss across driver_cmd_nl80211_mlo.o, _oem_data.o, _mon.o, _sr.o; full m evolution resumed after the fix and passed this step |
