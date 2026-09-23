@@ -1,8 +1,28 @@
 diff --git a/Android.bp b/Android.bp
-index c792e92fdb93bc11e1a166be1da51d6123aeb85d..8e1252fd4e852b85c24a546ce92a96fc1ab9a5f4 100644
+index c792e92fdb93bc11e1a166be1da51d6123aeb85d..529610c31ecde11617a6b3b037edb698571c83d0 100644
 --- a/Android.bp
 +++ b/Android.bp
-@@ -12630,7 +12630,7 @@ cc_prebuilt_library_shared {
+@@ -12492,6 +12492,7 @@ cc_prebuilt_library_shared {
+     strip: {
+         none: true,
+     },
++    allow_undefined_symbols: true,
+     target: {
+         android_arm64: {
+             srcs: [
+@@ -12510,6 +12511,7 @@ cc_prebuilt_library_shared {
+                 "libinput",
+                 "libwfdmminterface",
+                 "libwfddisplayconfig",
++                "libaudiobase",
+                 "libmedia_helper",
+                 "libaudioclient",
+                 "libwfdavenhancements",
+@@ -12627,10 +12629,11 @@ cc_prebuilt_library_shared {
+                 "libinput",
+                 "libwfdmminterface",
+                 "libmedia_helper",
++                "libaudiobase",
                  "libaudioclient",
                  "libaudiofoundation",
                  "audioclient-types-aidl-cpp",
