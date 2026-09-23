@@ -1,0 +1,30 @@
+diff --git a/sound_trigger_hw.c b/sound_trigger_hw.c
+index 38b76558287e08de0099cca95d0331d8283cae82..f4c05113051481e867d2246a2f486a0d1300978c 100644
+--- a/sound_trigger_hw.c
++++ b/sound_trigger_hw.c
+@@ -73,6 +73,8 @@
+ #include "st_session.h"
+ #include "st_hw_common.h"
+ #include "st_hw_extn.h"
++
++int dbg_trace_max_lab_reads;
+ #include "st_hw_defs.h"
+
+ #define XSTR(x) STR(x)
+diff --git a/sound_trigger_hw.h b/sound_trigger_hw.h
+index 366e246a752aa892afcc1a2371fde2103ef9ab2c..8f719d3c060e5a4de0835c3d1e780e87ff5dd3df 100644
+--- a/sound_trigger_hw.h
++++ b/sound_trigger_hw.h
+@@ -308,12 +308,7 @@ do {\
+         fflush(fptr);\
+     }\
+ } while (0)
+-
+-#ifdef LINUX_ENABLED
+ extern int dbg_trace_max_lab_reads;
+-#else
+-int dbg_trace_max_lab_reads;
+-#endif
+
+ #define ST_DBG_ATRACE_ASYNC_BEGIN_IF(cond, name, cookie)\
+ do {\
