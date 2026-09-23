@@ -7,9 +7,10 @@
       "base_commit": "af859816808542007f5e3d9c14efbc49abadcaf0",
       "patch": "patches/bootable__recovery.patch",
       "files": [
-        "volume_manager/PublicVolume.cpp"
+        "volume_manager/PublicVolume.cpp",
+        "volume_manager/include/volume_manager/VolumeManager.h"
       ],
-      "patch_sha256": "b498fd36894936d10d18fe11b030d3557d8e6686de0fdc2213f6a96e16249f2d"
+      "patch_sha256": "9b5d22efca7ebbf7ee34964d28fe7b7b7b195484e87ed045e907961ff66ba081"
     },
     {
       "path": "build/soong",
@@ -36,12 +37,13 @@
       "patch": "patches/device__xiaomi__sm8350-common.patch",
       "files": [
         "extract-files.py",
+        "gps/android/utils/battery_listener.cpp",
         "gps/utils/LocIpc.cpp",
         "gps/utils/LocIpc.h",
         "proprietary-files.txt",
         "sepolicy/vendor/batterysecret.te"
       ],
-      "patch_sha256": "89d9f4fdf678682a7a97caf70be4718279100fd31be86a8f7ec0db835199d075"
+      "patch_sha256": "3354b443d4e37fa43afa5c3415328f1aa53d2affd63558d8cfd1340acfecb678"
     },
     {
       "path": "external/XMP-Toolkit-SDK",
@@ -69,6 +71,15 @@
         "Android.bp"
       ],
       "patch_sha256": "38a81e97bf7f8767af0a6dc92ff5c4c21b342dd365cd1d5d960520e2856d18db"
+    },
+    {
+      "path": "hardware/qcom-caf/sm8350/audio",
+      "base_commit": "9596e4bcde851fdff2e312c69a13ac06645c6681",
+      "patch": "patches/hardware__qcom-caf__sm8350__audio.patch",
+      "files": [
+        "hal/audio_extn/battery_listener.cpp"
+      ],
+      "patch_sha256": "0904a015f843d25b4d715070d1c6d65d4a755ce7f07f37f1c016561c1ab6017c"
     },
     {
       "path": "hardware/qcom-caf/sm8450-6.6/display/hal",
@@ -125,6 +136,16 @@
       "patch_sha256": "edadc92c4fa2c8fbcae3da6accb8dfe4ed43b3c0948f08e0cf48d6ae2435fde8"
     },
     {
+      "path": "hardware/qcom-caf/wlan",
+      "base_commit": "4593f9b377e25a7cd55b2319e7f85bf5ae35104b",
+      "patch": "patches/hardware__qcom-caf__wlan.patch",
+      "files": [
+        "qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211.c",
+        "qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211_common.h"
+      ],
+      "patch_sha256": "3b4743c757525e23269eacc7dec3a167383d38c962600ac29603715b1773da4f"
+    },
+    {
       "path": "hardware/qcom/sm7250/gps",
       "base_commit": "c0e0375f06c0335062f19e3d87cb84d3c27cbc57",
       "patch": "patches/hardware__qcom__sm7250__gps.patch",
@@ -149,9 +170,10 @@
       "base_commit": "7d269993c2edc6bf563a20400ff84ee792dc1d77",
       "patch": "patches/hardware__xiaomi.patch",
       "files": [
+        "aidl/fingerprint/Session.cpp",
         "megvii/Android.bp"
       ],
-      "patch_sha256": "240990a8c52fa1364b2260a124d253d9a0a5628e311b25d0fb6da79c15582685"
+      "patch_sha256": "7a0203331530899a3156a74073126467641d03cc2cff61d2224ebf746ed2d34c"
     },
     {
       "path": "system/vold",
@@ -163,6 +185,25 @@
       "patch_sha256": "a2d5b3a2c8a332f12d70149d0dc19996b6dc2c518a42e9a71d1b429771767e1d"
     },
     {
+      "path": "vendor/qcom/opensource/audio-hal/st-hal",
+      "base_commit": "943789d6972cc2e05b9e26afbb21cd53253784d7",
+      "patch": "patches/vendor__qcom__opensource__audio-hal__st-hal.patch",
+      "files": [
+        "sound_trigger_hw.c",
+        "sound_trigger_hw.h"
+      ],
+      "patch_sha256": "c2ac05f1c43a298d733ca3097471366465c2e783cc2875e0f0054fac4f0775b7"
+    },
+    {
+      "path": "vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
+      "base_commit": "897e6561f4c16cc1ab0bf397e6c0a657a1ed6231",
+      "patch": "patches/vendor__qcom__opensource__data-ipa-cfg-mgr-legacy-um.patch",
+      "files": [
+        "ipacm/inc/IPACM_OffloadManager.h"
+      ],
+      "patch_sha256": "b17aa87b450fe4894a66837ad0e51e928953efed0caeb4878a8fce613222822c"
+    },
+    {
       "path": "vendor/qcom/opensource/display",
       "base_commit": "74a5c56b6229dbe518b43cf781e4c52e1a5ecb71",
       "patch": "patches/vendor__qcom__opensource__display.patch",
@@ -170,6 +211,15 @@
         "services/config/src/device_impl.h"
       ],
       "patch_sha256": "95b50ad79c90e7e7f07eca56cace861068338fe2c2d3774f2a2940638473c951"
+    },
+    {
+      "path": "vendor/qcom/opensource/vibrator",
+      "base_commit": "7ec51495bebe272097fc5b7f95cbf5ff92180e71",
+      "patch": "patches/vendor__qcom__opensource__vibrator.patch",
+      "files": [
+        "aidl/VibratorSelector/VibratorSelector.h"
+      ],
+      "patch_sha256": "45cd3e79692c2e589d8d54b420b3d8b58ddea817bd12d2cbe9f13fe133b65f68"
     },
     {
       "path": "vendor/xiaomi/firmware-lisa",
