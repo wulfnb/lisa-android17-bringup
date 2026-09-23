@@ -43,7 +43,7 @@
         "proprietary-files.txt",
         "sepolicy/vendor/batterysecret.te"
       ],
-      "patch_sha256": "8288fa624cae36713f9665d97e596253c3a467e09d0fccf5e016ae1adb87d86b"
+      "patch_sha256": "dba7c820bdb5faa6465e5e68bf805dae7b8f25fc10f375e2930f48ca848fae1c"
     },
     {
       "path": "external/XMP-Toolkit-SDK",
@@ -182,7 +182,7 @@
       "files": [
         "drivers/staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c"
       ],
-      "patch_sha256": "60672e1087b1514c374778ae1d4abd6096396d3bce842710e3fc246d83ce2267"
+      "patch_sha256": "f3f868c36fcbea50162aff8e797c16342941cebb6accec3162e67be8b5b60370"
     },
     {
       "path": "system/vold",
