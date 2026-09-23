@@ -1,18 +1,32 @@
 diff --git a/extract-files.py b/extract-files.py
-index 02f70a0f72c76d8d1f1bef01f4c1651367a36b68..c62442ea6ca6f147efa40b2ed3c1f869bd74fab4 100755
+index 02f70a0f72c76d8d1f1bef01f4c1651367a36b68..a2d35424102ac6e523aafb56d17ac4bea4802a83 100755
 --- a/extract-files.py
 +++ b/extract-files.py
-@@ -44,6 +44,10 @@ lib_fixups: lib_fixups_user_type = {
+@@ -44,8 +44,24 @@ lib_fixups: lib_fixups_user_type = {
  }
 
  blob_fixups: blob_fixups_user_type = {
 +    # Android 17 platform audio libraries use V5; the WFD-imported common
 +    # parcelables retain their V4 declarations. Keep ELF and build deps aligned.
 +    'system_ext/lib64/libwfdservice.so': blob_fixup()
-+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
++        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so')
++        # AudioSystem::setDeviceConnectionState moved from libaudioclient into
++        # the newly split libaudiobase on this platform; the prebuilt's
++        # DT_NEEDED table was never updated for that split.
++        .add_needed('libaudiobase.so'),
      'system_ext/lib64/libwfdnative.so': blob_fixup()
          .add_needed('libinput_shim.so'),
++    # Same libaudiobase split as libwfdservice.so above. Additionally,
++    # SurfaceComposerClient::createVirtualDisplay gained a uid_t ownerUid
++    # parameter upstream; this prebuilt still calls the old 5-arg overload,
++    # which no longer exists. No source to rebuild against, so allow that
++    # one symbol to stay undefined at link time (matches this repo's
++    # existing caveat that WFD runtime behavior is unverified).
++    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
++        .add_needed('libaudiobase.so'),
      'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+         .add_line_if_missing('    task_profiles ServiceCapacityLow'),
+     ('vendor/etc/media_lahaina/video_system_specs.json', 'vendor/etc/media_shima_v1/video_system_specs.json', 'vendor/etc/media_yupik_v1/video_system_specs.json'): blob_fixup()
 diff --git a/gps/android/utils/battery_listener.cpp b/gps/android/utils/battery_listener.cpp
 index 64ce2c8e87134e48294f7ac6a0b95d29e9f5ffc8..954bb724c84ba1d857220c38e1333a2725f39ed8 100644
 --- a/gps/android/utils/battery_listener.cpp
@@ -61,15 +75,19 @@ index 40ed5a3d3601217a9d66637b7065788aec318151..50301b39927bd2f1557be1d539a86370
              getLocIpcQrtrRecver(const shared_ptr<ILocIpcListener>& listener,
                                  int service, int instance,
 diff --git a/proprietary-files.txt b/proprietary-files.txt
-index e60a8abdecc728150e74ac166e83bb21f2fca1aa..bde59dfe80c314d76b613b74b901321cecf56a0d 100644
+index e60a8abdecc728150e74ac166e83bb21f2fca1aa..d52af8790af698d96a5bde982ee254b83dab4a85 100644
 --- a/proprietary-files.txt
 +++ b/proprietary-files.txt
-@@ -735,7 +735,7 @@ system_ext/lib64/libwfdmmsink.so|4569ce9941eb5d06db599146ed80b8a32d7cd97f
- system_ext/lib64/libwfdmmsrc_system.so|0cc970954800566baddbf760b153b027940180f5
+@@ -732,10 +732,10 @@ system_ext/lib64/libwfdconfigutils.so|4d8200cc4c455f54fcbce927f5cabeb7b591f5d0
+ system_ext/lib64/libwfddisplayconfig.so|27f5d6e284edf05cc7776e5be010912973000ab9
+ system_ext/lib64/libwfdmminterface.so|8d3d493fef797aef2feaab4e09e50250ddf5dc9a
+ system_ext/lib64/libwfdmmsink.so|4569ce9941eb5d06db599146ed80b8a32d7cd97f
+-system_ext/lib64/libwfdmmsrc_system.so|0cc970954800566baddbf760b153b027940180f5
++system_ext/lib64/libwfdmmsrc_system.so|0cc970954800566baddbf760b153b027940180f5|01f6bfd5c0d25c91321c7880c3354347dee40cbb
  system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|9513bbbd813dd05fb063d3c9e72640a1bc9156c2|f2918bbd8e4c691299e840863e8cb502a47bb773
  system_ext/lib64/libwfdrtsp.so|1ab4fc5b75d25f551df3593d5856e6f7893a4176
 -system_ext/lib64/libwfdservice.so|af0e31f17ed997a5d8bad64cdad486be28cb9f07
-+system_ext/lib64/libwfdservice.so|af0e31f17ed997a5d8bad64cdad486be28cb9f07|b8ac918ddd45ae2982b96fe19183b14b32257a5f
++system_ext/lib64/libwfdservice.so|af0e31f17ed997a5d8bad64cdad486be28cb9f07|95dad874ea44b508dc9379ca30b24089fcebda3c
  system_ext/lib64/libwfdsinksm.so|cc899b719fa11d844c65908d7fdc18600451324d
  system_ext/lib64/libwfduibcinterface.so|432d54b072d8f1c80409b6e11f4f833ca9576937
  system_ext/lib64/libwfduibcsink.so|d12b05bbcefdff6addc2c31567a656b7540d7489
