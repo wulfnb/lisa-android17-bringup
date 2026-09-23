@@ -110,3 +110,64 @@ m evolution -j4 2>&1 | tee build_lisa_NEXT.log
 
 `-j4` limits the compile scheduler; it does not directly bound the single
 Soong analysis process. Keep watching memory and swap during analysis.
+
+
+
+## libaudiobase split breaks two more WFD prebuilts (fresh-machine build)
+
+### Evidence
+
+- `frameworks/av/media/libaudioclient/Android.bp` splits `AudioSystem.cpp`
+  (and its declared methods: `setDeviceConnectionState`, `setParameters`,
+  `addErrorCallback`, `removeErrorCallback`) out of `libaudioclient` into a
+  new `libaudiobase` module on this platform. Both WFD prebuilts still only
+  declare `libaudioclient` as a dependency and their ELF `DT_NEEDED` tables
+  were never updated for the split.
+- `libwfdservice.so` needed only the added dependency; its declared
+  `AudioSystem::setDeviceConnectionState` signature already matches the
+  current platform header exactly.
+- `libwfdmmsrc_system.so` needed the same added dependency, plus one symbol
+  that cannot be fixed: `SurfaceComposerClient::createVirtualDisplay` gained a
+  `uid_t ownerUid` parameter upstream since this blob was compiled. No source
+  is available to rebuild the blob against the new signature, so that one
+  symbol is left undefined via `allow_undefined_symbols: true`. WFD/screen
+  mirroring through this code path may fail or crash at runtime; everything
+  else in the module is unaffected. Consistent with this repo's existing
+  caveat that WFD runtime behavior is unverified.
+
+### Change
+
+Patched both prebuilts directly:
+
+```bash
+prebuilts/extract-tools/linux-x86/bin/patchelf-0_18 --add-needed libaudiobase.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libwfdservice.so
+prebuilts/extract-tools/linux-x86/bin/patchelf-0_18 --add-needed libaudiobase.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libwfdmmsrc_system.so
+```
+
+Recorded the resulting fixed hashes in `device/xiaomi/sm8350-common/proprietary-files.txt`
+and the `add_needed` calls in `extract-files.py`, and added `libaudiobase`
+(plus `allow_undefined_symbols` for the second module) to the generated
+`vendor/xiaomi/sm8350-common/Android.bp` by hand.
+
+**Not captured in `binary_fixups`.** Unlike the existing `libwfdservice.so`
+V4→V5 fixup, `patchelf --add-needed` is not a same-length byte substitution —
+it grows the file (observed: libwfdservice.so 303216 → 371713 bytes,
+libwfdmmsrc_system.so 151520 → 217401 bytes) via patchelf-0_18's own
+padding/relocation behavior. `scripts/capture.py`'s binary recipe format
+(`original.replace(from, to)`) cannot express that, and `scripts/apply.py`
+would silently apply only the old V4→V5 recipe and skip the `libaudiobase`
+fix with no error if the stale recipe were left in place. The existing
+`libwfdservice.so` recipe in `binary-fixups.json`/`snapshot.json` has been
+removed rather than left incorrect. **A fresh checkout must re-run the two
+`patchelf --add-needed` commands above by hand** (after `repo sync`, before
+building) until this is captured a better way — for example, teaching
+`capture.py` to record a rebuild recipe (base hash + shell command) instead
+of a text substitution, or getting `extract-files.py --regenerate_makefiles`
+working again (it currently exits silently after "Parsing
+proprietary-files.txt" without regenerating anything or reporting why).
+
+Final hashes:
+- `libwfdservice.so`: `af0e31f1...` → `95dad874ea44b508dc9379ca30b24089fcebda3c`
+- `libwfdmmsrc_system.so`: `0cc97095...` → `01f6bfd5c0d25c91321c7880c3354347dee40cbb`
