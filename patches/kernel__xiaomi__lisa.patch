@@ -1,0 +1,13 @@
+diff --git a/drivers/staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c b/drivers/staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c
+index 14f4f978fef5ea7b498cb62e9eead73f834c8ac0..895c1bd94f4687dfa5e82bfe36706b98ea55ce2d 100644
+--- a/drivers/staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c
++++ b/drivers/staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c
+@@ -2227,7 +2227,7 @@ hif_send_head(struct hif_opaque_softc *hif_ctx,
+
+ 	if (qdf_unlikely(!ce_hdl)) {
+ 		hif_err("CE handle is null");
+-		return A_ERROR;
++		return QDF_STATUS_E_FAILURE;
+ 	}
+
+ 	QDF_NBUF_UPDATE_TX_PKT_COUNT(nbuf, QDF_NBUF_TX_PKT_HIF);
