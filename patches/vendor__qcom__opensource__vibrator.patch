@@ -1,0 +1,12 @@
+diff --git a/aidl/VibratorSelector/VibratorSelector.h b/aidl/VibratorSelector/VibratorSelector.h
+index 3076c444be6c6080ab0b7e3650c85b0cb3520d91..8b4d790cdd207d0198e8e17942911b9cf826b6ee 100644
+--- a/aidl/VibratorSelector/VibratorSelector.h
++++ b/aidl/VibratorSelector/VibratorSelector.h
+@@ -37,6 +37,7 @@
+ #define VIBRATOR_SELECTOR_H
+
+ #include <vector>
++#include <memory>
+ #include <expat.h>
+
+ typedef enum {
