@@ -1,10 +1,1 @@
-[
-  {
-    "repository": "vendor/xiaomi/sm8350-common",
-    "path": "proprietary/system_ext/lib64/libwfdservice.so",
-    "original_sha1": "af0e31f17ed997a5d8bad64cdad486be28cb9f07",
-    "fixed_sha1": "b8ac918ddd45ae2982b96fe19183b14b32257a5f",
-    "from": "android.media.audio.common.types-V4-cpp.so",
-    "to": "android.media.audio.common.types-V5-cpp.so"
-  }
-]
+[]
