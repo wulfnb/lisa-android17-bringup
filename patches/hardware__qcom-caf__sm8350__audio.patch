@@ -1,0 +1,12 @@
+diff --git a/hal/audio_extn/battery_listener.cpp b/hal/audio_extn/battery_listener.cpp
+index 14be797d3816a3c1cbb8aeb1fea0a48f0e8a4f96..d963930fa79ed248d8f49d8a66c0ef6a3367adb8 100644
+--- a/hal/audio_extn/battery_listener.cpp
++++ b/hal/audio_extn/battery_listener.cpp
+@@ -37,6 +37,7 @@
+ #include <healthhalutils/HealthHalUtils.h>
+ #include <hidl/HidlTransportSupport.h>
+ #include <thread>
++#include <mutex>
+ #include "battery_listener.h"
+
+ using android::hardware::interfacesEqual;
