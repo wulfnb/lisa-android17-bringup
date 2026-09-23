@@ -43,7 +43,7 @@
         "proprietary-files.txt",
         "sepolicy/vendor/batterysecret.te"
       ],
-      "patch_sha256": "afb52b2e1361d4543fbbeb65dd4921c4026ed5cd08132b49f8c918914be82c17"
+      "patch_sha256": "8288fa624cae36713f9665d97e596253c3a467e09d0fccf5e016ae1adb87d86b"
     },
     {
       "path": "external/XMP-Toolkit-SDK",
@@ -176,6 +176,15 @@
       "patch_sha256": "12232f9a25dc53040854f2515643f30d346067d51acc89ee3f3d98ac9b4e4280"
     },
     {
+      "path": "kernel/xiaomi/lisa",
+      "base_commit": "05cf5a16a3252dc2c3a5300da64adc79fff861f2",
+      "patch": "patches/kernel__xiaomi__lisa.patch",
+      "files": [
+        "drivers/staging/qca-wifi-host-cmn/hif/src/ce/ce_main.c"
+      ],
+      "patch_sha256": "60672e1087b1514c374778ae1d4abd6096396d3bce842710e3fc246d83ce2267"
+    },
+    {
       "path": "system/vold",
       "base_commit": "6d1461e1b7618ba30272450633a5971f2e89710b",
       "patch": "patches/system__vold.patch",
@@ -238,17 +247,8 @@
       "files": [
         "Android.bp"
       ],
-      "patch_sha256": "73ee92975bac84bcc30d93f0b003840feb48d243ff73f3b823571f3c0908d52e"
+      "patch_sha256": "359765564ab73fda1cbffa1dec7e247825a2c7ee1bb7a6f06085ea6f87d9130d"
     }
   ],
-  "binary_fixups": [
-    {
-      "repository": "vendor/xiaomi/sm8350-common",
-      "path": "proprietary/system_ext/lib64/libwfdservice.so",
-      "original_sha1": "af0e31f17ed997a5d8bad64cdad486be28cb9f07",
-      "fixed_sha1": "b8ac918ddd45ae2982b96fe19183b14b32257a5f",
-      "from": "android.media.audio.common.types-V4-cpp.so",
-      "to": "android.media.audio.common.types-V5-cpp.so"
-    }
-  ]
+  "binary_fixups": []
 }
