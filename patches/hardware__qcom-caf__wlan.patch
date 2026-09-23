@@ -1,0 +1,29 @@
+diff --git a/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211.c b/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211.c
+index cc5f54cf3efbe80d28e8117df2f8747ce5ec4f56..ed887c3dc8e614f13bc63bdcb282c42f5a85e1b8 100644
+--- a/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211.c
++++ b/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211.c
+@@ -71,6 +71,9 @@
+ #endif
+ #include "driver_cmd_nl80211_extn.h"
+ #include "driver_cmd_nl80211_common.h"
++
++struct wpa_driver_nl80211_data *drv;
++struct i802_bss *bss;
+ #include "driver_cmd_nl80211_mlo.h"
+ #include <inttypes.h>
+
+diff --git a/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211_common.h b/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211_common.h
+index 0e532127b173c9845e1c1baa9c2363fc2a0a7171..212cc07fce8bbcfb33b999ae517711c562410b01 100644
+--- a/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211_common.h
++++ b/qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211_common.h
+@@ -54,8 +54,8 @@
+ #define MAX_NUM_MLO_LINKS      15
+ #define NL80211_ATTR_MAX_INTERNAL 256
+
+-struct wpa_driver_nl80211_data *drv;
+-struct i802_bss *bss;
++extern struct wpa_driver_nl80211_data *drv;
++extern struct i802_bss *bss;
+ struct nl_msg *prepare_nlmsg(struct wpa_driver_nl80211_data *drv,
+ 		             char *ifname, int cmdid, int subcmd, int flag);
+ struct nl_msg *prepare_vendor_nlmsg(struct wpa_driver_nl80211_data *drv,
