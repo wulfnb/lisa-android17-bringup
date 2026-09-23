@@ -10,7 +10,7 @@
         "volume_manager/PublicVolume.cpp",
         "volume_manager/include/volume_manager/VolumeManager.h"
       ],
-      "patch_sha256": "9b5d22efca7ebbf7ee34964d28fe7b7b7b195484e87ed045e907961ff66ba081"
+      "patch_sha256": "20c2f228cd82d6f2144fce3cd823c29c475fd7626268af83caabe0e598424148"
     },
     {
       "path": "build/soong",
@@ -43,7 +43,7 @@
         "proprietary-files.txt",
         "sepolicy/vendor/batterysecret.te"
       ],
-      "patch_sha256": "3354b443d4e37fa43afa5c3415328f1aa53d2affd63558d8cfd1340acfecb678"
+      "patch_sha256": "afb52b2e1361d4543fbbeb65dd4921c4026ed5cd08132b49f8c918914be82c17"
     },
     {
       "path": "external/XMP-Toolkit-SDK",
@@ -79,7 +79,7 @@
       "files": [
         "hal/audio_extn/battery_listener.cpp"
       ],
-      "patch_sha256": "0904a015f843d25b4d715070d1c6d65d4a755ce7f07f37f1c016561c1ab6017c"
+      "patch_sha256": "4d7da1ea777a6ef37d5e097454d0b8e385b1b59dc8aa7ec4777ebdc42bb56229"
     },
     {
       "path": "hardware/qcom-caf/sm8450-6.6/display/hal",
@@ -143,7 +143,7 @@
         "qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211.c",
         "qcwcn/wpa_supplicant_8_lib/driver_cmd_nl80211_common.h"
       ],
-      "patch_sha256": "3b4743c757525e23269eacc7dec3a167383d38c962600ac29603715b1773da4f"
+      "patch_sha256": "3f12258f6188c60b35fad556d5a1e6fafb2bcaa8f8879e701e979f14b32abdd0"
     },
     {
       "path": "hardware/qcom/sm7250/gps",
@@ -173,7 +173,7 @@
         "aidl/fingerprint/Session.cpp",
         "megvii/Android.bp"
       ],
-      "patch_sha256": "7a0203331530899a3156a74073126467641d03cc2cff61d2224ebf746ed2d34c"
+      "patch_sha256": "12232f9a25dc53040854f2515643f30d346067d51acc89ee3f3d98ac9b4e4280"
     },
     {
       "path": "system/vold",
@@ -192,7 +192,7 @@
         "sound_trigger_hw.c",
         "sound_trigger_hw.h"
       ],
-      "patch_sha256": "c2ac05f1c43a298d733ca3097471366465c2e783cc2875e0f0054fac4f0775b7"
+      "patch_sha256": "ae14cd4db9847c5b59c37a1ed9c1ce1df28c87bc7efbfd6ff919624a59c79b0c"
     },
     {
       "path": "vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
@@ -201,7 +201,7 @@
       "files": [
         "ipacm/inc/IPACM_OffloadManager.h"
       ],
-      "patch_sha256": "b17aa87b450fe4894a66837ad0e51e928953efed0caeb4878a8fce613222822c"
+      "patch_sha256": "790809455c7589f3d368a3412ec1de7b6776c489a9a9f15a331052508a6ce0ea"
     },
     {
       "path": "vendor/qcom/opensource/display",
@@ -219,7 +219,7 @@
       "files": [
         "aidl/VibratorSelector/VibratorSelector.h"
       ],
-      "patch_sha256": "45cd3e79692c2e589d8d54b420b3d8b58ddea817bd12d2cbe9f13fe133b65f68"
+      "patch_sha256": "eccb046b44612525b39bb2dde81517ce7e4cbde04bd9e7ad2a00985fe2bed2e8"
     },
     {
       "path": "vendor/xiaomi/firmware-lisa",
